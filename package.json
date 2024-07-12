@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "smooth-scrollbar": "^8.8.4"
+  },
+  "devDependencies": {
+    "babel-loader": "^9.1.3",
+    "webpack-cli": "^5.1.4"
+  }
+}

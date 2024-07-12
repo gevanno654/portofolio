@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gevanno Yoh</title>
+    <link rel="icon" href="image/logo.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-thin-straight/css/uicons-thin-straight.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body id="top">
+        <!-- Preloader Area Start -->
+        <div class="preloader">
+            <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+                <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
+            </svg>
+
+            <div class="preloader-heading">
+                <div class="load-text">
+                    <span>H</span>
+                    <span>e</span>
+                    <span>l</span>
+                    <span>l</span>
+                    <span>0</span>
+                    <span>!</span>
+                </div>
+            </div>
+        </div>
+        <!-- Preloader Area End -->
+         
+        <!-- Navbar 1 (Stay) -->
+        <nav id="navbar1" class="navbar navbar-expand-lg navbar-color">
+            <div class="container-fluid">
+                <a class="navbar-brand-navbar1" href="mailto:gpascalbeye@gmail.com" style="text-decoration: none; margin-top: 1%;">
+                    <img src="image/logo.png" alt="Logo" style="width: 60px; height: 60px; margin-right: -6%; margin-top: -5%;">
+                    evanno Yoh
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-scroll>About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects" data-scroll>Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#exp-edu" data-scroll>Experience & Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills" data-scroll>Skills & Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Navbar 2 (Sticky) -->
+        <nav id="navbar2" class="navbar navbar-expand-lg sticky-top navbar-color2 animate__animated animate__fadeIn" style="display: none;">
+            <div class="container-fluid">
+                <a class="navbar-brand-navbar2">
+                    <img src="image/logo.png" alt="Logo" style="width: 60px; height: 60px; margin-right: -6%;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about" data-scroll>About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects" data-scroll>Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#exp-edu" data-scroll>Experience & Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills" data-scroll>Skills & Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header>
+            <div class="container-me">
+                <!-- Card Foto-->
+                <div class="card-photo">
+                    <div class="card-photo-content">
+                        <img src="image/me.png">
+                    </div>
+                </div>
+
+                <div class="container-desc">
+                    <div class="name">I am Gevanno</div>
+                    <div class="skill">as a Front End<br>and Web Developer</div>
+                    <div class="desc">I will always strive to create the best appearance<br>to establish a unique characteristic.</div>
+                    <ul class="social-media-btn">
+                        <li class="icon-content">
+                            <a href="https://github.com/gevanno654" aria-label="GitHub" data-social="github">
+                                <div class="filled"></div>
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-github"
+                                viewBox="0 0 16 16"
+                                xml:space="preserve"
+                                >
+                                <path
+                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                                    fill="currentColor"
+                                ></path>
+                                </svg>
+                            </a>
+                            <div class="tooltip">GitHub gevanno654</div>
+                        </li>
+                        <li class="icon-content">
+                            <a href="https://www.instagram.com/gevanno.p_14/" aria-label="Instagram" data-social="instagram">
+                                <div class="filled"></div>
+                                <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-instagram"
+                                viewBox="0 0 16 16"
+                                xml:space="preserve"
+                                >
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                                    fill="currentColor"
+                                ></path>
+                                </svg>
+                            </a>
+                            <div class="tooltip">Instagram gevanno.p_14</div>
+                        </li>
+                        <button class="download-btn" onclick="downloadCV()">
+                            <span class="download-btn-content">Download My CV</span>
+                        </button>
+                    </ul>
+                </div>
+                
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container-about">
+                <h2 class="title-about animate-on-scroll" data-animation="animate__zoomIn">About Me</h2>
+                <p class="desc-about animate-on-scroll" data-animation="animate__fadeInUp">I am an Informatics student at Universitas Pembangunan Nasional "Veteran" Jawa Timur<br>with experience in creating and developing websites.<br> I have knowledge of HTML, CSS, JavaScript, PHP, and Java.<br>Apart from that, I am able to create poster designs and social media posts<br>using Adobe Photoshop and Canva.<br>Blend the art of design with programming skills to enhance the user experience.<br>I am very interested in a Front End position or Web Developments.</p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container-projects">
+                <h2 class="title-projects animate-on-scroll" data-animation="animate__zoomIn">My Recent Projets</h2>
+                <p class="desc-projects animate-on-scroll" data-animation="animate__zoomIn">It's all about what I've created and learned.</p>
+                <div class="owl-carousel owl-carousel-pro owl-carousel owl-theme">
+                    <div class="card-projects animate-on-scroll" data-animation="animate__fadeInUp">
+                        <div class="card-projects-details">
+                          <p class="title-card-projects">University Database Website</p>
+                          <img class="img-card-projects" src="image/Database.png">
+                        </div>
+                        <button class="card-projects-button" data-bs-toggle="modal" data-bs-target="#modal-pro1">Read More about University Database Website</button>
+                    </div>
+                    <div class="card-projects animate-on-scroll" data-animation="animate__fadeInUp">
+                        <div class="card-projects-details">
+                          <p class="title-card-projects">Restaurant Menu Website</p>
+                          <img class="img-card-projects" src="image/Restoran.png">
+                        </div>
+                        <button class="card-projects-button" data-bs-toggle="modal" data-bs-target="#modal-pro2">Read More about Ordering Food & Drink from website</button>
+                    </div>
+                    <div class="card-projects animate-on-scroll" data-animation="animate__fadeInUp">
+                        <div class="card-projects-details">
+                          <p class="title-card-projects">Decision Support System for Scholarship Desktop App</p>
+                          <img class="img-card-projects" src="image/DSS.png">
+                        </div>
+                        <button class="card-projects-button" data-bs-toggle="modal" data-bs-target="#modal-pro3">Read More about DSS for Scholarship</button>
+                    </div>
+                    <div class="card-projects animate-on-scroll" data-animation="animate__fadeInUp">
+                        <div class="card-projects-details">
+                          <p class="title-card-projects">OBS Deckstream Panel</p>
+                          <img class="img-card-projects" src="image/DSS.png">
+                        </div>
+                        <button class="card-projects-button" data-bs-toggle="modal" data-bs-target="#modal-pro4">Read More about OBS Deckstream Panel</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modals Project 1-->
+        <div class="modal fade" id="modal-pro1" tabindex="-1" aria-labelledby="modal-pro1-label" aria-hidden="true" data-lenis-prevent="">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                <div type="button" class="close-button" data-bs-dismiss="modal">
+                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
+                    </svg>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="image-modal-pro">
+                            <div class="thumbnail"><img src="image/Database.png" alt="Image Projects"></div>
+                        </div>
+                        <div class="header-modal-pro">
+                            <h5 class="title-modal-pro">University Database Website</h5>
+                            <div class="time-modal-pro">14th - 21th December 2023</div>
+                        </div>
+                        <div class="desc-modal-pro">A project that implements Advanced Query SQL into a website feature<br>to make it easier for users to search for data.</div>
+                        <button class="preview-btn" onclick="redirectToProject('projects/university-database/index.php')">
+                            <span class="preview-btn-content">Live Preview</span>
+                        </button>
+                        <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/university-database')">
+                            <span class="preview-btn-content">View Codes</span>
+                        </button>
+                        <div class="image-modal-pro owl-carousel-modal-pro owl-carousel owl-theme">
+                            <div class="item"><img src="image/Beranda-UD.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Dosen-UD.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Detail-Data-Dosen-UD.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Sunting-Data-Dosen-UD.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Tambah-Dosen-UD.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Matkul-UD.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Tambah-Matkul-UD.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Detail-Data-Matkul-UD.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Sunting-Data-Matkul-UD.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Mahasiswa-UD.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Detail-Mahasiswa-UD.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Sungting-Data-Mahasiswa-UD.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Tambah-Data-Mahasiswa-UD.png" alt="Image Projects"></div>
+                        </div>
+                        <div class="subtitle-modal-pro">What I did in this Project:</div>
+                        <div class="myjob-modal-pro">• Built with HTML5, CSS3, JavaScript, Bootstrap, PHP, MySQL.<br>
+                            • Designed database.<br>
+                            • Connected database to the website by applying Advanced Query.<br>
+                            • Enhanced user experience by optimizing the display, site structure, and navigation.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals Project 2-->
+        <div class="modal fade" id="modal-pro2" tabindex="-1" aria-labelledby="modal-pro2-label" aria-hidden="true" data-lenis-prevent="">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                <div type="button" class="close-button" data-bs-dismiss="modal">
+                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
+                    </svg>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="image-modal-pro">
+                            <div class="thumbnail"><img src="image/Restoran.png" alt="Image Projects"></div>
+                        </div>
+                        <div class="header-modal-pro">
+                            <h5 class="title-modal-pro">Restaurant Menu Website</h5>
+                            <div class="time-modal-pro">23th May 2024 - 12th June 2024</div>
+                        </div>
+                        <div class="desc-modal-pro">A project that develops activities in ordering menus at a restaurant.<br>The goal is to make it easier for customers to order food & drinks.</div>
+                        <button class="preview-btn" onclick="redirectToProject('projects/restaurant-app/index.php')">
+                            <span class="preview-btn-content">Live Preview</span>
+                        </button>
+                        <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/restaurant-app')">
+                            <span class="preview-btn-content">View Codes</span>
+                        </button>
+                        <div class="image-modal-pro owl-carousel-modal-pro owl-carousel owl-theme">
+                            <div class="item"><img src="image/Beranda-RM.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Modal-Order-RM.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Alert-Order-RM.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Menu-RM.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Modal-Cart-RM.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Checkout-RM.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Modal-Sit-RM.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Confirm-Modal-RM.png" alt="Image Projects"></div>
+                        </div>
+                        <div class="subtitle-modal-pro">What I did in this Project:</div>
+                        <div class="myjob-modal-pro">• Built website with HTML5, CSS3, PHP, JavaScript, Bootstrap.<br>
+                            • Created database design.<br>
+                            • Created animation and transition with CSS3 dan JavaScript.<br>
+                            • Developed desktop website to responsive website.<br>
+                            • Built function from additional item to cart by applying JSON to collect item’s information.<br>
+                            • Enhanced user experience by optimizing button function and navigation on the website page.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals Project 3-->
+        <div class="modal fade" id="modal-pro3" tabindex="-1" aria-labelledby="modal-pro3-label" aria-hidden="true" data-lenis-prevent="">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                <div type="button" class="close-button" data-bs-dismiss="modal">
+                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
+                    </svg>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="image-modal-pro">
+                            <div class="thumbnail"><img src="image/DSS.png" alt="Image Projects"></div>
+                        </div>
+                        <div class="header-modal-pro">
+                            <h5 class="title-modal-pro">Decision Support System<br>for Scholarship Desktop App</h5>
+                            <div class="time-modal-pro">23th May 2024 - 12th June 2024</div>
+                        </div>
+                        <div class="desc-modal-pro">A project that develops the calculation of the Simple Additive Weighting method<br>to assist a scholarship committee in determining     the eligibility of students who get scholarships.</div>
+                        <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/DSS-Scholarship-Desktop-App')">
+                            <span class="preview-btn-content">View Codes</span>
+                        </button>
+                        <div class="image-modal-pro owl-carousel-modal-pro owl-carousel owl-theme">
+                            <div class="item"><img src="image/Login Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Registration Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/HomeMahasiswa Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/LengkapiDokumen Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Dashboard Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Kriteria Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/DataMahasiswa Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Penghitungan Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/DataPeringkat Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/HomeMahasiswaLolos Page-DSS.png" alt="Image Projects"></div>
+                        </div>
+                        <div class="subtitle-modal-pro">What I did in this Project:</div>
+                        <div class="myjob-modal-pro">• Created database design.<br>
+                            • Created interface desktop app with menggunakan Java Swing.<br>
+                            • Connected desktop app to database with Java JDBC Driver.<br>
+                            • Created user authentication, database management, and data validation.<br>
+                            • Created DSS calculation feature by applying SAW method calculation.<br>
+                            • Enhanced user experience by optimizing button function, display, structure, and navigation on the website page.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals Project 4-->
+        <div class="modal fade" id="modal-pro4" tabindex="-1" aria-labelledby="modal-pro4-label" aria-hidden="true" data-lenis-prevent="">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                <div type="button" class="close-button" data-bs-dismiss="modal">
+                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
+                    </svg>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="image-modal-pro">
+                            <div class="thumbnail"><img src="image/DSS.png" alt="Image Projects"></div>
+                        </div>
+                        <div class="header-modal-pro">
+                            <h5 class="title-modal-pro">OBS Deckstream Panel</h5>
+                            <div class="time-modal-pro">1st July 2024 - To be Continued</div>
+                        </div>
+                        <div class="desc-modal-pro">A project that develops a websocket connection with a broadcasting application called OBS Studio. This project aims to make it easier for users to operate OBS Studio and can be run on multiple platforms (desktop and mobile).</div>
+                        <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/OBS-deckstream-panel')">
+                            <span class="preview-btn-content">View Codes</span>
+                        </button>
+                        <div class="image-modal-pro owl-carousel-modal-pro owl-carousel owl-theme">
+                            <div class="item"><img src="image/Login Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Registration Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/HomeMahasiswa Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/LengkapiDokumen Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Dashboard Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Kriteria Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/DataMahasiswa Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/Penghitungan Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/DataPeringkat Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/HomeMahasiswaLolos Page-DSS.png" alt="Image Projects"></div>
+                        </div>
+                        <div class="subtitle-modal-pro">What I did in this Project:</div>
+                        <div class="myjob-modal-pro">• Created concepts for application functions.<br>
+                            • Created user interface and user experience.<br>
+                            • Created a dynamic connection between the website, websocket, and OBS.<br>
+                            • Created button functions on the website to run OBS Scenes and Sources.<br>
+                            • Created shortcuts and shortcut settings for each function connected to OBS Scenes and Sources.<br>
+                            • Created Scenes, Sources, and Profile settings in OBS.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience & Education -->
+        <section id="exp-edu">
+            <div class="container-exp-edu">
+                <div class="container-experience">
+                    <h2 class="title-experience animate-on-scroll" data-animation="animate__zoomIn">My Experience</h2>
+                    <div class="card-exp animate-on-scroll" data-animation="animate__fadeInLeftBig" data-bs-toggle="modal" data-bs-target="#modal-exp1">
+                        <div class="card-exp-content">
+                            <h4 class="title-card-exp">2020-2021</h4>
+                            <h3 class="job-card-exp">Staff of PubDoc</h3>
+                            <p class="name-card-exp">OSIS SMA Katolik St. Louis 2</p>
+                        </div>
+                    </div>
+                    <div class="card-exp animate-on-scroll" data-animation="animate__fadeInLeftBig" data-bs-toggle="modal" data-bs-target="#modal-exp2">
+                        <div class="card-exp-content">
+                            <h4 class="title-card-exp">February 2023-April 2023</h4>
+                            <h3 class="job-card-exp">Head of PDD Team</h3>
+                            <p class="name-card-exp">Perayaan Paskah UKKK UPN “Veteran” Jawa Timur</p>
+                        </div>
+                    </div>
+                    <div class="card-exp animate-on-scroll" data-animation="animate__fadeInLeftBig" data-bs-toggle="modal" data-bs-target="#modal-exp3">
+                        <div class="card-exp-content">
+                            <h4 class="title-card-exp">June 2023-September 2023</h4>
+                            <h3 class="job-card-exp">Head of PDD Team</h3>
+                            <p class="name-card-exp">Orientasi Mahasiswa Kristen Baru UKKK UPNV Jawa Timur</p>
+                        </div>
+                    </div>
+                    <div class="card-exp animate-on-scroll" data-animation="animate__fadeInLeftBig" data-bs-toggle="modal" data-bs-target="#modal-exp4">
+                        <div class="card-exp-content">
+                            <h4 class="title-card-exp">February 2022-Present</h4>
+                            <h3 class="job-card-exp">Staff of Inforcom and Multimedia</h3>
+                            <p class="name-card-exp">GPIB Eben Haezer Surabaya</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-education">
+                    <h2 class="title-education animate-on-scroll" data-animation="animate__zoomIn">My Education</h2>
+                    <div class="card-exp animate-on-scroll" data-animation="animate__fadeInRightBig" data-bs-toggle="modal" data-bs-target="#modal-edu1">
+                        <div class="card-exp-content">
+                            <h4 class="title-card-exp">2019-2022</h4>
+                            <h3 class="job-card-exp">Sosial Science</h3>
+                            <p class="name-card-exp">SMA Katolik St.Louis 2</p>
+                        </div>
+                    </div>
+                    <div class="card-exp animate-on-scroll" data-animation="animate__fadeInRightBig" data-bs-toggle="modal" data-bs-target="#modal-edu2">
+                        <div class="card-exp-content">
+                            <h4 class="title-card-exp">2022-Present</h4>
+                            <h3 class="job-card-exp">Informatics</h3>
+                            <p class="name-card-exp">Universitas Pembangunan Nasional “Veteran” Jatim</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modals -->
+        <div class="modal fade" id="modal-exp1" tabindex="-1" aria-labelledby="modal-exp1-label" aria-hidden="true" data-lenis-prevent="">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                <div type="button" class="close-button" data-bs-dismiss="modal">
+                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
+                    </svg>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="image-modal-exp">
+                            <img src="image/OSIS-Gevanno.png" alt="Certificate">
+                        </div>
+                        <div class="header-modal-exp">
+                            <h5 class="title-modal-exp">OSIS SMAK Katolik St. Louis 2 Surabaya</h5>
+                            <div class="time-modal-exp">2020-2021</div>
+                        </div>
+                        <div class="role-modal-exp">Staff of Publication and Documentation</div>
+                        <div class="desc-modal-exp">My jobdesc during my tenure:<br>
+                            • Coordinated with teacher about publication projects.<br>
+                            • Created video concepts and edited event videos.<br>
+                            • Created concepts and designed Instagram feeds.<br>
+                            • Interacted with audiences and shared informations on Instagram.<br>
+                            • Operated Live Streaming Youtube and Instagram.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-exp2" tabindex="-1" aria-labelledby="modal-exp2-label" aria-hidden="true" data-lenis-prevent="">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                <div type="button" class="close-button" data-bs-dismiss="modal">
+                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
+                    </svg>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="image-modal-exp">
+                            <img src="image/PASKAH-PDD-Gevanno.png" alt="Certificate">
+                        </div>
+                        <div class="header-modal-exp">
+                            <h5 class="title-modal-exp">Perayaan Paskah UKKK UPN "Veteran" Jatim</h5>
+                            <div class="time-modal-exp">February 2023 - April 2023</div>
+                        </div>
+                        <div class="role-modal-exp">Head of Publication, Documentation, and Decoration</div>
+                        <div class="desc-modal-exp">My jobdesc during my tenure:<br>
+                            • Coordinated task for team and scheduled the timeline.<br>
+                            • Coordinated with other division to arrange publication and decoration.<br>
+                            • Communicated and negotiated with sponsors to get a sponsorship.<br>
+                            • Created publications concepts.<br>
+                            • Edited sneak peek video, teaser, and after movie.<br>
+                            • Achieved 3.700+ Instagram reels views on teaser.<br>
+                            • Designed Instagram feeds and event poster.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-exp3" tabindex="-1" aria-labelledby="modal-exp3-label" aria-hidden="true" data-lenis-prevent="">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                <div type="button" class="close-button" data-bs-dismiss="modal">
+                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
+                    </svg>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="image-modal-exp">
+                            <img src="image/OMKB-PDD-Gevanno.png" alt="Certificate">
+                        </div>
+                        <div class="header-modal-exp">
+                            <h5 class="title-modal-exp">OMKB UKKK UPN "Veteran" Jatim</h5>
+                            <div class="time-modal-exp">June 2023 - September 2023</div>
+                        </div>
+                        <div class="role-modal-exp">Head of Publication and Decoration</div>
+                        <div class="desc-modal-exp">My jobdesc during my tenure:<br>
+                            • Led team and scheduled the timeline.<br>
+                            • Coordinated with other division to arrange publication concepts, merchandise, and videos.<br>
+                            • Communicated and negotiated with sponsors to get sponsorships.<br>
+                            • Created and edited design concept.<br>
+                            • Edited after movie video.<br>
+                            • Designed Instagram feeds, Technical Meeting information, sponsorship proposal, and event poster.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-exp4" tabindex="-1" aria-labelledby="modal-exp4-label" aria-hidden="true" data-lenis-prevent="">
+            <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                <div type="button" class="close-button" data-bs-dismiss="modal">
+                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
+                    </svg>
+                </div>
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="image-modal-exp">
+                        </div>
+                        <div class="header-modal-exp">
+                            <h5 class="title-modal-exp">GPIB Eben Haezer Surabaya</h5>
+                            <div class="time-modal-exp">February 2022 - Present</div>
+                        </div>
+                        <div class="role-modal-exp">Staff of Information, Communication and Multimedia</div>
+                        <div class="desc-modal-exp">My jobdesc during my tenure:<br>
+                            • Operated Live Streaming of church services.<br>
+                            • Scheduled operator every three months.<br>
+                            • Created concepts and designed Live Stream thumbnail.<br>
+                            • Created concepts and designed Live Stream display.<br>
+                            • Created video bumper.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Skills -->
+        <section id="skills">
+            <div class="container-skills">
+                <h2 class="title-skills animate-on-scroll" data-animation="animate__zoomIn">My Skills</h2>
+                <p class="desc-skills animate-on-scroll" data-animation="animate__zoomIn">These are skills that I am currently good at and will continue to improve as time goes on.</p>
+            </div>
+            <div class="card-container">
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
+                        <i class="fab fa-html5 skill-icon"></i>
+                    </div>
+                    <span class="skill-text">HTML</span>
+                </div>
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                    </div>
+                    <span class="skill-text">CSS</span>
+                </div>
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
+                        <i class="fab fa-js skill-icon"></i>
+                    </div>
+                    <span class="skill-text">JavaScript</span>
+                </div>
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
+                        <i class="devicon-php-plain skill-icon"></i>
+                    </div>
+                    <span class="skill-text">PHP</span>
+                </div>
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
+                        <i class="fab fa-java skill-icon"></i>
+                    </div>
+                    <span class="skill-text">Java</span>
+                </div>
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
+                        <i class="devicon-c-plain skill-icon"></i>
+                    </div>
+                    <span class="skill-text">C</span>
+                </div>                
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
+                        <i class="devicon-cplusplus-plain skill-icon"></i>
+                    </div>
+                    <span class="skill-text">C++</span>
+                </div>
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
+                        <i class="devicon-mysql-original skill-icon"></i>
+                    </div>
+                    <span class="skill-text">MySQL</span>
+                </div>
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
+                        <i class="devicon-bootstrap-plain skill-icon"></i>
+                    </div>
+                    <span class="skill-text">Bootstrap</span>
+                </div>
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
+                        <i class="devicon-jquery-plain skill-icon"></i>
+                    </div>
+                    <span class="skill-text">jQuery</span>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
+                        <i class="devicon-photoshop-plain skill-icon"></i>
+                    </div>
+                    <span class="skill-text">Photoshop</span>
+                </div>
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
+                        <i class="devicon-premierepro-plain skill-icon"></i>
+                    </div>
+                    <span class="skill-text">PremierePro</span>
+                </div>
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
+                        <i class="devicon-canva-original skill-icon"></i>
+                    </div>
+                    <span class="skill-text">Canva</span>
+                </div>
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
+                        <i class="fab fa-figma skill-icon"></i>
+                    </div>
+                    <span class="skill-text">Figma</span>
+                </div>                
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container-contact">
+                <h2 class="title-contact animate-on-scroll" data-animation="animate__backInUp">Contact Me</h2>
+                <div class="content-contact animate-on-scroll"  data-animation="animate__backInUp">
+                    <div class="contact-info">
+                        <button class="social-btn" onclick="window.open('https://wa.me/6281805003532', '_blank')">
+                            <i class="fab fa-whatsapp"></i>
+                        </button>
+                        <div class="contact-text">
+                            <div class="head-contact">Phone/Whatsapp</div>
+                            <div class="subhead-contact">
+                                <a href="https://wa.me/6281805003532" target="_blank" style="text-decoration: none; color: inherit;">+62 818 0500 3532</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <button class="social-btn" onclick="window.location.href='mailto:gpascalbeye@gmail.com'">
+                            <i class="fa-regular fa-envelope"></i>
+                        </button>
+                        <div class="contact-text">
+                            <div class="head-contact">Email</div>
+                            <div class="subhead-contact">
+                                <a href="mailto:gpascalbeye@gmail.com" style="text-decoration: none; color: inherit;">gpascalbeye@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    <!-- Bootstrap JS and dependencies (Popper.js and jQuery) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/scripts.js"></script>
+
+    <script>
+        // Download button
+        function downloadCV() {
+            const link = document.createElement('a');
+            link.href = 'document/CV.pdf';
+            link.download = 'GevannoYoh CV.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        //Animasi nav link
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= sectionTop - sectionHeight / 3) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active-link', 'inactive-link');
+                    if (link.getAttribute('href').substring(1) === current) {
+                        link.classList.add('active-link');
+                    } else {
+                        link.classList.add('inactive-link');
+                    }
+                });
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+        
+        //Animasi content
+        document.addEventListener("DOMContentLoaded", function() {
+            const animatedElements = document.querySelectorAll('.animate-on-scroll');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const animationClass = entry.target.dataset.animation;
+                        entry.target.classList.add('animate__animated', animationClass);
+                        observer.unobserve(entry.target); // Stop observing once the animation is triggered
+                    }
+                });
+            }, {
+                threshold: 0.1 // Adjust this value to control when the animation triggers
+            });
+
+            animatedElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
