@@ -124,3 +124,30 @@ $(document).ready(function() {
 function redirectToProject(url) {
     window.location.href = url;
 }
+
+//nav-link hover
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        if (!link.classList.contains('active-link')) {
+            link.classList.remove('inactive-link');
+            link.classList.add('active-link');
+        }
+    });
+  
+    link.addEventListener('mouseleave', () => {
+        if (link.classList.contains('active-link')) {
+            link.classList.remove('active-link');
+            link.classList.add('inactive-link');
+        }
+    });
+});
+
+// WoW Js
+var wow = new WOW({
+    boxClass: "wow", // default
+    animateClass: "animated", // default
+    offset: 100, // default
+    mobile: true, // default
+    live: true, // default
+});
+wow.init();

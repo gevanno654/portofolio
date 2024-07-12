@@ -37,16 +37,16 @@ body {
   cursor: pointer;
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover {
   color: #03045E;
   transition: all 0.5s;
 }
 
 .nav-link {
-    margin-right: 10px;
-    color: #0077B6;
-    position: relative;
-    overflow: hidden;
+  margin-right: 10px;
+  color: #0077B6;
+  position: relative;
+  overflow: hidden;
 }
 
 .nav-link::after {
@@ -55,51 +55,55 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background-color: #007bff;
   transform: translateX(-100%);
   transition: transform 0.3s ease;
 }
+
 .nav-link.active-link::after {
   animation: slideIn 0.3s forwards;
 }
+
 .nav-link.inactive-link::after {
   animation: slideOut 0.3s forwards;
 }
+
 @keyframes slideIn {
   from {
-      transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   to {
-      transform: translateX(0);
+    transform: translateX(0);
   }
 }
+
 @keyframes slideOut {
   from {
-      transform: translateX(0);
+    transform: translateX(0);
   }
   to {
-      transform: translateX(100%);
+    transform: translateX(100%);
   }
 }
 
 .nav-link:hover {
-    color: #03045E;
+  color: #03045E;
 }
 
 .nav-link:focus {
-    color: #03045E;
+  color: #03045E;
 }
 
 .navbar-sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar-color2 {
-    background-color: #f6f3fc;
+  background-color: #f6f3fc;
 }
 
 /* Header Styles */
@@ -1120,3 +1124,64 @@ html.lenis, html.lenis body {
 .lenis.lenis-smooth iframe {
   pointer-events: none;
 }
+
+/* custom animate */
+.animate__fadeInRight {
+  animation-duration: 1.5s; /* Adjust the duration as needed */
+  animation-delay: 0.2s; /* Adjust the delay as needed */
+  animation-fill-mode: both;
+}
+@keyframes fadeInRight {
+  from {
+      opacity: 0;
+      transform: translateX(50px); /* Adjust the distance as needed */
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+.animate__fadeInRight {
+  animation-name: fadeInRight;
+}
+/* batas kanan */
+
+.animate__fadeInLeft {
+  animation-duration: 1.5s; /* Adjust the duration as needed */
+  animation-delay: 0.2s; /* Adjust the delay as needed */
+  animation-fill-mode: both;
+}
+@keyframes fadeInLeft {
+  from {
+      opacity: 0;
+      transform: translateX(-50px); /* Adjust the distance as needed */
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+.animate__fadeInLeft {
+  animation-name: fadeInLeft;
+}
+/* batas kiri */
+
+.animate__fadeInUp {
+  animation-duration: 1s; /* Adjust the duration as needed */
+  animation-delay: 0.2s; /* Adjust the delay as needed */
+  animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(40px); /* Adjust the distance as needed */
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.animate__fadeInUp {
+  animation-name: fadeInUp;
+}
+/* batas atas */
