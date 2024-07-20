@@ -86,9 +86,9 @@ $(document).ready(function() {
 
     var owl = $('.owl-carousel-pro');
     owl.owlCarousel({
-        items: 3,
+        items: 2,
         loop: true,
-        margin: 260,
+        margin: 20,
         autoplay: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true
@@ -142,12 +142,94 @@ document.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-// WoW Js
-var wow = new WOW({
-    boxClass: "wow", // default
-    animateClass: "animated", // default
-    offset: 100, // default
-    mobile: true, // default
-    live: true, // default
+//Animasi content
+document.addEventListener("DOMContentLoaded", function() {
+    const animatedElements = document.querySelectorAll('.animate-on-scroll');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const animationClass = entry.target.dataset.animation;
+                entry.target.classList.add('animate__animated', animationClass);
+                observer.unobserve(entry.target); // Stop observing once the animation is triggered
+            }
+        });
+    }, {
+        threshold: 0.1 // Adjust this value to control when the animation triggers
+    });
+
+    animatedElements.forEach(element => {
+        observer.observe(element);
+    });
 });
-wow.init();
+
+//Animasi untuk elemen project dalam tampilan mobile 
+document.addEventListener("DOMContentLoaded", function() {
+    const cardProjects = document.querySelectorAll('.card-projects');
+
+    // Check if the screen width is less than or equal to 600px (typical smartphone width)
+    if (window.innerWidth <= 992) {
+        cardProjects.forEach(element => {
+            element.dataset.animation = 'animate__fadeInUp';
+        });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const animationClass = entry.target.dataset.animation;
+                entry.target.classList.add('animate__animated', animationClass);
+                observer.unobserve(entry.target); // Stop observing once the animation is triggered
+            }
+        });
+    }, {
+        threshold: 0.1 // Adjust this value to control when the animation triggers
+    });
+
+    cardProjects.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+//Animasi untuk elemen exp&edu dalam tampilan mobile
+document.addEventListener("DOMContentLoaded", function() {
+    const cardExps = document.querySelectorAll('.card-exp');
+
+    // Check if the screen width is less than or equal to 600px (typical smartphone width)
+    if (window.innerWidth <= 600) {
+        cardExps.forEach(element => {
+            element.dataset.animation = 'animate__fadeInUp';
+        });
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const animationClass = entry.target.dataset.animation;
+                entry.target.classList.add('animate__animated', animationClass);
+                observer.unobserve(entry.target); // Stop observing once the animation is triggered
+            }
+        });
+    }, {
+        threshold: 0.1 // Adjust this value to control when the animation triggers
+    });
+
+    cardExps.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+// Tombol Expand Navbar Custom
+document.addEventListener("DOMContentLoaded", function() {
+    const customToggler = document.getElementById('custom-toggler');
+    const navbarToggle = document.getElementById('navbar-toggle');
+    const navbarNav = document.getElementById('navbarNav');
+
+    customToggler.addEventListener('click', function() {
+        if (navbarNav.classList.contains('show')) {
+            navbarNav.classList.remove('show');
+        } else {
+            navbarNav.classList.add('show');
+        }
+    });
+});
