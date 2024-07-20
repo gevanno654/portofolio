@@ -1,0 +1,967 @@
+/* Large Devices */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .container-me {
+        column-gap: 0;
+        margin: 0 4% 0 4%;
+    }
+    .card-photo {
+        width: 750px;
+        height: 450px;
+    }
+    .skill {
+        font-size: 2.6rem;
+    }
+    .desc {
+        font-size: 1.4rem;
+    }
+    .title-about {
+        font-size: 2.6rem;
+    }
+    .desc-about {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .title-projects {
+        font-size: 2.6rem;
+    }
+    .time-modal-pro {
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .title-experience {
+        font-size: 2.6rem;
+    }
+    .title-card-exp {
+        font-size: 20px;
+    }
+    .job-card-exp {
+        font-size: 28px;
+    }
+    .name-card-exp {
+        font-size: 18px;
+    }
+    .time-modal-exp {
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+    .title-education {
+        font-size: 2.6rem;
+    }
+    .title-skills {
+        font-size: 2.6rem;
+    }
+    .desc-skills {
+        font-size: 1.5rem;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .title-contact {
+        font-size: 2.6rem;
+    }
+    .content-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info {
+        width: auto;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: -15px;
+    }
+    .hide-me {
+        display: none;
+    }
+    .hide-me-on-large-devices {
+        display: none;
+    }
+
+    /* card projects */
+    .container-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-left-projects {
+        margin-bottom: -20px;
+    }
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* general */
+    section h2 {
+        margin-bottom: 0;
+    }
+
+
+    /* navbar */
+    .nav-link {
+        text-align: center;
+        border-bottom: 0.5px solid blue;
+    }
+    .nav-link::after {
+        display: none
+    }
+    .my-logo {
+        width: 50px;
+        height: 50px;
+        margin-right: -10px;
+    }
+    .navbar-brand-navbar1 {
+        font-size: 24px;
+    }
+
+    /* navbar toggler custom */
+    #navbar-toggler1, #navbar-toggler2 {
+        display: none;
+    }
+    .toggle2 {
+        position: relative;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        transition-duration: .5s;
+        margin-right: 30px;
+    }
+    .bars {
+        width: 100%;
+        height: 6px;
+        background-color: #0077B6;
+        border-radius: 6px;
+    }
+    #bar5 {
+        transition-duration: .8s;
+    }
+    #bar4, #bar6 {
+        width: 80%;
+    }
+    #navbar-toggler1:checked + .toggle2 .bars,
+    #navbar-toggler2:checked + .toggle2 .bars {
+        position: absolute;
+        transition-duration: .5s;
+    }
+    #navbar-toggler1:checked + .toggle2 #bar5,
+    #navbar-toggler2:checked + .toggle2 #bar5 {
+        transform: scaleX(0);
+        transition-duration: .5s;
+    }
+    #navbar-toggler1:checked + .toggle2 #bar4,
+    #navbar-toggler2:checked + .toggle2 #bar4 {
+        width: 100%;
+        transform: rotate(45deg);
+        transition-duration: .5s;
+        height: 4px;
+    }
+    #navbar-toggler1:checked + .toggle2 #bar6,
+    #navbar-toggler2:checked + .toggle2 #bar6 {
+        width: 100%;
+        transform: rotate(-45deg);
+        transition-duration: .5s;
+        height: 4px;
+    }
+    #navbar-toggler1:checked + .toggle2,
+    #navbar-toggler2:checked + .toggle2 {
+        transition-duration: .5s;
+        transform: rotate(180deg);
+    }
+    .navbarkedua {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background-color: rgba(246, 243, 252, 0.95);
+    }
+    .container-fluid {
+        padding-right: 0;
+    }
+
+
+    /*header */
+    .card-photo {
+        width: 300px;
+        height: 300px;
+        margin-top: -60px;
+        margin-bottom: 10px;
+    }
+    .my-photo {
+        max-width: 120%;
+    }
+    .container-me{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    .container-desc{
+        text-align: center;
+    }
+    .name {
+        font-size: 1.75rem;
+    }
+    .skill {
+        font-size: 2.1rem;
+    }
+    .desc {
+        font-size: 1.15rem;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .download-btn-content {
+        font-size: 0.9rem;
+    }
+    .social-media-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -20px;
+        column-gap: 7px;
+    }
+    .social-media-btn .icon-content {
+        margin: 0;
+    }
+
+    /* download button */
+    .download-btn {
+        background: linear-gradient(45deg, #00B4D8 0%,#023E8A 100%);
+    }
+    .download-btn::before {
+        background: linear-gradient(45deg, #023E8A 0%, #00B4D8 100%);
+    }
+
+
+    /* about me */
+    .container-about {
+        margin-top: 75px;
+    }
+    .title-about {
+        font-size: 2.3rem;
+    }
+    .desc-about {
+        font-size: 1.15rem;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+    .hide-me {
+        display: none;
+    }
+
+    /* projects */
+    .container-projects {
+        margin-top: -20px;
+    }
+    .title-projects {
+        font-size: 2.3rem;
+    }
+    .desc-projects {
+        font-size: 1.15rem;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+
+
+    /* card projects */
+    .container-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-left-projects {
+        margin-bottom: -20px;
+    }
+    .card-projects {
+        width: 400px;
+        height: 325px;
+        margin: 20px 25px 20px 25px;
+    }
+    .card-projects:before {
+        transform: translate(-50%, -100%);
+    }
+    .card-projects-button {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .title-card-projects {
+        font-size: 20px;
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-top: -5px;
+        margin-bottom: 0;
+    }
+    .card-projects-details {
+        align-content: stretch;
+    }
+    .card-projects-button {
+        text-align: center;
+        margin-left: -15px;
+    }
+    .img-card-projects {
+        max-width: 110%;
+        height: auto;
+    }
+
+
+    /* experience & education */
+    .container-exp-edu {
+        gap: 0;
+        margin-top: 0;
+    }
+    .container-experience {
+        margin-left: 0;
+        margin-right: -20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-education {
+        margin-left: -20px;
+        margin-right: 0;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-exp {
+        width: 90%;
+    }
+    .title-experience, .title-education {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    .title-card-exp {
+        font-size: 18px;
+    }
+    .job-card-exp {
+        font-size: 26px;
+    }
+    .name-card-exp {
+        font-size: 17px;
+    }
+
+
+    /* skills */
+    .container-skills {
+        margin-top: 10px;
+    }
+    .title-skills {
+        font-size: 2.3rem;
+    }
+    .desc-skills {
+        font-size: 1.15rem;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .skills-grid {
+        row-gap: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        row-gap: 50px;
+    }
+    .card-skills {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 0;
+    }
+    .skill-icon {
+        font-size: 2.5rem;
+    }
+    .skill-text {
+        bottom: -25px;
+        font-size: 14px;
+    }
+
+
+    /* contact me */
+    .container-contact {
+        margin-top: 10px;
+    }
+    .title-contact {
+        font-size: 2.3rem;
+    }
+    .content-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info {
+        width: auto;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: -15px;
+    }
+    .head-contact {
+        font-size: 14px;
+    }
+    .subhead-contact {
+        font-size: 22px;
+    }
+    .social-btn {
+        padding: 0.5rem;
+    }
+
+    /* modal */
+    .modal {
+        --bs-modal-margin: 10px;
+    }
+    .close-button {
+        font-size: 25px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 9999;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 20%;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: Arial, monospace;
+        transition: background-color 0.1s ease;
+    }
+    .close-button svg {
+        height: 20px;
+        width: 20px;
+    }
+    .modal-dialog-scrollable .modal-body {
+        --sb-size: 0;
+    }
+
+    /* modal experience */
+    .header-modal-exp {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .title-modal-exp {
+        font-size: 24px;
+        margin-left: 15px;
+    }
+    .time-modal-exp {
+        font-size: 18px;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .role-modal-exp {
+        font-size: 20px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    .desc-modal-exp {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    
+
+    /* modal projects */
+    .header-modal-pro {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .title-modal-pro {
+        font-size: 24px;
+        margin-left: 15px;
+    }
+    .time-modal-pro {
+        font-size: 18px;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .desc-modal-pro {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    .subtitle-modal-pro {
+        font-size: 23px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .myjob-modal-pro {
+        font-size: 15px;
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-top: 5px;
+    }
+
+
+
+    /* custom animate */
+    .animate__fadeInRight {
+        animation-duration: 1s; /* Adjust the duration as needed */
+        animation-delay: 0.2s; /* Adjust the delay as needed */
+        animation-fill-mode: both;
+    }
+    @keyframes fadeInRight {
+        from {
+            opacity: 0;
+            transform: translateX(20px); /* Adjust the distance as needed */
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .animate__fadeInRight {
+        animation-name: fadeInRight;
+    }
+    /* batas kanan */
+    
+    .animate__fadeInLeft {
+        animation-duration: 1s; /* Adjust the duration as needed */
+        animation-delay: 0.2s; /* Adjust the delay as needed */
+        animation-fill-mode: both;
+    }
+    @keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translateX(-20px); /* Adjust the distance as needed */
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .animate__fadeInLeft {
+        animation-name: fadeInLeft;
+    }
+    /* batas kiri */
+}
+
+
+
+/* mobile */
+@media (max-width: 767px) {
+    /* general */
+    section h2 {
+        margin-bottom: 0;
+    }
+
+    /* preloader */
+    .preloader .preloader-heading .load-text {
+        font-size: 20px;
+    }
+    
+    /* navbar */
+    .nav-link {
+        text-align: center;
+        border-bottom: 0.5px solid blue;
+    }
+    .nav-link::after {
+        display: none
+    }
+    .my-logo {
+        width: 40px;
+        height: 40px;
+        margin-right: -10px;
+    }
+    .navbar-brand-navbar1 {
+        font-size: 20px;
+    }
+
+    /*header */
+    .card-photo {
+        width: 300px;
+        height: 300px;
+        margin-top: -60px;
+        margin-bottom: 10px;
+    }
+    .my-photo {
+        max-width: 120%;
+    }
+    .container-me{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+    .container-desc{
+        text-align: center;
+    }
+    .name {
+        font-size: 1.7rem;
+    }
+    .skill {
+        font-size: 1.8rem;
+    }
+    .desc {
+        font-size: 1.07rem;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .download-btn-content {
+        font-size: 0.8rem;
+    }
+    .social-media-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -40px;
+    }
+    .social-media-btn .icon-content {
+        margin: 0;
+    }
+
+    /* download button */
+    .download-btn {
+        background: linear-gradient(45deg, #00B4D8 0%,#023E8A 100%);
+    }
+    .download-btn::before {
+        background: linear-gradient(45deg, #023E8A 0%, #00B4D8 100%);
+    }
+
+
+    /* about me */
+    .container-about {
+        margin-top: 0;
+    }
+    .title-about {
+        font-size: 2.3rem;
+    }
+    .desc-about {
+        font-size: 1.07rem;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    .hide-me {
+        display: none;
+    }
+
+    /* projects */
+    .container-projects {
+        margin-top: -50px;
+    }
+    .title-projects {
+        font-size: 2rem;
+    }
+    .desc-projects {
+        font-size: 1.3rem;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+
+    /* card projects */
+    .container-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-left-projects {
+        margin-bottom: -20px;
+    }
+    .card-projects {
+        width: 290px;
+        height: 270px;
+        margin: 20px 25px 20px 25px;
+    }
+    .card-projects:before {
+        transform: translate(-50%, -100%);
+    }
+    .card-projects-button {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .title-card-projects {
+        font-size: 18px;
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .card-projects-details {
+        align-content: stretch;
+    }
+    .card-projects-button {
+        text-align: center;
+        margin-left: -15px;
+    }
+    .img-card-projects {
+        max-width: 110%;
+        height: auto;
+    }
+
+    /* experience & education */
+    .container-exp-edu {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin-top: 0;
+    }
+    .container-experience {
+        margin-left: 0;
+    }
+    .container-education {
+        margin-right: 0;
+    }
+    .title-experience, .title-education {
+        font-size: 2.3rem;
+        margin-bottom: 30px;
+    }
+    .title-card-exp {
+        font-size: 18px;
+    }
+    .job-card-exp {
+        font-size: 25px;
+    }
+    .name-card-exp {
+        font-size: 16px;
+    }
+    
+
+    /* skills */
+    .title-skills {
+        font-size: 2.3rem;
+    }
+    .desc-skills {
+        font-size: 1.15rem;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .skills-grid {
+        row-gap: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        row-gap: 50px;
+    }
+    .card-skills {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 0;
+    }
+    .skill-icon {
+        font-size: 2.5rem;
+    }
+    .skill-text {
+        bottom: -25px;
+        font-size: 14px;
+    }
+
+    /* contact me */
+    .title-contact {
+        font-size: 2.3rem;
+    }
+    .content-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info {
+        width: auto;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: -15px;
+    }
+    .head-contact {
+        font-size: 14px;
+    }
+    .subhead-contact {
+        font-size: 18px;
+    }
+    .social-btn {
+        padding: 0.5rem;
+    }
+
+    /* modal */
+    .modal {
+        --bs-modal-margin: 10px;
+    }
+    .close-button {
+        font-size: 25px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 9999;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 20%;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: Arial, monospace;
+        transition: background-color 0.1s ease;
+    }
+    .close-button svg {
+        height: 20px;
+        width: 20px;
+    }
+    .modal-dialog-scrollable .modal-body {
+        --sb-size: 0;
+    }
+
+    /* modal experience */
+    .header-modal-exp {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .title-modal-exp {
+        font-size: 24px;
+        margin-left: 15px;
+    }
+    .time-modal-exp {
+        font-size: 18px;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .role-modal-exp {
+        font-size: 20px;
+        margin-left: 15px;
+        margin-bottom: 10px;
+    }
+    .desc-modal-exp {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 15px;
+    }
+
+    /* modal projects */
+    .header-modal-pro {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .title-modal-pro {
+        font-size: 24px;
+        margin-left: 15px;
+    }
+    .time-modal-pro {
+        font-size: 18px;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .desc-modal-pro {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 15px;
+    }
+    .subtitle-modal-pro {
+        font-size: 23px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .myjob-modal-pro {
+        font-size: 15px;
+        margin-left: 35px;
+        margin-right: 35px;
+        margin-top: 5px;
+    }
+
+    /* preview button */
+    .container-preview-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .preview-btn {
+        height: 2.5rem;
+        padding: 0 1.5rem;
+        margin-left: 0;
+    }
+    .preview-btn-content {
+        font-size: 14px;
+    }
+    /* navbar toggler custom */
+    #navbar-toggler1, #navbar-toggler2 {
+        display: none;
+    }
+    .toggle2 {
+        position: relative;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        transition-duration: .5s;
+        margin-right: 30px;
+    }
+    .bars {
+        width: 100%;
+        height: 6px;
+        background-color: #0077B6;
+        border-radius: 6px;
+    }
+    #bar5 {
+        transition-duration: .8s;
+    }
+    #bar4, #bar6 {
+        width: 80%;
+    }
+    #navbar-toggler1:checked + .toggle2 .bars,
+    #navbar-toggler2:checked + .toggle2 .bars {
+        position: absolute;
+        transition-duration: .5s;
+    }
+    #navbar-toggler1:checked + .toggle2 #bar5,
+    #navbar-toggler2:checked + .toggle2 #bar5 {
+        transform: scaleX(0);
+        transition-duration: .5s;
+    }
+    #navbar-toggler1:checked + .toggle2 #bar4,
+    #navbar-toggler2:checked + .toggle2 #bar4 {
+        width: 100%;
+        transform: rotate(45deg);
+        transition-duration: .5s;
+        height: 4px;
+    }
+    #navbar-toggler1:checked + .toggle2 #bar6,
+    #navbar-toggler2:checked + .toggle2 #bar6 {
+        width: 100%;
+        transform: rotate(-45deg);
+        transition-duration: .5s;
+        height: 4px;
+    }
+    #navbar-toggler1:checked + .toggle2,
+    #navbar-toggler2:checked + .toggle2 {
+        transition-duration: .5s;
+        transform: rotate(180deg);
+    }
+    .container-fluid {
+        padding-right: 0;
+    }
+    
+    /* Footer Area */
+    .container-footer-area {
+        padding: 40px 0 20px;
+    }
+    .footer-logo-box {
+        margin: 0 auto 15px;
+    }
+    .footer-menu ul {
+        gap: 10px 25px;
+    }
+    .footer-menu li {
+        font-size: 18px;
+    }
+    .footer-text {
+        font-size: 14px;
+        text-align: center;
+    }
+}
