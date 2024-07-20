@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body id="top">
         <!-- Preloader Area Start -->
@@ -40,12 +41,15 @@
         <nav id="navbar1" class="navbar navbar-expand-lg navbar-color">
             <div class="container-fluid">
                 <a class="navbar-brand-navbar1" href="mailto:gpascalbeye@gmail.com" style="text-decoration: none; margin-top: 1%;">
-                    <img src="image/logo.png" alt="Logo" style="width: 60px; height: 60px; margin-right: -6%; margin-top: -5%;">
+                    <img class="my-logo" src="image/logo.png" alt="Logo">
                     evanno Yoh
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <input id="navbar-toggler1" type="checkbox">
+                <label class="toggle toggle2" for="navbar-toggler1" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                    <div id="bar4" class="bars"></div>
+                    <div id="bar5" class="bars"></div>
+                    <div id="bar6" class="bars"></div>
+                </label>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
@@ -71,10 +75,13 @@
                 <a class="navbar-brand-navbar2">
                     <img src="image/logo.png" alt="Logo" style="width: 60px; height: 60px; margin-right: -6%;">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <input id="navbar-toggler2" type="checkbox">
+                <label class="toggle toggle2" for="navbar-toggler2" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false">
+                    <div id="bar4" class="bars"></div>
+                    <div id="bar5" class="bars"></div>
+                    <div id="bar6" class="bars"></div>
+                </label>
+                <div class="collapse navbar-collapse navbarkedua" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link" href="#about" data-scroll>About Me</a>
@@ -94,19 +101,19 @@
         </nav>
 
         <!-- Header -->
-        <header>
+        <header id="header">
             <div class="container-me">
                 <!-- Card Foto-->
                 <div class="card-photo">
                     <div class="card-photo-content">
-                        <img src="image/me.png">
+                        <img class="my-photo" src="image/me.png">
                     </div>
                 </div>
 
                 <div class="container-desc">
                     <div class="name">I am Gevanno</div>
                     <div class="skill">as a Front End<br>and Web Developer</div>
-                    <div class="desc">I will always strive to create the best appearance<br>to establish a unique characteristic.</div>
+                    <div class="desc">I will always strive to create the best appearance<br class="hide-me"> to establish a unique characteristic.</div>
                     <ul class="social-media-btn">
                         <li class="icon-content">
                             <a href="https://github.com/gevanno654" aria-label="GitHub" data-social="github">
@@ -161,56 +168,81 @@
         <section id="about">
             <div class="container-about">
                 <h2 class="title-about animate-on-scroll" data-animation="animate__zoomIn">About Me</h2>
-                <p class="desc-about animate-on-scroll" data-animation="animate__fadeInUp">I am an Informatics student at Universitas Pembangunan Nasional "Veteran" Jawa Timur<br>with experience in creating and developing websites.<br> I have knowledge of HTML, CSS, JavaScript, PHP, and Java.<br>Apart from that, I am able to create poster designs and social media posts<br>using Adobe Photoshop and Canva.<br>Blend the art of design with programming skills to enhance the user experience.<br>I am very interested in a Front End position or Web Developments.</p>
+                <p class="desc-about animate-on-scroll" data-animation="animate__fadeInUp">I am an Informatics student at Universitas Pembangunan Nasional "Veteran" Jawa Timur<br class="hide-me"> with experience in creating and developing websites.<br class="hide-me-on-large-devices"> I have knowledge of HTML, CSS, JavaScript, PHP, and Java.<br class="hide-me"> Apart from that, I am able to create poster designs and social media posts<br class="hide-me"> using Adobe Photoshop and Canva.<br class="hide-me"> Blend the art of design with programming skills to enhance the user experience.<br class="hide-me"> I am very interested in a Front End position or Web Developments.</p>
             </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects">
             <div class="container-projects">
-                <h2 class="title-projects animate-on-scroll" data-animation="animate__zoomIn">My Recent Projets</h2>
+                <h2 class="title-projects animate-on-scroll" data-animation="animate__zoomIn">My Recent Projects</h2>
                 <p class="desc-projects animate-on-scroll" data-animation="animate__zoomIn">It's all about what I've created and learned.</p>
-                <div class="owl-carousel owl-carousel-pro owl-carousel owl-theme">
-                    <div class="card-projects animate-on-scroll" data-animation="animate__fadeInUp">
-                        <div class="card-projects-details">
-                          <p class="title-card-projects">University Database Website</p>
-                          <img class="img-card-projects" src="image/Database.png">
+                <div class="container-card">
+                    <div class="container-left-projects">
+                        <div class="card-projects animate-on-scroll" data-animation="animate__fadeInLeft">
+                            <div class="card-projects-details">
+                                <p class="title-card-projects">University Database Website</p>
+                                <img class="img-card-projects" src="image/Database.png">
+                            </div>
+                            <button class="card-projects-button" data-bs-toggle="modal" data-bs-target="#modal-pro1">Read More</button>
                         </div>
-                        <button class="card-projects-button" data-bs-toggle="modal" data-bs-target="#modal-pro1">Read More about University Database Website</button>
+                        <div class="card-projects animate-on-scroll" data-animation="animate__fadeInLeft">
+                            <div class="card-projects-details">
+                                <p class="title-card-projects">Restaurant Menu Website</p>
+                                <img class="img-card-projects" src="image/Restoran.png">
+                            </div>
+                            <button class="card-projects-button" data-bs-toggle="modal" data-bs-target="#modal-pro2">Read More</button>
+                        </div>
                     </div>
-                    <div class="card-projects animate-on-scroll" data-animation="animate__fadeInUp">
-                        <div class="card-projects-details">
-                          <p class="title-card-projects">Restaurant Menu Website</p>
-                          <img class="img-card-projects" src="image/Restoran.png">
+                    <div class="container-right-projects">
+                        <div class="card-projects animate-on-scroll" data-animation="animate__fadeInRight">
+                            <div class="card-projects-details">
+                                <p class="title-card-projects">DSS for Scholarship</p>
+                                <img class="img-card-projects" src="image/DSS.png">
+                            </div>
+                            <button class="card-projects-button" data-bs-toggle="modal" data-bs-target="#modal-pro3">Read More</button>
                         </div>
-                        <button class="card-projects-button" data-bs-toggle="modal" data-bs-target="#modal-pro2">Read More about Ordering Food & Drink from website</button>
-                    </div>
-                    <div class="card-projects animate-on-scroll" data-animation="animate__fadeInUp">
-                        <div class="card-projects-details">
-                          <p class="title-card-projects">Decision Support System for Scholarship Desktop App</p>
-                          <img class="img-card-projects" src="image/DSS.png">
+                        <div class="card-projects animate-on-scroll" data-animation="animate__fadeInRight">
+                            <div class="card-projects-details">
+                                <p class="title-card-projects">OBS Deckstream Panel</p>
+                                <img class="img-card-projects" src="image/OBS-panel-1.png">
+                            </div>
+                            <button class="card-projects-button" data-bs-toggle="modal" data-bs-target="#modal-pro4">Read More</button>
                         </div>
-                        <button class="card-projects-button" data-bs-toggle="modal" data-bs-target="#modal-pro3">Read More about DSS for Scholarship</button>
-                    </div>
-                    <div class="card-projects animate-on-scroll" data-animation="animate__fadeInUp">
-                        <div class="card-projects-details">
-                          <p class="title-card-projects">OBS Deckstream Panel</p>
-                          <img class="img-card-projects" src="image/DSS.png">
-                        </div>
-                        <button class="card-projects-button" data-bs-toggle="modal" data-bs-target="#modal-pro4">Read More about OBS Deckstream Panel</button>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Modals Experiences-->
+        <div class="modal fade" id="modal-exp1" tabindex="-1" aria-labelledby="modal-exp1-label" aria-hidden="true" data-lenis-prevent="">
+            <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
+            <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="image-modal-exp">
+                            <img src="image/OSIS-Gevanno.png" alt="Certificate">
+                        </div>
+                        <div class="header-modal-exp">
+                            <h5 class="title-modal-exp">OSIS SMAK Katolik St. Louis 2 Surabaya</h5>
+                            <div class="time-modal-exp">2020-2021</div>
+                            <div class="role-modal-exp">Staff of Publication & Documentation</div>
+                        </div>
+                        <div class="desc-modal-exp">My jobdesc during my tenure:<br>
+                            • Coordinated with teacher about publication projects.<br>
+                            • Created video concepts and edited event videos.<br>
+                            • Created concepts and designed Instagram feeds.<br>
+                            • Interacted with audiences and shared informations on Instagram.<br>
+                            • Operated Live Streaming Youtube and Instagram.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Modals Project 1-->
         <div class="modal fade" id="modal-pro1" tabindex="-1" aria-labelledby="modal-pro1-label" aria-hidden="true" data-lenis-prevent="">
+            <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
             <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
-                <div type="button" class="close-button" data-bs-dismiss="modal">
-                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
-                    </svg>
-                </div>
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="image-modal-pro">
@@ -219,14 +251,16 @@
                         <div class="header-modal-pro">
                             <h5 class="title-modal-pro">University Database Website</h5>
                             <div class="time-modal-pro">14th - 21th December 2023</div>
+                            <div class="desc-modal-pro">A project that implements Advanced Query SQL into a website feature<br>to make it easier for users to search for data.</div>
                         </div>
-                        <div class="desc-modal-pro">A project that implements Advanced Query SQL into a website feature<br>to make it easier for users to search for data.</div>
-                        <button class="preview-btn" onclick="redirectToProject('projects/university-database/index.php')">
-                            <span class="preview-btn-content">Live Preview</span>
-                        </button>
-                        <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/university-database')">
-                            <span class="preview-btn-content">View Codes</span>
-                        </button>
+                        <div class="container-preview-btn">
+                            <button class="preview-btn" onclick="redirectToProject('projects/university-database/index.php')">
+                                <span class="preview-btn-content">Live Preview</span>
+                            </button>
+                            <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/university-database')">
+                                <span class="preview-btn-content">View Codes</span>
+                            </button>
+                        </div>
                         <div class="image-modal-pro owl-carousel-modal-pro owl-carousel owl-theme">
                             <div class="item"><img src="image/Beranda-UD.png" alt="Image Projects"></div>
                             <div class="item"><img src="image/Dosen-UD.png" alt="Image Projects"></div>
@@ -254,12 +288,8 @@
 
         <!-- Modals Project 2-->
         <div class="modal fade" id="modal-pro2" tabindex="-1" aria-labelledby="modal-pro2-label" aria-hidden="true" data-lenis-prevent="">
+            <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
             <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
-                <div type="button" class="close-button" data-bs-dismiss="modal">
-                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
-                    </svg>
-                </div>
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="image-modal-pro">
@@ -268,14 +298,16 @@
                         <div class="header-modal-pro">
                             <h5 class="title-modal-pro">Restaurant Menu Website</h5>
                             <div class="time-modal-pro">23th May 2024 - 12th June 2024</div>
+                            <div class="desc-modal-pro">A project that develops activities in ordering menus at a restaurant.<br>The goal is to make it easier for customers to order food & drinks.</div>
                         </div>
-                        <div class="desc-modal-pro">A project that develops activities in ordering menus at a restaurant.<br>The goal is to make it easier for customers to order food & drinks.</div>
-                        <button class="preview-btn" onclick="redirectToProject('projects/restaurant-app/index.php')">
-                            <span class="preview-btn-content">Live Preview</span>
-                        </button>
-                        <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/restaurant-app')">
-                            <span class="preview-btn-content">View Codes</span>
-                        </button>
+                        <div class="container-preview-btn">
+                            <button class="preview-btn" onclick="redirectToProject('projects/restaurant-app/index.php')">
+                                <span class="preview-btn-content">Live Preview</span>
+                            </button>
+                            <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/restaurant-app')">
+                                <span class="preview-btn-content">View Codes</span>
+                            </button>
+                        </div>
                         <div class="image-modal-pro owl-carousel-modal-pro owl-carousel owl-theme">
                             <div class="item"><img src="image/Beranda-RM.png" alt="Image Projects"></div>
                             <div class="item"><img src="image/Modal-Order-RM.png" alt="Image Projects"></div>
@@ -300,12 +332,8 @@
 
         <!-- Modals Project 3-->
         <div class="modal fade" id="modal-pro3" tabindex="-1" aria-labelledby="modal-pro3-label" aria-hidden="true" data-lenis-prevent="">
+            <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
             <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
-                <div type="button" class="close-button" data-bs-dismiss="modal">
-                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
-                    </svg>
-                </div>
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="image-modal-pro">
@@ -314,11 +342,13 @@
                         <div class="header-modal-pro">
                             <h5 class="title-modal-pro">Decision Support System<br>for Scholarship Desktop App</h5>
                             <div class="time-modal-pro">23th May 2024 - 12th June 2024</div>
+                            <div class="desc-modal-pro">A project that develops the calculation of the Simple Additive Weighting method<br>to assist a scholarship committee in determining the eligibility of students who get scholarships.</div>
                         </div>
-                        <div class="desc-modal-pro">A project that develops the calculation of the Simple Additive Weighting method<br>to assist a scholarship committee in determining     the eligibility of students who get scholarships.</div>
-                        <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/DSS-Scholarship-Desktop-App')">
-                            <span class="preview-btn-content">View Codes</span>
-                        </button>
+                        <div class="container-preview-btn">
+                            <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/DSS-Scholarship-Desktop-App')">
+                                <span class="preview-btn-content">View Codes</span>
+                            </button>
+                        </div>
                         <div class="image-modal-pro owl-carousel-modal-pro owl-carousel owl-theme">
                             <div class="item"><img src="image/Login Page-DSS.png" alt="Image Projects"></div>
                             <div class="item"><img src="image/Registration Page-DSS.png" alt="Image Projects"></div>
@@ -345,36 +375,27 @@
 
         <!-- Modals Project 4-->
         <div class="modal fade" id="modal-pro4" tabindex="-1" aria-labelledby="modal-pro4-label" aria-hidden="true" data-lenis-prevent="">
+            <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
             <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
-                <div type="button" class="close-button" data-bs-dismiss="modal">
-                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
-                    </svg>
-                </div>
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="image-modal-pro">
-                            <div class="thumbnail"><img src="image/DSS.png" alt="Image Projects"></div>
+                            <div class="thumbnail"><img src="image/OBS-panel-1.png" alt="Image Projects"></div>
                         </div>
                         <div class="header-modal-pro">
                             <h5 class="title-modal-pro">OBS Deckstream Panel</h5>
                             <div class="time-modal-pro">1st July 2024 - To be Continued</div>
+                            <div class="desc-modal-pro">A project that develops a websocket connection with a broadcasting application called OBS Studio. This project aims to make it easier for users to operate OBS Studio and can be run on multiple platforms (desktop and mobile).</div>
                         </div>
-                        <div class="desc-modal-pro">A project that develops a websocket connection with a broadcasting application called OBS Studio. This project aims to make it easier for users to operate OBS Studio and can be run on multiple platforms (desktop and mobile).</div>
-                        <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/OBS-deckstream-panel')">
-                            <span class="preview-btn-content">View Codes</span>
-                        </button>
+                        <div class="container-preview-btn">
+                            <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/OBS-deckstream-panel')">
+                                <span class="preview-btn-content">View Codes</span>
+                            </button>
+                        </div>
                         <div class="image-modal-pro owl-carousel-modal-pro owl-carousel owl-theme">
-                            <div class="item"><img src="image/Login Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/Registration Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/HomeMahasiswa Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/LengkapiDokumen Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/Dashboard Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/Kriteria Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/DataMahasiswa Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/Penghitungan Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/DataPeringkat Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/HomeMahasiswaLolos Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/OBS-panel-1.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/OBS-panel-2.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/OBS-panel-3.png" alt="Image Projects"></div>
                         </div>
                         <div class="subtitle-modal-pro">What I did in this Project:</div>
                         <div class="myjob-modal-pro">• Created concepts for application functions.<br>
@@ -452,12 +473,8 @@
 
         <!-- Modals Experiences-->
         <div class="modal fade" id="modal-exp1" tabindex="-1" aria-labelledby="modal-exp1-label" aria-hidden="true" data-lenis-prevent="">
+            <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
             <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
-                <div type="button" class="close-button" data-bs-dismiss="modal">
-                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
-                    </svg>
-                </div>
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="image-modal-exp">
@@ -466,8 +483,8 @@
                         <div class="header-modal-exp">
                             <h5 class="title-modal-exp">OSIS SMAK Katolik St. Louis 2 Surabaya</h5>
                             <div class="time-modal-exp">2020-2021</div>
+                            <div class="role-modal-exp">Staff of Publication & Documentation</div>
                         </div>
-                        <div class="role-modal-exp">Staff of Publication and Documentation</div>
                         <div class="desc-modal-exp">My jobdesc during my tenure:<br>
                             • Coordinated with teacher about publication projects.<br>
                             • Created video concepts and edited event videos.<br>
@@ -480,12 +497,8 @@
         </div>
 
         <div class="modal fade" id="modal-exp2" tabindex="-1" aria-labelledby="modal-exp2-label" aria-hidden="true" data-lenis-prevent="">
+            <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
             <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
-                <div type="button" class="close-button" data-bs-dismiss="modal">
-                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
-                    </svg>
-                </div>
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="image-modal-exp">
@@ -510,12 +523,8 @@
         </div>
 
         <div class="modal fade" id="modal-exp3" tabindex="-1" aria-labelledby="modal-exp3-label" aria-hidden="true" data-lenis-prevent="">
+            <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
             <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
-                <div type="button" class="close-button" data-bs-dismiss="modal">
-                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
-                    </svg>
-                </div>
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="image-modal-exp">
@@ -539,12 +548,8 @@
         </div>
 
         <div class="modal fade" id="modal-exp4" tabindex="-1" aria-labelledby="modal-exp4-label" aria-hidden="true" data-lenis-prevent="">
+            <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
             <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
-                <div type="button" class="close-button" data-bs-dismiss="modal">
-                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
-                    </svg>
-                </div>
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="image-modal-exp">
@@ -567,12 +572,8 @@
 
         <!-- Modal Education -->
         <div class="modal fade" id="modal-edu2" tabindex="-1" aria-labelledby="modal-edu2-label" aria-hidden="true" data-lenis-prevent="">
+            <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
             <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
-                <div type="button" class="close-button" data-bs-dismiss="modal">
-                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
-                    </svg>
-                </div>
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="image-modal-exp">
@@ -589,12 +590,8 @@
             </div>
         </div>
         <div class="modal fade" id="modal-edu3" tabindex="-1" aria-labelledby="modal-edu3-label" aria-hidden="true" data-lenis-prevent="">
+            <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
             <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
-                <div type="button" class="close-button" data-bs-dismiss="modal">
-                    <svg height="40px" width="40px" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="white" d="M 19 15 C 17.977 15 16.951875 15.390875 16.171875 16.171875 C 14.609875 17.733875 14.609875 20.266125 16.171875 21.828125 L 30.34375 36 L 16.171875 50.171875 C 14.609875 51.733875 14.609875 54.266125 16.171875 55.828125 C 16.951875 56.608125 17.977 57 19 57 C 20.023 57 21.048125 56.609125 21.828125 55.828125 L 36 41.65625 L 50.171875 55.828125 C 51.731875 57.390125 54.267125 57.390125 55.828125 55.828125 C 57.391125 54.265125 57.391125 51.734875 55.828125 50.171875 L 41.65625 36 L 55.828125 21.828125 C 57.390125 20.266125 57.390125 17.733875 55.828125 16.171875 C 54.268125 14.610875 51.731875 14.609875 50.171875 16.171875 L 36 30.34375 L 21.828125 16.171875 C 21.048125 15.391875 20.023 15 19 15 z"></path>
-                    </svg>
-                </div>
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="image-modal-exp">
@@ -617,7 +614,7 @@
                 <h2 class="title-skills animate-on-scroll" data-animation="animate__zoomIn">My Skills</h2>
                 <p class="desc-skills animate-on-scroll" data-animation="animate__zoomIn">These are skills that I am currently good at and will continue to improve as time goes on.</p>
             </div>
-            <div class="card-container">
+            <div class="skills-grid">
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
                         <i class="fab fa-html5 skill-icon"></i>
@@ -660,8 +657,6 @@
                     </div>
                     <span class="skill-text">C++</span>
                 </div>
-            </div>
-            <div class="card-container">
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
                         <i class="devicon-mysql-original skill-icon"></i>
@@ -719,7 +714,7 @@
                         <div class="contact-text">
                             <div class="head-contact">Phone/Whatsapp</div>
                             <div class="subhead-contact">
-                                <a href="https://wa.me/6281805003532" target="_blank" style="text-decoration: none; color: inherit;">+62 818 0500 3532</a>
+                                <a href="https://wa.me/6281805003532" target="_blank" style="text-decoration: none; color: inherit;">+6281805003532</a>
                             </div>
                         </div>
                     </div>
@@ -737,6 +732,31 @@
                 </div>
             </div>
         </section>
+
+        <!-- FOOTER AREA START -->
+        <footer class="container-footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="footer-logo-box">
+                            <a href="mailto:gpascalbeye@gmail.com"><img src="image/logo.png" alt="" /></a>
+                        </div>
+                        <div class="footer-menu">
+                            <nav>
+                            <ul>
+                                <li><a href="#about">About Me</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#exp-edu">Experience & Education</a></li>
+                                <li><a href="#skills">Skills & Contact</a></li>
+                            </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-text">&copy; 2024 All rights reserved. Created and designed by <a class="footer-text" href="mailto:gpascalbeye@gmail.com"style="text-decoration: none;">Gevanno Yoh</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FOOTER AREA END -->
         
     <!-- Bootstrap JS and dependencies (Popper.js and jQuery) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
@@ -796,27 +816,6 @@
                         });
                     }
                 });
-            });
-        });
-        
-        //Animasi content
-        document.addEventListener("DOMContentLoaded", function() {
-            const animatedElements = document.querySelectorAll('.animate-on-scroll');
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        const animationClass = entry.target.dataset.animation;
-                        entry.target.classList.add('animate__animated', animationClass);
-                        observer.unobserve(entry.target); // Stop observing once the animation is triggered
-                    }
-                });
-            }, {
-                threshold: 0.1 // Adjust this value to control when the animation triggers
-            });
-
-            animatedElements.forEach(element => {
-                observer.observe(element);
             });
         });
     </script>
