@@ -233,3 +233,197 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+//Tooltip Hover
+document.addEventListener('DOMContentLoaded', function() {
+    const imageContainers = document.querySelectorAll('.image-container');
+    const tooltipCaption = document.getElementById('tooltip-caption');
+    const tooltipTitle = tooltipCaption.querySelector('.tooltip-title');
+    const tooltipSubtitle = tooltipCaption.querySelector('.tooltip-subtitle');
+    let currentMouseEvent;
+
+    imageContainers.forEach(container => {
+        container.addEventListener('mouseenter', function(e) {
+            const title = e.currentTarget.querySelector('.hover-image').getAttribute('data-title');
+            const subtitle = e.currentTarget.querySelector('.hover-image').getAttribute('data-subtitle');
+            tooltipTitle.textContent = title;
+            tooltipSubtitle.textContent = subtitle;
+            tooltipCaption.classList.add('active');
+            setTimeout(() => {
+                tooltipCaption.style.animation = 'clipFromLeft 0.6s forwards';
+            });
+            updateTooltipPosition(e);
+            currentMouseEvent = e;
+        });
+
+        container.addEventListener('mouseleave', function() {
+            tooltipCaption.classList.remove('active');
+            tooltipCaption.style.animation = '';
+        });
+
+        container.addEventListener('mousemove', function(e) {
+            updateTooltipPosition(e);
+            currentMouseEvent = e;
+        });
+    });
+
+    window.addEventListener('scroll', function() {
+        if (currentMouseEvent) {
+            updateTooltipPosition(currentMouseEvent);
+        }
+    });
+
+    let lastMouseEvent;
+
+    document.addEventListener('mousemove', function(e) {
+        lastMouseEvent = e;
+        updateTooltipPosition(e);
+    });
+
+    window.addEventListener('scroll', function() {
+        if (lastMouseEvent) {
+            updateTooltipPosition(lastMouseEvent);
+        }
+    });
+
+    function updateTooltipPosition(e) {
+        const offsetX = -5; // Jarak dari cursor pada sumbu X
+        const offsetY = -35; // Jarak dari cursor pada sumbu Y
+        const scrollX = window.scrollX || window.pageXOffset;
+        const scrollY = window.scrollY || window.pageYOffset;
+        tooltipCaption.style.top = (e.clientY + scrollY + offsetY) + 'px';
+        tooltipCaption.style.left = (e.clientX + scrollX + offsetX) + 'px';
+    }
+});
+
+// Dropdown Menu
+document.addEventListener('DOMContentLoaded', function() {
+    const settingDropdowns = document.querySelectorAll('.setting-button');
+    const dropdownMenus = document.querySelectorAll('.dropdown-menu');
+
+    settingDropdowns.forEach((settingDropdown, index) => {
+        settingDropdown.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent the click event from propagating to the window
+            dropdownMenus[index].classList.toggle('show');
+            settingDropdown.classList.toggle('spinning');
+        });
+    });
+
+    // Close dropdown if user clicks outside the dropdown area
+    window.addEventListener('click', function(event) {
+        settingDropdowns.forEach((settingDropdown, index) => {
+            if (!event.target.matches('.setting-button')) {
+                if (dropdownMenus[index].classList.contains('show')) {
+                    dropdownMenus[index].classList.remove('show');
+                    settingDropdown.classList.remove('spinning');
+                }
+            }
+        });
+    });
+});
+
+
+// Toggle Language for Navbar 1
+document.getElementById('language-toggle').addEventListener('change', function() {
+    const isChecked = this.checked;
+    document.getElementById('language-toggle2').checked = isChecked;
+    if (isChecked) {
+        changeLanguage('id');
+        localStorage.setItem('language', 'id');
+    } else {
+        changeLanguage('en');
+        localStorage.setItem('language', 'en');
+    }
+});
+
+// Toggle Language for Navbar 2
+document.getElementById('language-toggle2').addEventListener('change', function() {
+    const isChecked = this.checked;
+    document.getElementById('language-toggle').checked = isChecked;
+    if (isChecked) {
+        changeLanguage('id');
+        localStorage.setItem('language', 'id');
+    } else {
+        changeLanguage('en');
+        localStorage.setItem('language', 'en');
+    }
+});
+
+// Default language
+document.addEventListener('DOMContentLoaded', () => {
+    const savedLang = localStorage.getItem('language');
+    if (savedLang) {
+        changeLanguage(savedLang);
+        document.getElementById('language-toggle').checked = savedLang === 'id';
+        document.getElementById('language-toggle2').checked = savedLang === 'id';
+    } else {
+        changeLanguage('en'); // atau 'id' jika Anda ingin bahasa defaultnya Bahasa Indonesia
+    }
+});
+
+// Function for change language
+function changeLanguage(lang) {
+    const elements = document.querySelectorAll("[data-translate]");
+    elements.forEach(el => {
+        const key = el.getAttribute("data-translate");
+        el.innerHTML = translations[lang][key]; // Menggunakan innerHTML untuk menangani tag <br>
+    });
+
+    // Menangani elemen gambar dengan atribut data-translate-title dan data-translate-subtitle
+    const hoverImages = document.querySelectorAll(".hover-image");
+    hoverImages.forEach(img => {
+        const titleKey = img.getAttribute("data-translate-title");
+        const subtitleKey = img.getAttribute("data-translate-subtitle");
+        img.setAttribute("data-title", translations[lang][titleKey]);
+        img.setAttribute("data-subtitle", translations[lang][subtitleKey]);
+    });
+}
+
+
+// Dark Mode
+document.addEventListener('DOMContentLoaded', (event) => {
+    const toggleSwitch1 = document.querySelector('#navbar1 .switch input[type="checkbox"]');
+    const toggleSwitch2 = document.querySelector('#navbar2 .switch input[type="checkbox"]');
+    const currentTheme = localStorage.getItem('theme');
+
+    if (currentTheme === 'dark-mode') {
+        document.body.classList.add('dark-mode');
+        toggleSwitch1.checked = true;
+        toggleSwitch2.checked = true;
+        loadDarkModeStyles();
+    }
+
+    function switchTheme(e) {
+        if (e.target.checked) {
+            document.body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark-mode');
+            loadDarkModeStyles();
+        } else {
+            document.body.classList.remove('dark-mode');
+            localStorage.setItem('theme', 'light-mode');
+            unloadDarkModeStyles();
+        }
+        // Sinkronkan status toggle switch
+        toggleSwitch1.checked = e.target.checked;
+        toggleSwitch2.checked = e.target.checked;
+    }
+
+    function loadDarkModeStyles() {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'css/styles-dark.css';
+        link.id = 'dark-mode-style';
+        document.head.appendChild(link);
+    }
+
+    function unloadDarkModeStyles() {
+        const link = document.getElementById('dark-mode-style');
+        if (link) {
+            link.remove();
+        }
+    }
+
+    toggleSwitch1.addEventListener('change', switchTheme, false);
+    toggleSwitch2.addEventListener('change', switchTheme, false);
+});

@@ -286,36 +286,34 @@
     .container-left-projects {
         margin-bottom: -20px;
     }
-    .card-projects {
-        width: 400px;
-        height: 325px;
-        margin: 20px 25px 20px 25px;
+    .image-projects-responsive {
+        display: block;
     }
-    .card-projects:before {
-        transform: translate(-50%, -100%);
-    }
-    .card-projects-button {
-        opacity: 1;
-        pointer-events: auto;
-    }
-    .title-card-projects {
-        font-size: 20px;
-        margin-left: -10px;
-        margin-right: -10px;
-        margin-top: -5px;
-        margin-bottom: 0;
-    }
-    .card-projects-details {
-        align-content: stretch;
-    }
-    .card-projects-button {
+    .title-image-projects {
+        z-index: 100;
+        color: white;
+        background: linear-gradient(135deg, #021B79 16.35%, #0575E6 91.35%);
+        padding: 5px 0px;
         text-align: center;
-        margin-left: -15px;
+        font-size: 16px;
     }
-    .img-card-projects {
-        max-width: 110%;
+    #desktop-mode {
+        display: none;
+    }
+
+    
+    /* hover tooltip */
+    .image-container {
+        width: 550px;
         height: auto;
+        margin: 30px 25px 30px 25px;
+        border-radius: 10px;
     }
+    #tooltip-caption {
+        display: none;
+    }
+
+
 
 
     /* experience & education */
@@ -382,8 +380,11 @@
         height: 70px;
         margin-bottom: 0;
     }
-    .skill-icon {
-        font-size: 2.5rem;
+    .card-skills-content svg {
+        width: 2.5rem;
+    }
+    .card-skills-content img {
+        width: 2.5rem;
     }
     .skill-text {
         bottom: -25px;
@@ -546,6 +547,31 @@
         animation-name: fadeInLeft;
     }
     /* batas kiri */
+
+    /* owl dot */
+    .owl-theme .owl-dots .owl-dot span {
+        width: 15px;
+        margin: 5px 5px;
+    }
+
+    /* Setting Button */
+    .setting-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Dropdown Menu */
+    .dropdown-menu {
+        width: 100%;
+        margin-top: 6px;
+    }
+    .mode-interface {
+        justify-content: space-evenly;
+    }
+
+    .dropdown-menu::before {
+        display: none;
+    }
 }
 
 
@@ -672,36 +698,33 @@
     .container-left-projects {
         margin-bottom: -20px;
     }
-    .card-projects {
-        width: 290px;
-        height: 270px;
-        margin: 20px 25px 20px 25px;
+    .image-projects-responsive {
+        display: block;
     }
-    .card-projects:before {
-        transform: translate(-50%, -100%);
-    }
-    .card-projects-button {
-        opacity: 1;
-        pointer-events: auto;
-    }
-    .title-card-projects {
-        font-size: 18px;
-        margin-left: -10px;
-        margin-right: -10px;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-    .card-projects-details {
-        align-content: stretch;
-    }
-    .card-projects-button {
+    .title-image-projects {
+        z-index: 100;
+        color: white;
+        background: linear-gradient(135deg, #021B79 16.35%, #0575E6 91.35%);
+        padding: 5px 0px;
         text-align: center;
-        margin-left: -15px;
+        font-size: 14px;
     }
-    .img-card-projects {
-        max-width: 110%;
+    #desktop-mode {
+        display: none;
+    }
+
+
+    /* hover tooltip */
+    .image-container {
+        width: 350px;
         height: auto;
+        margin: 30px 25px 30px 25px;
+        border-radius: 5px;
     }
+    #tooltip-caption {
+        display: none;
+    }
+
 
     /* experience & education */
     .container-exp-edu {
@@ -753,8 +776,11 @@
         height: 70px;
         margin-bottom: 0;
     }
-    .skill-icon {
-        font-size: 2.5rem;
+    .card-skills-content svg {
+        width: 2.5rem;
+    }
+    .card-skills-content img {
+        width: 2.5rem;
     }
     .skill-text {
         bottom: -25px;
@@ -963,5 +989,30 @@
     .footer-text {
         font-size: 14px;
         text-align: center;
+    }
+
+    /* owl dot */
+    .owl-theme .owl-dots .owl-dot span {
+        width: 15px;
+        margin: 5px 4px;
+    }
+
+    /* Setting Button */
+    .setting-button {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Dropdown Menu */
+    .dropdown-menu {
+        width: 97%;
+        margin-top: 6px;
+    }
+    .mode-interface {
+        justify-content: space-evenly;
+    }
+
+    .dropdown-menu::before {
+        display: none;
     }
 }

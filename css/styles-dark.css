@@ -1,0 +1,292 @@
+/* dark mode */
+
+/*scrollbar.app */
+body {
+    --sb-track-color: linear-gradient(135deg, #020121 0%, #01010b 100%);
+}
+
+/*backgroud */
+.background-gradient {
+    background-image: linear-gradient(135deg, #03004b 0%, #01010b 100%);
+}
+
+
+/* navbar & dropdown menu */
+.navbar-brand-navbar1 {
+    background: linear-gradient(187deg, #50e4f1 0%, #246dd4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+    color: #dddddd;
+}
+
+.nav-link::after {
+    background: linear-gradient(187deg, #50e4f1 0%, #246dd4 100%);
+}
+
+.nav-link:hover {
+    color: #00ccff;
+}
+  
+.nav-link:focus {
+    color: #00ccff;
+}
+
+.navbar-color2 {
+    background-color: rgba(13, 25, 80, 0.85);
+}
+
+.navbar-nav {
+    margin-bottom: 7px;
+}
+
+.setting-button {
+    background: linear-gradient(187deg, #50e4f1 0%, #246dd4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dropdown-menu {
+    background-color: #001253;
+}
+
+.dropdown-menu::before {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 30px solid #001253;
+}
+
+.mode-interface {
+    color: #dddddd;
+}
+
+input.check-toggle-round-flat + label {
+    background: linear-gradient(0deg, #021B79 0%, #0446ae 100%);
+}
+
+input.check-toggle-round-flat + label:before {
+    background: linear-gradient(0deg, #021B79 0%, #0446ae 100%);
+}
+
+/* card photo */
+.card-photo {
+    background: linear-gradient(0deg, #021B79 0%, #0446ae 100%);
+}
+
+/* Header */
+.name {
+    color: #dddddd;
+}
+
+.skill {
+    background: linear-gradient(90deg, #50e4f1 0%, #246dd4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.desc {
+    color: #dddddd;
+}
+
+/* About Me */
+.title-about {
+    background: linear-gradient(187deg, #50e4f1 0%, #246dd4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.desc-about {
+    color: #dddddd;
+}
+
+/* Projects */
+.title-projects {
+    background: linear-gradient(187deg, #50e4f1 0%, #246dd4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.desc-projects {
+    color: #dddddd;
+}
+
+/* Hover Tooltips */
+#tooltip-caption .tooltip-title,
+#tooltip-caption .tooltip-subtitle {
+    background: linear-gradient(270deg, #02165f 35%, #0446ae 100%);
+    color: #dddddd;
+}
+
+/* Modal */
+.modal-content {
+    background-image: linear-gradient(135deg, #03004b 0%, #01010b 100%);
+}
+.modal-dialog-scrollable .modal-body {
+    --sb-track-color: linear-gradient(135deg, #020121 0%, #01010b 100%);
+}
+
+/* Modal Projects */
+.title-modal-pro {
+    background: linear-gradient(187deg, #50e4f1 0%, #246dd4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.time-modal-pro {
+    background: linear-gradient(187deg, #50e4f1 0%, #246dd4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle-modal-pro {
+    background: linear-gradient(187deg, #50e4f1 0%, #246dd4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.desc-modal-pro {
+    color: #dddddd;
+}
+
+.myjob-modal-pro {
+    color: #dddddd;
+}
+
+
+/* Experience & Education */
+.title-experience, .title-education {
+    background: linear-gradient(187deg, #50e4f1 0%, #246dd4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Card Exp & Edu */
+.card-exp {
+    background-color: #03004b;
+    color: #dddddd;
+}
+
+.card-exp::before {
+    background: linear-gradient(250deg, #021B79 30%, #0446ae 100%);
+}
+
+.title-card-exp {
+    color: #246dd4;
+}
+
+/* Modal Exp & Edu */
+.title-modal-exp {
+    background: linear-gradient(187deg, #50e4f1 0%, #246dd4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.time-modal-exp {
+    background: linear-gradient(187deg, #50e4f1 0%, #246dd4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.role-modal-exp {
+    background: linear-gradient(187deg, #50e4f1 0%, #246dd4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.desc-modal-exp {
+    color: #dddddd;
+}
+
+
+/* Skills */
+.title-skills {
+    background: linear-gradient(187deg, #50e4f1 0%, #246dd4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.desc-skills {
+    color: #dddddd;
+}
+
+/* Card Skills */
+.card-skills {
+    background: linear-gradient(250deg, #021B79 20%, #0446ae 100%);
+}
+
+.skill-text {
+    color: #dddddd;
+}
+
+
+/* Contact */
+.title-contact {
+    background: linear-gradient(187deg, #50e4f1 0%, #246dd4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.head-contact {
+    color: #dddddd;
+}
+
+.subhead-contact {
+    color:#246dd4;
+}
+
+.subhead-contact:hover {
+    color: #dddddd;
+}
+
+.social-btn {
+    background: linear-gradient(250deg, #021B79 0%, #0446ae 100%);
+}
+
+.social-btn:hover {
+    background: linear-gradient(250deg, #021B79 0%, #0446ae 100%);
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+          inset -4px -4px 6px -1px rgba(7, 7, 7, 0.7),
+          -0.5px -0.5px 0px rgb(20, 20, 20),
+          0.5px 0.5px 0px rgba(0,0,0,0.15),
+          0px 12px 10px -10px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.social-btn i {
+    color: #50e4f1;
+}
+
+.social-btn i:hover {
+    color: #dddddd;
+}
+
+
+/* Footer Area */
+.container-footer-area {
+    background-image: linear-gradient(0deg, #021B79 0%, #0446ae 100%);
+}
+
+.footer-menu ul li a {
+    color: #dddddd;
+    transition: color 0.5s ease;
+}
+
+.footer-menu ul li a:hover {
+    color: #00ccff;
+}
+
+.footer-menu ul li a::before {
+    background: linear-gradient(187deg, #50e4f1 0%, #246dd4 100%);
+}
+
+.footer-text {
+    color: #dddddd;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbarkedua {
+        background:rgba(13, 25, 80, 0.85);
+    }
+}

@@ -26,12 +26,12 @@
 
             <div class="preloader-heading">
                 <div class="load-text">
-                    <span>H</span>
-                    <span>e</span>
-                    <span>l</span>
-                    <span>l</span>
-                    <span>0</span>
-                    <span>!</span>
+                    <span data-translate="preload-h">H</span>
+                    <span data-translate="preload-e">e</span>
+                    <span data-translate="preload-l1">l</span>
+                    <span data-translate="preload-l2">l</span>
+                    <span data-translate="preload-o">o</span>
+                    <span data-translate="preload-!">!</span>
                 </div>
             </div>
         </div>
@@ -53,16 +53,38 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#about" data-scroll>About Me</a>
+                            <a class="nav-link" href="#about" data-translate="navlink-about">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects" data-scroll>Projects</a>
+                            <a class="nav-link" href="#projects" data-translate="navlink-projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#exp-edu" data-scroll>Experience & Education</a>
+                            <a class="nav-link" href="#exp-edu" data-translate="navlink-exp&edu">Experience & Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skills" data-scroll>Skills & Contact</a>
+                            <a class="nav-link" href="#skills" data-translate="navlink-skills&contact">Skills & Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <i class="fa-solid fa-gear setting-button" id="settingDropdown"></i>
+                            <ul class="dropdown-menu" id="dropdownMenu" aria-labelledby="settingDropdown">
+                                <li>
+                                    <div class="mode-interface">
+                                        Mode :
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="mode-interface">
+                                        <div class="switch-lang">
+                                            <input id="language-toggle" class="check-toggle check-toggle-round-flat language-toggle" type="checkbox">
+                                            <label for="language-toggle"></label>
+                                            <span class="on">EN</span>
+                                            <span class="off">ID</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -84,21 +106,45 @@
                 <div class="collapse navbar-collapse navbarkedua" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#about" data-scroll>About Me</a>
+                            <a class="nav-link" href="#about" data-translate="navlink-about">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects" data-scroll>Projects</a>
+                            <a class="nav-link" href="#projects" data-translate="navlink-projects">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#exp-edu" data-scroll>Experience & Education</a>
+                            <a class="nav-link" href="#exp-edu" data-translate="navlink-exp&edu">Experience & Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#skills" data-scroll>Skills & Contact</a>
+                            <a class="nav-link" href="#skills" data-translate="navlink-skills&contact">Skills & Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <i class="fa-solid fa-gear setting-button" id="settingDropdown"></i>
+                            <ul class="dropdown-menu" id="dropdownMenu" aria-labelledby="settingDropdown">
+                                <li>
+                                    <div class="mode-interface">
+                                        Mode :
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                    </div>
+                                    <div class="mode-interface">
+                                        <div class="switch-lang">
+                                            <input id="language-toggle2" class="check-toggle check-toggle-round-flat language-toggle" type="checkbox">
+                                            <label for="language-toggle2"></label>
+                                            <span class="on">EN</span>
+                                            <span class="off">ID</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <div class="background-gradient"></div>
 
         <!-- Header -->
         <header id="header">
@@ -111,9 +157,9 @@
                 </div>
 
                 <div class="container-desc">
-                    <div class="name">I am Gevanno</div>
-                    <div class="skill">as a Front End<br>and Web Developer</div>
-                    <div class="desc">I will always strive to create the best appearance<br class="hide-me"> to establish a unique characteristic.</div>
+                    <div class="name" data-translate="name">I am Gevanno</div>
+                    <div class="skill" data-translate="skill-header">as a Front End<br>and Web Developer</div>
+                    <div class="desc" data-translate="desc-header">I will always strive to create the best appearance<br class="hide-me"> to establish a unique characteristic.</div>
                     <ul class="social-media-btn">
                         <li class="icon-content">
                             <a href="https://github.com/gevanno654" aria-label="GitHub" data-social="github">
@@ -156,63 +202,70 @@
                             <div class="tooltip">Instagram gevanno.p_14</div>
                         </li>
                         <button class="download-btn" onclick="downloadCV()">
-                            <span class="download-btn-content">Download My CV</span>
+                            <span class="download-btn-content" data-translate="download-btn">Download My CV</span>
                         </button>
                     </ul>
                 </div>
-                
             </div>
         </header>
 
         <!-- About Section -->
         <section id="about">
             <div class="container-about">
-                <h2 class="title-about animate-on-scroll" data-animation="animate__zoomIn">About Me</h2>
-                <p class="desc-about animate-on-scroll" data-animation="animate__fadeInUp">I am an Informatics student at Universitas Pembangunan Nasional "Veteran" Jawa Timur<br class="hide-me"> with experience in creating and developing websites.<br class="hide-me-on-large-devices"> I have knowledge of HTML, CSS, JavaScript, PHP, and Java.<br class="hide-me"> Apart from that, I am able to create poster designs and social media posts<br class="hide-me"> using Adobe Photoshop and Canva.<br class="hide-me"> Blend the art of design with programming skills to enhance the user experience.<br class="hide-me"> I am very interested in a Front End position or Web Developments.</p>
+                <h2 class="title-about animate-on-scroll" data-animation="animate__zoomIn" data-translate="title-about">About Me</h2>
+                <p class="desc-about animate-on-scroll" data-animation="animate__fadeInUp" data-translate="desc-about">I am an Informatics student at Universitas Pembangunan Nasional Veteran Jawa Timur<br class="hide-me"> with experience in creating and developing websites.<br class="hide-me-on-large-devices"> I have knowledge of HTML, CSS, JavaScript, PHP, and Java.<br class="hide-me"> Apart from that, I am able to create poster designs and social media posts<br class="hide-me"> using Adobe Photoshop and Canva.<br class="hide-me"> Blend the art of design with programming skills to enhance the user experience.<br class="hide-me"> I am very interested in a Front End position or Web Developments.</p>
             </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects">
             <div class="container-projects">
-                <h2 class="title-projects animate-on-scroll" data-animation="animate__zoomIn">My Recent Projects</h2>
-                <p class="desc-projects animate-on-scroll" data-animation="animate__zoomIn">It's all about what I've created and learned.</p>
+                <h2 class="title-projects animate-on-scroll" data-animation="animate__zoomIn" data-translate="title-projects">My Recent Projects</h2>
+                <p class="desc-projects animate-on-scroll" data-animation="animate__zoomIn" data-translate="desc-projects">It's all about what I've created and learned.</p>
                 <div class="container-card">
                     <div class="container-left-projects">
-                        <div class="card-projects animate-on-scroll" data-animation="animate__fadeInLeft">
-                            <div class="card-projects-details">
-                                <p class="title-card-projects">University Database Website</p>
-                                <img class="img-card-projects" src="image/webp/Database.webp">
+                        <div class="image-container animate-on-scroll" data-animation="animate__fadeInLeft">
+                            <img class="hover-image" id="desktop-mode" src="image/webp/Database.webp" data-bs-toggle="modal" data-bs-target="#modal-pro1" data-translate-title="project1-title" data-translate-subtitle="project1-subtitle">
+                            <div class="image-projects-responsive">
+                                <img class="hover-image" src="image/webp/Database.webp" data-bs-toggle="modal" data-bs-target="#modal-pro1" data-translate-title="project1-title" data-translate-subtitle="project1-subtitle">
+                                <div class="title-image-projects" data-bs-toggle="modal" data-bs-target="#modal-pro1">Read More</div>
                             </div>
-                            <button class="card-projects-button" data-bs-toggle="modal" data-bs-target="#modal-pro1">Read More</button>
                         </div>
-                        <div class="card-projects animate-on-scroll" data-animation="animate__fadeInLeft">
-                            <div class="card-projects-details">
-                                <p class="title-card-projects">Restaurant Menu Website</p>
-                                <img class="img-card-projects" src="image/webp/Restoran.webp">
+                        <div class="image-container animate-on-scroll" data-animation="animate__fadeInLeft">
+                            <img class="hover-image" id="desktop-mode" src="image/webp/Restoran.webp" data-bs-toggle="modal" data-bs-target="#modal-pro2" data-translate-title="project2-title" data-translate-subtitle="project2-subtitle">
+                            <div class="image-projects-responsive">
+                                <img class="hover-image" src="image/webp/Restoran.webp" data-bs-toggle="modal" data-bs-target="#modal-pro2" data-translate-title="project2-title" data-translate-subtitle="project2-subtitle">
+                                <div class="title-image-projects" data-bs-toggle="modal" data-bs-target="#modal-pro2">Read More</div>
                             </div>
-                            <button class="card-projects-button" data-bs-toggle="modal" data-bs-target="#modal-pro2">Read More</button>
                         </div>
                     </div>
                     <div class="container-right-projects">
-                        <div class="card-projects animate-on-scroll" data-animation="animate__fadeInRight">
-                            <div class="card-projects-details">
-                                <p class="title-card-projects">DSS for Scholarship</p>
-                                <img class="img-card-projects" src="image/webp/DSS.webp">
+                        <div class="image-container animate-on-scroll" data-animation="animate__fadeInRight">
+                            <img class="hover-image" id="desktop-mode" src="image/webp/DSS.webp" data-bs-toggle="modal" data-bs-target="#modal-pro3" data-translate-title="project3-title" data-translate-subtitle="project3-subtitle">
+                            <div class="image-projects-responsive">
+                                <img class="hover-image" src="image/webp/DSS.webp" data-bs-toggle="modal" data-bs-target="#modal-pro3" data-translate-title="project3-title" data-translate-subtitle="project3-subtitle">
+                                <div class="title-image-projects" data-bs-toggle="modal" data-bs-target="#modal-pro3">Read More</div>
                             </div>
-                            <button class="card-projects-button" data-bs-toggle="modal" data-bs-target="#modal-pro3">Read More</button>
                         </div>
-                        <div class="card-projects animate-on-scroll" data-animation="animate__fadeInRight">
-                            <div class="card-projects-details">
-                                <p class="title-card-projects">OBS Deckstream Panel</p>
-                                <img class="img-card-projects" src="image/webp/OBS-panel-1.webp">
+                        <div class="image-container animate-on-scroll" data-animation="animate__fadeInRight">
+                            <img class="hover-image" id="desktop-mode" src="image/webp/OBS-panel-1.webp" data-bs-toggle="modal" data-bs-target="#modal-pro4" data-translate-title="project4-title" data-translate-subtitle="project4-subtitle">
+                            <div class="image-projects-responsive">
+                                <img class="hover-image" src="image/webp/OBS-panel-1.webp" data-bs-toggle="modal" data-bs-target="#modal-pro4" data-translate-title="project4-title" data-translate-subtitle="project4-subtitle">
+                                <div class="title-image-projects" data-bs-toggle="modal" data-bs-target="#modal-pro4">Read More</div>
                             </div>
-                            <button class="card-projects-button" data-bs-toggle="modal" data-bs-target="#modal-pro4">Read More</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Tooltip Hover -->
+        <div id="tooltip-caption">
+            <div class="tooltip-inner">
+                <span class="tooltip-subtitle"></span>
+                <h4 class="tooltip-title"></h4>
+            </div>
+        </div>
 
         <!-- Modals Project 1-->
         <div class="modal fade" id="modal-pro1" tabindex="-1" aria-labelledby="modal-pro1-label" aria-hidden="true" data-lenis-prevent="">
@@ -224,16 +277,16 @@
                             <div class="thumbnail"><img src="image/webp/Database.webp" alt="Image Projects"></div>
                         </div>
                         <div class="header-modal-pro">
-                            <h5 class="title-modal-pro">University Database Website</h5>
-                            <div class="time-modal-pro">14th - 21th December 2023</div>
-                            <div class="desc-modal-pro">A project that implements Advanced Query SQL into a website feature<br>to make it easier for users to search for data.</div>
+                            <h5 class="title-modal-pro" data-translate="title-modal-pro1">University Database Website</h5>
+                            <div class="time-modal-pro" data-translate="time-modal-pro1">14th - 21th December 2023</div>
+                            <div class="desc-modal-pro" data-translate="desc-modal-pro1">A project that implements Advanced Query SQL into a website feature<br>to make it easier for users to search for data.</div>
                         </div>
                         <div class="container-preview-btn">
                             <button class="preview-btn" onclick="redirectToProject('projects/university-database/index.php')">
-                                <span class="preview-btn-content">Live Preview</span>
+                                <span class="preview-btn-content" data-translate="live-preview">Live Preview</span>
                             </button>
                             <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/university-database')">
-                                <span class="preview-btn-content">View Codes</span>
+                                <span class="preview-btn-content" data-translate="code-preview">View Codes</span>
                             </button>
                         </div>
                         <div class="image-modal-pro owl-carousel-modal-pro owl-carousel owl-theme">
@@ -251,8 +304,8 @@
                             <div class="item"><img src="image/webp/Sungting-Data-Mahasiswa-UD.webp" alt="Image Projects"></div>
                             <div class="item"><img src="image/webp/Tambah-Data-Mahasiswa-UD.webp" alt="Image Projects"></div>
                         </div>
-                        <div class="subtitle-modal-pro">What I did in this Project:</div>
-                        <div class="myjob-modal-pro">• Built with HTML5, CSS3, JavaScript, Bootstrap, PHP, MySQL.<br>
+                        <div class="subtitle-modal-pro" data-translate="subtitle-modal-pro1">What I did in this Project:</div>
+                        <div class="myjob-modal-pro" data-translate="myjob-modal-pro1">• Built with HTML5, CSS3, JavaScript, Bootstrap, PHP, MySQL.<br>
                             • Designed database.<br>
                             • Connected database to the website by applying Advanced Query.<br>
                             • Enhanced user experience by optimizing the display, site structure, and navigation.</div>
@@ -271,35 +324,45 @@
                             <div class="thumbnail"><img src="image/webp/Restoran.webp" alt="Image Projects"></div>
                         </div>
                         <div class="header-modal-pro">
-                            <h5 class="title-modal-pro">Restaurant Menu Website</h5>
-                            <div class="time-modal-pro">23th May 2024 - 12th June 2024</div>
-                            <div class="desc-modal-pro">A project that develops activities in ordering menus at a restaurant.<br>The goal is to make it easier for customers to order food & drinks.</div>
+                            <h5 class="title-modal-pro" data-translate="title-modal-pro2">Restaurant Menu Website</h5>
+                            <div class="time-modal-pro" data-translate="time-modal-pro2">23th May 2024 - 12th June 2024</div>
+                            <div class="desc-modal-pro" data-translate="desc-modal-pro2">A project that develops activities in ordering menus at a restaurant.<br>The goal is to make it easier for customers to order food & drinks.</div>
                         </div>
                         <div class="container-preview-btn">
                             <button class="preview-btn" onclick="redirectToProject('projects/restaurant-app/index.php')">
-                                <span class="preview-btn-content">Live Preview</span>
+                                <span class="preview-btn-content" data-translate="live-preview">Live Preview</span>
                             </button>
                             <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/restaurant-app')">
-                                <span class="preview-btn-content">View Codes</span>
+                                <span class="preview-btn-content" data-translate="code-preview">View Codes</span>
                             </button>
                         </div>
                         <div class="image-modal-pro owl-carousel-modal-pro owl-carousel owl-theme">
-                            <div class="item"><img src="image/webp/Beranda-RM.webp" alt="Image Projects"></div>
-                            <div class="item"><img src="image/webp/Modal-Order-RM.webp" alt="Image Projects"></div>
-                            <div class="item"><img src="image/webp/Alert-Order-RM.webp" alt="Image Projects"></div>
                             <div class="item"><img src="image/webp/Menu-RM.webp" alt="Image Projects"></div>
-                            <div class="item"><img src="image/webp/Modal-Cart-RM.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Popup-RM.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/PesananBerhasil-RM.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Minuman-RM.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Keranjang-RM.webp" alt="Image Projects"></div>
                             <div class="item"><img src="image/webp/Checkout-RM.webp" alt="Image Projects"></div>
-                            <div class="item"><img src="image/webp/Modal-Sit-RM.webp" alt="Image Projects"></div>
-                            <div class="item"><img src="image/webp/Confirm-Modal-RM.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/DineinMenu-RM.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Takeway Menu-RM.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Thankyou-RM.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/LoginAdmin-RM.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Admin-RM.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/DetailOrder-RM.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/HistoryOrder-RM.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/DetailHistory-RM.webp" alt="Image Projects"></div>
                         </div>
-                        <div class="subtitle-modal-pro">What I did in this Project:</div>
-                        <div class="myjob-modal-pro">• Built website with HTML5, CSS3, PHP, JavaScript, Bootstrap.<br>
+                        <div class="subtitle-modal-pro" data-translate="subtitle-modal-pro2">What I did in this Project:</div>
+                        <div class="myjob-modal-pro" data-translate="myjob-modal-pro2">• Built website with HTML5, CSS3, PHP, JavaScript, Bootstrap.<br>
                             • Created database design.<br>
                             • Created animation and transition with CSS3 dan JavaScript.<br>
                             • Developed desktop website to responsive website.<br>
                             • Built function from additional item to cart by applying JSON to collect item’s information.<br>
-                            • Enhanced user experience by optimizing button function and navigation on the website page.</div>
+                            • Enhanced user experience by optimizing button function and navigation on the website page.<br>
+                            • Imporved the thankyou.php page to automatically display the code based on the order type (dine in or take away).<br>
+                            • Created admin page and order history page, including order detail modal.<br>
+                            • Created live page on the admin page to view the order code without having to refresh the page. Live page using React.js<br>
+                            • Created notification automatically if there is a new order.</div>
                     </div>
                 </div>
             </div>
@@ -315,29 +378,29 @@
                             <div class="thumbnail"><img src="image/webp/DSS.webp" alt="Image Projects"></div>
                         </div>
                         <div class="header-modal-pro">
-                            <h5 class="title-modal-pro">Decision Support System<br>for Scholarship Desktop App</h5>
-                            <div class="time-modal-pro">23th May 2024 - 12th June 2024</div>
-                            <div class="desc-modal-pro">A project that develops the calculation of the Simple Additive Weighting method<br>to assist a scholarship committee in determining the eligibility of students who get scholarships.</div>
+                            <h5 class="title-modal-pro" data-translate="title-modal-pro3">Decision Support System<br>for Scholarship Desktop App</h5>
+                            <div class="time-modal-pro" data-translate="time-modal-pro3">23th May 2024 - 12th June 2024</div>
+                            <div class="desc-modal-pro" data-translate="desc-modal-pro3">A project that develops the calculation of the Simple Additive Weighting method<br>to assist a scholarship committee in determining the eligibility of students who get scholarships.</div>
                         </div>
                         <div class="container-preview-btn">
                             <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/DSS-Scholarship-Desktop-App')">
-                                <span class="preview-btn-content">View Codes</span>
+                                <span class="preview-btn-content" data-translate="code-preview">View Codes</span>
                             </button>
                         </div>
                         <div class="image-modal-pro owl-carousel-modal-pro owl-carousel owl-theme">
-                            <div class="item"><img src="image/webp/Login Page-DSS.webp Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/webp/Registration Page-DSS.webp Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/webp/HomeMahasiswa Page-DSS.webp Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/webp/LengkapiDokumen Page-DSS.webp Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/webp/Dashboard Page-DSS.webp Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/webp/Kriteria Page-DSS.webp Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/webp/DataMahasiswa Page-DSS.webp Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/webp/Penghitungan Page-DSS.webp Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/webp/DataPeringkat Page-DSS.webp Page-DSS.png" alt="Image Projects"></div>
-                            <div class="item"><img src="image/webp/HomeMahasiswaLolos Page-DSS.webp Page-DSS.png" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Login Page-DSS.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Registration Page-DSS.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/HomeMahasiswa Page-DSS.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/LengkapiDokumen Page-DSS.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Dashboard Page-DSS.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Kriteria Page-DSS.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/DataMahasiswa Page-DSS.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Penghitungan Page-DSS.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/DataPeringkat Page-DSS.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/HomeMahasiswaLolos Page-DSS.webp" alt="Image Projects"></div>
                         </div>
-                        <div class="subtitle-modal-pro">What I did in this Project:</div>
-                        <div class="myjob-modal-pro">• Created database design.<br>
+                        <div class="subtitle-modal-pro" data-translate="subtitle-modal-pro3">What I did in this Project:</div>
+                        <div class="myjob-modal-pro" data-translate="myjob-modal-pro3">• Created database design.<br>
                             • Created interface desktop app with menggunakan Java Swing.<br>
                             • Connected desktop app to database with Java JDBC Driver.<br>
                             • Created user authentication, database management, and data validation.<br>
@@ -358,13 +421,13 @@
                             <div class="thumbnail"><img src="image/webp/OBS-panel-1.webp" alt="Image Projects"></div>
                         </div>
                         <div class="header-modal-pro">
-                            <h5 class="title-modal-pro">OBS Deckstream Panel</h5>
-                            <div class="time-modal-pro">1st July 2024 - To be Continued</div>
-                            <div class="desc-modal-pro">A project that develops a websocket connection with a broadcasting application called OBS Studio. This project aims to make it easier for users to operate OBS Studio and can be run on multiple platforms (desktop and mobile).</div>
+                            <h5 class="title-modal-pro" data-translate="title-modal-pro4">OBS Deckstream Panel</h5>
+                            <div class="time-modal-pro" data-translate="time-modal-pro4">1st July 2024 - To be Continued</div>
+                            <div class="desc-modal-pro" data-translate="desc-modal-pro4">A project that develops a websocket connection with a broadcasting application called OBS Studio. This project aims to make it easier for users to operate OBS Studio and can be run on multiple platforms (desktop and mobile).</div>
                         </div>
                         <div class="container-preview-btn">
                             <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/OBS-deckstream-panel')">
-                                <span class="preview-btn-content">View Codes</span>
+                                <span class="preview-btn-content" data-translate="code-preview">View Codes</span>
                             </button>
                         </div>
                         <div class="image-modal-pro owl-carousel-modal-pro owl-carousel owl-theme">
@@ -372,8 +435,8 @@
                             <div class="item"><img src="image/webp/OBS-panel-2.webp" alt="Image Projects"></div>
                             <div class="item"><img src="image/webp/OBS-panel-3.webp" alt="Image Projects"></div>
                         </div>
-                        <div class="subtitle-modal-pro">What I did in this Project:</div>
-                        <div class="myjob-modal-pro">• Created concepts for application functions.<br>
+                        <div class="subtitle-modal-pro" data-translate="subtitle-modal-pro4">What I did in this Project:</div>
+                        <div class="myjob-modal-pro" data-translate="myjob-modal-pro4">• Created concepts for application functions.<br>
                             • Created user interface and user experience.<br>
                             • Created a dynamic connection between the website, websocket, and OBS.<br>
                             • Created button functions on the website to run OBS Scenes and Sources.<br>
@@ -388,58 +451,58 @@
         <section id="exp-edu">
             <div class="container-exp-edu">
                 <div class="container-experience">
-                    <h2 class="title-experience animate-on-scroll" data-animation="animate__zoomIn">My Experience</h2>
+                    <h2 class="title-experience animate-on-scroll" data-animation="animate__zoomIn" data-translate="title-experience">My Experience</h2>
                     <div class="card-exp animate-on-scroll" data-animation="animate__fadeInLeft" data-bs-toggle="modal" data-bs-target="#modal-exp1">
                         <div class="card-exp-content">
-                            <h4 class="title-card-exp">2020-2021</h4>
-                            <h3 class="job-card-exp">Staff of PubDoc</h3>
-                            <p class="name-card-exp">OSIS SMA Katolik St. Louis 2</p>
+                            <h4 class="title-card-exp" data-translate="title-card-exp1">2020-2021</h4>
+                            <h3 class="job-card-exp" data-translate="job-card-exp1">Staff of PubDoc</h3>
+                            <p class="name-card-exp" data-translate="name-card-exp1">OSIS SMA Katolik St. Louis 2</p>
                         </div>
                     </div>
                     <div class="card-exp animate-on-scroll" data-animation="animate__fadeInLeft" data-bs-toggle="modal" data-bs-target="#modal-exp2">
                         <div class="card-exp-content">
-                            <h4 class="title-card-exp">February 2023-April 2023</h4>
-                            <h3 class="job-card-exp">Head of PDD Team</h3>
-                            <p class="name-card-exp">Perayaan Paskah UKKK UPN “Veteran” Jawa Timur</p>
+                            <h4 class="title-card-exp" data-translate="title-card-exp2">February 2023-April 2023</h4>
+                            <h3 class="job-card-exp" data-translate="job-card-exp2">Head of PDD Team</h3>
+                            <p class="name-card-exp" data-translate="name-card-exp2">Perayaan Paskah UKKK UPN “Veteran” Jawa Timur</p>
                         </div>
                     </div>
                     <div class="card-exp animate-on-scroll" data-animation="animate__fadeInLeft" data-bs-toggle="modal" data-bs-target="#modal-exp3">
                         <div class="card-exp-content">
-                            <h4 class="title-card-exp">June 2023-September 2023</h4>
-                            <h3 class="job-card-exp">Head of PDD Team</h3>
-                            <p class="name-card-exp">Orientasi Mahasiswa Kristen Baru UKKK UPNV Jawa Timur</p>
+                            <h4 class="title-card-exp" data-translate="title-card-exp3">June 2023-September 2023</h4>
+                            <h3 class="job-card-exp" data-translate="job-card-exp3">Head of PDD Team</h3>
+                            <p class="name-card-exp" data-translate="name-card-exp3">Orientasi Mahasiswa Kristen Baru UKKK UPNV Jawa Timur</p>
                         </div>
                     </div>
                     <div class="card-exp animate-on-scroll" data-animation="animate__fadeInLeft" data-bs-toggle="modal" data-bs-target="#modal-exp4">
                         <div class="card-exp-content">
-                            <h4 class="title-card-exp">February 2022-Present</h4>
-                            <h3 class="job-card-exp">Staff of Inforcom and Multimedia</h3>
-                            <p class="name-card-exp">GPIB Eben Haezer Surabaya</p>
+                            <h4 class="title-card-exp" data-translate="title-card-exp4">February 2022-Present</h4>
+                            <h3 class="job-card-exp" data-translate="job-card-exp4">Staff of Inforcom and Multimedia</h3>
+                            <p class="name-card-exp" data-translate="name-card-exp4">GPIB Eben Haezer Surabaya</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="container-education">
-                    <h2 class="title-education animate-on-scroll" data-animation="animate__zoomIn">My Education</h2>
+                    <h2 class="title-education animate-on-scroll" data-animation="animate__zoomIn" data-translate="title-education">My Education</h2>
                     <div class="card-exp animate-on-scroll" data-animation="animate__fadeInRight" data-bs-toggle="modal" data-bs-target="#modal-edu1">
                         <div class="card-exp-content">
-                            <h4 class="title-card-exp">2019-2022</h4>
-                            <h3 class="job-card-exp">Sosial Science</h3>
-                            <p class="name-card-exp">SMA Katolik St.Louis 2</p>
+                            <h4 class="title-card-exp" data-translate="title-card-edu1">2019-2022</h4>
+                            <h3 class="job-card-exp" data-translate="job-card-edu1">Sosial Science</h3>
+                            <p class="name-card-exp" data-translate="name-card-edu1">SMA Katolik St.Louis 2</p>
                         </div>
                     </div>
                     <div class="card-exp animate-on-scroll" data-animation="animate__fadeInRight" data-bs-toggle="modal" data-bs-target="#modal-edu2">
                         <div class="card-exp-content">
-                            <h4 class="title-card-exp">10th-22nd July 2023</h4>
-                            <h3 class="job-card-exp">Basic Intensive English Program</h3>
-                            <p class="name-card-exp">Language Center</p>
+                            <h4 class="title-card-exp" data-translate="title-card-edu2">10th-22nd July 2023</h4>
+                            <h3 class="job-card-exp" data-translate="job-card-edu2">Basic Intensive English Program</h3>
+                            <p class="name-card-exp" data-translate="name-card-edu2">Language Center</p>
                         </div>
                     </div>
                     <div class="card-exp animate-on-scroll" data-animation="animate__fadeInRight" data-bs-toggle="modal" data-bs-target="#modal-edu3">
                         <div class="card-exp-content">
-                            <h4 class="title-card-exp">2022-Present</h4>
-                            <h3 class="job-card-exp">Informatics</h3>
-                            <p class="name-card-exp">Universitas Pembangunan Nasional “Veteran” Jatim</p>
+                            <h4 class="title-card-exp" data-translate="title-card-edu3">2022-Present</h4>
+                            <h3 class="job-card-exp" data-translate="job-card-edu3">Informatics</h3>
+                            <p class="name-card-exp" data-translate="name-card-edu3">Universitas Pembangunan Nasional “Veteran” Jatim</p>
                         </div>
                     </div>
                 </div>
@@ -456,11 +519,11 @@
                             <img src="image/webp/OSIS-Gevanno.webp" alt="Certificate">
                         </div>
                         <div class="header-modal-exp">
-                            <h5 class="title-modal-exp">OSIS SMAK Katolik St. Louis 2 Surabaya</h5>
-                            <div class="time-modal-exp">2020-2021</div>
-                            <div class="role-modal-exp">Staff of Publication & Documentation</div>
+                            <h5 class="title-modal-exp" data-translate="title-modal-exp1">OSIS SMAK Katolik St. Louis 2 Surabaya</h5>
+                            <div class="time-modal-exp" data-translate="time-modal-exp1">2020-2021</div>
+                            <div class="role-modal-exp" data-translate="role-modal-exp1">Staff of Publication & Documentation</div>
                         </div>
-                        <div class="desc-modal-exp">My jobdesc during my tenure:<br>
+                        <div class="desc-modal-exp" data-translate="desc-modal-exp1">My jobdesc during my tenure:<br>
                             • Coordinated with teacher about publication projects.<br>
                             • Created video concepts and edited event videos.<br>
                             • Created concepts and designed Instagram feeds.<br>
@@ -480,11 +543,11 @@
                             <img src="image/webp/PASKAH-PDD-Gevanno.webp" alt="Certificate">
                         </div>
                         <div class="header-modal-exp">
-                            <h5 class="title-modal-exp">Perayaan Paskah UKKK UPN "Veteran" Jatim</h5>
-                            <div class="time-modal-exp">February 2023 - April 2023</div>
+                            <h5 class="title-modal-exp" data-translate="title-modal-exp2">Perayaan Paskah UKKK UPN "Veteran" Jatim</h5>
+                            <div class="time-modal-exp" data-translate="time-modal-exp2">February 2023 - April 2023</div>
                         </div>
-                        <div class="role-modal-exp">Head of Publication, Documentation, and Decoration</div>
-                        <div class="desc-modal-exp">My jobdesc during my tenure:<br>
+                        <div class="role-modal-exp" data-translate="role-modal-exp2">Head of Publication, Documentation, and Decoration</div>
+                        <div class="desc-modal-exp" data-translate="desc-modal-exp2">My jobdesc during my tenure:<br>
                             • Coordinated task for team and scheduled the timeline.<br>
                             • Coordinated with other division to arrange publication and decoration.<br>
                             • Communicated and negotiated with sponsors to get a sponsorship.<br>
@@ -506,11 +569,11 @@
                             <img src="image/webp/OMKB-PDD-Gevanno.webp" alt="Certificate">
                         </div>
                         <div class="header-modal-exp">
-                            <h5 class="title-modal-exp">OMKB UKKK UPN "Veteran" Jatim</h5>
-                            <div class="time-modal-exp">June 2023 - September 2023</div>
+                            <h5 class="title-modal-exp" data-translate="title-modal-exp3">OMKB UKKK UPN "Veteran" Jatim</h5>
+                            <div class="time-modal-exp" data-translate="time-modal-exp3">June 2023 - September 2023</div>
                         </div>
-                        <div class="role-modal-exp">Head of Publication and Decoration</div>
-                        <div class="desc-modal-exp">My jobdesc during my tenure:<br>
+                        <div class="role-modal-exp" data-translate="role-modal-exp3">Head of Publication and Documentation</div>
+                        <div class="desc-modal-exp" data-translate="desc-modal-exp3">My jobdesc during my tenure:<br>
                             • Led team and scheduled the timeline.<br>
                             • Coordinated with other division to arrange publication concepts, merchandise, and videos.<br>
                             • Communicated and negotiated with sponsors to get sponsorships.<br>
@@ -530,11 +593,11 @@
                         <div class="image-modal-exp">
                         </div>
                         <div class="header-modal-exp">
-                            <h5 class="title-modal-exp">GPIB Eben Haezer Surabaya</h5>
-                            <div class="time-modal-exp">February 2022 - Present</div>
+                            <h5 class="title-modal-exp" data-translate="title-modal-exp4">GPIB Eben Haezer Surabaya</h5>
+                            <div class="time-modal-exp" data-translate="time-modal-exp4">February 2022 - Present</div>
                         </div>
-                        <div class="role-modal-exp">Staff of Information, Communication and Multimedia</div>
-                        <div class="desc-modal-exp">My jobdesc during my tenure:<br>
+                        <div class="role-modal-exp" data-translate="role-modal-exp4">Staff of Information, Communication and Multimedia</div>
+                        <div class="desc-modal-exp" data-translate="desc-modal-exp4">My jobdesc during my tenure:<br>
                             • Operated Live Streaming of church services.<br>
                             • Scheduled operator every three months.<br>
                             • Created concepts and designed Live Stream thumbnail.<br>
@@ -555,10 +618,10 @@
                             <img src="image/webp/LC-Gevanno.webp" alt="Certificate">
                         </div>
                         <div class="header-modal-exp">
-                            <h5 class="title-modal-exp">Basic Intensive English Program</h5>
-                            <div class="time-modal-exp">10th July 2023 - 22nd July 2023</div>
+                            <h5 class="title-modal-exp" data-translate="title-modal-edu2">Basic Intensive English Program</h5>
+                            <div class="time-modal-exp" data-translate="time-modal-edu2">10th July 2023 - 22nd July 2023</div>
                         </div>
-                        <div class="role-modal-exp">Language Center</div>
+                        <div class="role-modal-exp" data-translate="role-modal-edu2">Language Center</div>
                         <div class="desc-modal-exp"> </div>
                     </div>
                 </div>
@@ -573,10 +636,10 @@
                             <img src="image/webp/Transkrip-Nilai.webp" alt="Certificate">
                         </div>
                         <div class="header-modal-exp">
-                            <h5 class="title-modal-exp">Informatics</h5>
-                            <div class="time-modal-exp">2022-Present</div>
+                            <h5 class="title-modal-exp" data-translate="title-modal-edu3">Informatics</h5>
+                            <div class="time-modal-exp" data-translate="time-modal-edu3">2022-Present</div>
                         </div>
-                        <div class="role-modal-exp">Universitas Pembangunan Nasional "Veteran" Jatim</div>
+                        <div class="role-modal-exp" data-translate="role-modal-edu3">Universitas Pembangunan Nasional "Veteran" Jatim</div>
                         <div class="desc-modal-exp"> </div>
                     </div>
                 </div>
@@ -586,91 +649,112 @@
         <!-- Skills -->
         <section id="skills">
             <div class="container-skills">
-                <h2 class="title-skills animate-on-scroll" data-animation="animate__zoomIn">My Skills</h2>
-                <p class="desc-skills animate-on-scroll" data-animation="animate__zoomIn">These are skills that I am currently good at and will continue to improve as time goes on.</p>
+                <h2 class="title-skills animate-on-scroll" data-animation="animate__zoomIn" data-translate="title-skills">My Skills</h2>
+                <p class="desc-skills animate-on-scroll" data-animation="animate__zoomIn" data-translate="desc-skills">These are skills that I am currently good at and will continue to improve as time goes on.</p>
             </div>
             <div class="skills-grid">
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
-                        <i class="fab fa-html5 skill-icon"></i>
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#E44D26" d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"></path><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878H64z"></path><path fill="#EBEBEB" d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"></path><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"></path>
+                        </svg>
                     </div>
                     <span class="skill-text">HTML</span>
                 </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
-                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#1572B6" d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"></path><path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"></path><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"></path><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"></path><path fill="#EBEBEB" d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"></path>
+                        </svg>
                     </div>
                     <span class="skill-text">CSS</span>
                 </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
-                        <i class="fab fa-js skill-icon"></i>
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#F0DB4F" d="M1.408 1.408h125.184v125.185H1.408z"></path><path fill="#323330" d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"></path>
+                        </svg>
                     </div>
                     <span class="skill-text">JavaScript</span>
                 </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
-                        <i class="devicon-php-plain skill-icon"></i>
+                        <svg viewBox="0 0 128 128">
+                            <path fill="url(#a)" d="M0 64c0 18.593 28.654 33.667 64 33.667 35.346 0 64-15.074 64-33.667 0-18.593-28.655-33.667-64-33.667C28.654 30.333 0 45.407 0 64Z"></path><path fill="#777bb3" d="M64 95.167c33.965 0 61.5-13.955 61.5-31.167 0-17.214-27.535-31.167-61.5-31.167S2.5 46.786 2.5 64c0 17.212 27.535 31.167 61.5 31.167Z"></path><path d="M34.772 67.864c2.793 0 4.877-.515 6.196-1.53 1.306-1.006 2.207-2.747 2.68-5.175.44-2.27.272-3.854-.5-4.71-.788-.874-2.493-1.317-5.067-1.317h-4.464l-2.473 12.732zM20.173 83.547a.694.694 0 0 1-.68-.828l6.557-33.738a.695.695 0 0 1 .68-.561h14.134c4.442 0 7.748 1.206 9.827 3.585 2.088 2.39 2.734 5.734 1.917 9.935-.333 1.711-.905 3.3-1.7 4.724a15.818 15.818 0 0 1-3.128 3.92c-1.531 1.432-3.264 2.472-5.147 3.083-1.852.604-4.232.91-7.07.91h-5.724l-1.634 8.408a.695.695 0 0 1-.682.562z"></path><path fill="#fff" d="M34.19 55.826h3.891c3.107 0 4.186.682 4.553 1.089.607.674.723 2.097.331 4.112-.439 2.257-1.253 3.858-2.42 4.756-1.194.92-3.138 1.386-5.773 1.386h-2.786l2.205-11.342zm6.674-8.1H26.731a1.39 1.39 0 0 0-1.364 1.123L18.81 82.588a1.39 1.39 0 0 0 1.363 1.653h7.35a1.39 1.39 0 0 0 1.363-1.124l1.525-7.846h5.151c2.912 0 5.364-.318 7.287-.944 1.977-.642 3.796-1.731 5.406-3.237a16.522 16.522 0 0 0 3.259-4.087c.831-1.487 1.429-3.147 1.775-4.931.86-4.423.161-7.964-2.076-10.524-2.216-2.537-5.698-3.823-10.349-3.823zM30.301 68.557h4.471c2.963 0 5.17-.557 6.62-1.675 1.451-1.116 2.428-2.98 2.938-5.591.485-2.508.264-4.277-.665-5.308-.931-1.03-2.791-1.546-5.584-1.546h-5.036l-2.743 14.12m10.563-19.445c4.252 0 7.353 1.117 9.303 3.348 1.95 2.232 2.536 5.347 1.76 9.346-.322 1.648-.863 3.154-1.625 4.518-.764 1.366-1.76 2.614-2.991 3.747-1.468 1.373-3.097 2.352-4.892 2.935-1.794.584-4.08.875-6.857.875h-6.296l-1.743 8.97h-7.35l6.558-33.739h14.133"></path><path d="M69.459 74.577a.694.694 0 0 1-.682-.827l2.9-14.928c.277-1.42.209-2.438-.19-2.87-.245-.263-.979-.704-3.15-.704h-5.256l-3.646 18.768a.695.695 0 0 1-.683.56h-7.29a.695.695 0 0 1-.683-.826l6.558-33.739a.695.695 0 0 1 .682-.561h7.29a.695.695 0 0 1 .683.826L64.41 48.42h5.653c4.307 0 7.227.758 8.928 2.321 1.733 1.593 2.275 4.14 1.608 7.573l-3.051 15.702a.695.695 0 0 1-.682.56h-7.407z"></path><path fill="#fff" d="M65.31 38.755h-7.291a1.39 1.39 0 0 0-1.364 1.124l-6.557 33.738a1.39 1.39 0 0 0 1.363 1.654h7.291a1.39 1.39 0 0 0 1.364-1.124l3.537-18.205h4.682c2.168 0 2.624.463 2.641.484.132.14.305.795.019 2.264l-2.9 14.927a1.39 1.39 0 0 0 1.364 1.654h7.408a1.39 1.39 0 0 0 1.363-1.124l3.051-15.7c.715-3.686.103-6.45-1.82-8.217-1.836-1.686-4.91-2.505-9.398-2.505h-4.81l1.421-7.315a1.39 1.39 0 0 0-1.364-1.655zm0 1.39-1.743 8.968h6.496c4.087 0 6.907.714 8.457 2.14 1.553 1.426 2.017 3.735 1.398 6.93l-3.052 15.699h-7.407l2.901-14.928c.33-1.698.208-2.856-.365-3.474-.573-.617-1.793-.926-3.658-.926h-5.829l-3.756 19.327H51.46l6.558-33.739h7.292z"></path><path d="M92.136 67.864c2.793 0 4.878-.515 6.198-1.53 1.304-1.006 2.206-2.747 2.679-5.175.44-2.27.273-3.854-.5-4.71-.788-.874-2.493-1.317-5.067-1.317h-4.463l-2.475 12.732zM77.54 83.547a.694.694 0 0 1-.682-.828l6.557-33.738a.695.695 0 0 1 .682-.561H98.23c4.442 0 7.748 1.206 9.826 3.585 2.089 2.39 2.734 5.734 1.917 9.935a15.878 15.878 0 0 1-1.699 4.724 15.838 15.838 0 0 1-3.128 3.92c-1.53 1.432-3.265 2.472-5.147 3.083-1.852.604-4.232.91-7.071.91h-5.723l-1.633 8.408a.695.695 0 0 1-.683.562z"></path><path fill="#fff" d="M91.555 55.826h3.891c3.107 0 4.186.682 4.552 1.089.61.674.724 2.097.333 4.112-.44 2.257-1.254 3.858-2.421 4.756-1.195.92-3.139 1.386-5.773 1.386h-2.786l2.204-11.342zm6.674-8.1H84.096a1.39 1.39 0 0 0-1.363 1.123l-6.558 33.739a1.39 1.39 0 0 0 1.364 1.653h7.35a1.39 1.39 0 0 0 1.363-1.124l1.525-7.846h5.15c2.911 0 5.364-.318 7.286-.944 1.978-.642 3.797-1.731 5.408-3.238a16.52 16.52 0 0 0 3.258-4.086c.832-1.487 1.428-3.147 1.775-4.931.86-4.423.162-7.964-2.076-10.524-2.216-2.537-5.697-3.823-10.35-3.823zM87.666 68.557h4.47c2.964 0 5.17-.557 6.622-1.675 1.45-1.116 2.428-2.98 2.936-5.591.487-2.508.266-4.277-.665-5.308-.93-1.03-2.791-1.546-5.583-1.546h-5.035Zm10.563-19.445c4.251 0 7.354 1.117 9.303 3.348 1.95 2.232 2.537 5.347 1.759 9.346-.32 1.648-.862 3.154-1.624 4.518-.763 1.366-1.76 2.614-2.992 3.747-1.467 1.373-3.097 2.352-4.892 2.935-1.793.584-4.078.875-6.856.875h-6.295l-1.745 8.97h-7.35l6.558-33.739h14.133"></path><defs><radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(84.04136 0 0 84.04136 38.426 42.169)" gradientUnits="userSpaceOnUse"><stop stop-color="#AEB2D5"></stop><stop offset=".3" stop-color="#AEB2D5"></stop><stop offset=".75" stop-color="#484C89"></stop><stop offset="1" stop-color="#484C89"></stop></radialGradient></defs>
+                        </svg>
                     </div>
                     <span class="skill-text">PHP</span>
                 </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
-                        <i class="fab fa-java skill-icon"></i>
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#0074BD" d="M47.617 98.12s-4.767 2.774 3.397 3.71c9.892 1.13 14.947.968 25.845-1.092 0 0 2.871 1.795 6.873 3.351-24.439 10.47-55.308-.607-36.115-5.969zm-2.988-13.665s-5.348 3.959 2.823 4.805c10.567 1.091 18.91 1.18 33.354-1.6 0 0 1.993 2.025 5.132 3.131-29.542 8.64-62.446.68-41.309-6.336z"></path><path fill="#EA2D2E" d="M69.802 61.271c6.025 6.935-1.58 13.17-1.58 13.17s15.289-7.891 8.269-17.777c-6.559-9.215-11.587-13.792 15.635-29.58 0 .001-42.731 10.67-22.324 34.187z"></path><path fill="#0074BD" d="M102.123 108.229s3.529 2.91-3.888 5.159c-14.102 4.272-58.706 5.56-71.094.171-4.451-1.938 3.899-4.625 6.526-5.192 2.739-.593 4.303-.485 4.303-.485-4.953-3.487-32.013 6.85-13.743 9.815 49.821 8.076 90.817-3.637 77.896-9.468zM49.912 70.294s-22.686 5.389-8.033 7.348c6.188.828 18.518.638 30.011-.326 9.39-.789 18.813-2.474 18.813-2.474s-3.308 1.419-5.704 3.053c-23.042 6.061-67.544 3.238-54.731-2.958 10.832-5.239 19.644-4.643 19.644-4.643zm40.697 22.747c23.421-12.167 12.591-23.86 5.032-22.285-1.848.385-2.677.72-2.677.72s.688-1.079 2-1.543c14.953-5.255 26.451 15.503-4.823 23.725 0-.002.359-.327.468-.617z"></path><path fill="#EA2D2E" d="M76.491 1.587S89.459 14.563 64.188 34.51c-20.266 16.006-4.621 25.13-.007 35.559-11.831-10.673-20.509-20.07-14.688-28.815C58.041 28.42 81.722 22.195 76.491 1.587z"></path><path fill="#0074BD" d="M52.214 126.021c22.476 1.437 57-.8 57.817-11.436 0 0-1.571 4.032-18.577 7.231-19.186 3.612-42.854 3.191-56.887.874 0 .001 2.875 2.381 17.647 3.331z"></path>
+                        </svg>
                     </div>
                     <span class="skill-text">Java</span>
                 </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
-                        <i class="devicon-c-plain skill-icon"></i>
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#659AD3" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"></path><path fill="#03599C" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"></path><path fill="#fff" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"></path>
+                        </svg>    
                     </div>
                     <span class="skill-text">C</span>
                 </div>                
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
-                    <div class="card-skills-content">
-                        <i class="devicon-cplusplus-plain skill-icon"></i>
+                    <div class="card-skills-content">          
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#00599c" d="M118.766 95.82c.89-1.543 1.441-3.28 1.441-4.843V36.78c0-1.558-.55-3.297-1.441-4.84l-55.32 31.94Zm0 0"></path>
+                            <path fill="#004482" d="m68.36 126.586 46.933-27.094c1.352-.781 2.582-2.129 3.473-3.672l-55.32-31.94L8.12 95.82c.89 1.543 2.121 2.89 3.473 3.672l46.933 27.094c2.703 1.562 7.13 1.562 9.832 0Zm0 0"></path>
+                            <path fill="#659ad2" d="M118.766 31.941c-.891-1.546-2.121-2.894-3.473-3.671L68.359 1.172c-2.703-1.563-7.129-1.563-9.832 0L11.594 28.27C8.89 29.828 6.68 33.66 6.68 36.78v54.196c0 1.562.55 3.3 1.441 4.843L63.445 63.88Zm0 0"></path>
+                            <path fill="#fff" d="M63.445 26.035c-20.867 0-37.843 16.977-37.843 37.844s16.976 37.844 37.843 37.844c13.465 0 26.024-7.247 32.77-18.91L79.84 73.335c-3.38 5.84-9.66 9.465-16.395 9.465-10.433 0-18.922-8.488-18.922-18.922 0-10.434 8.49-18.922 18.922-18.922 6.73 0 13.017 3.629 16.39 9.465l16.38-9.477c-6.75-11.664-19.305-18.91-32.77-18.91zM92.88 57.57v4.207h-4.207v4.203h4.207v4.207h4.203V65.98h4.203v-4.203h-4.203V57.57H92.88zm15.766 0v4.207h-4.204v4.203h4.204v4.207h4.207V65.98h4.203v-4.203h-4.203V57.57h-4.207z"></path>
+                        </svg>
                     </div>
                     <span class="skill-text">C++</span>
                 </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
-                        <i class="devicon-mysql-original skill-icon"></i>
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#00618A" d="M0 91.313h4.242V74.566l6.566 14.598c.773 1.77 1.832 2.391 3.914 2.391s3.098-.621 3.871-2.391l6.566-14.598v16.746h4.242V74.594c0-1.633-.652-2.422-2-2.828-3.223-1.004-5.383-.137-6.363 2.039l-6.441 14.41-6.238-14.41c-.937-2.176-3.14-3.043-6.359-2.039-1.348.406-2 1.195-2 2.828zM32.93 77.68h4.238v9.227c-.039.5.16 1.676 2.484 1.715h9.223V77.633h4.25c.02 0-.008 14.984-.008 15.047.023 3.695-4.582 4.496-6.707 4.559H33.02v-2.852l13.414-.004c2.73-.285 2.406-1.645 2.406-2.098v-1.113h-9.012c-4.195-.039-6.863-1.871-6.898-3.977-.004-.191.09-9.422 0-9.516zm0 0"></path><path fill="#E48E00" d="M56.391 91.313h12.195c1.426 0 2.813-.301 3.914-.816 1.836-.84 2.73-1.984 2.73-3.48v-3.098c0-1.223-1.016-2.367-3.016-3.125-1.059-.41-2.367-.625-3.629-.625h-5.141c-1.711 0-2.527-.516-2.73-1.656-.039-.137-.039-.246-.039-.383V76.2c0-.109 0-.219.039-.355.203-.867.652-1.113 2.16-1.25l.41-.027h12.109v-2.824H63.488c-1.711 0-2.609.109-3.426.352-2.527.789-3.629 2.039-3.629 4.215v2.473c0 1.902 2.16 3.535 5.789 3.914l1.223.055h4.406c.164 0 .324 0 .449.027 1.344.109 1.914.355 2.324.844.211.195.332.473.324.758v2.477c0 .297-.203.68-.609 1.004-.367.328-.98.543-1.793.598l-.449.027H56.391zm45.297-4.922c0 2.91 2.164 4.539 6.523 4.867l1.227.055h11.051v-2.828h-11.133c-2.488 0-3.426-.625-3.426-2.121V71.738h-4.238V86.39zm-23.75.148V76.457c0-2.559 1.801-4.113 5.355-4.602a7.976 7.976 0 0 1 1.145-.082h8.047c.41 0 .777.027 1.188.082 3.555.488 5.352 2.043 5.352 4.602v10.082c0 2.078-.762 3.188-2.523 3.914l4.18 3.77h-4.926l-3.379-3.051-3.402.215H84.44a9.23 9.23 0 0 1-2.492-.352c-2.699-.734-4.008-2.152-4.008-4.496zm4.578-.246c0 .137.039.273.082.438.246 1.172 1.348 1.824 3.023 1.824h3.852l-3.539-3.195h4.926l3.086 2.789c.57-.305.941-.766 1.074-1.363.039-.137.039-.273.039-.41v-9.668c0-.109 0-.246-.039-.383-.246-1.09-1.348-1.715-2.984-1.715h-6.414c-1.879 0-3.105.816-3.105 2.098zm0 0"></path><path fill="#00618A" d="M124.219 67.047c-2.605-.07-4.598.172-6.301.891-.484.203-1.258.207-1.336.813.266.281.309.699.52 1.039.406.66 1.094 1.539 1.707 2l2.074 1.484c1.273.777 2.699 1.223 3.93 2 .723.461 1.441 1.039 2.148 1.559.348.254.582.656 1.039.816v-.074c-.238-.305-.301-.723-.52-1.039l-.965-.965c-.941-1.25-2.137-2.348-3.41-3.262-1.016-.727-3.281-1.711-3.707-2.891l-.074-.074c.719-.078 1.563-.34 2.223-.516 1.117-.301 2.113-.223 3.262-.52l1.559-.449v-.293c-.582-.598-.996-1.387-1.633-1.93-1.656-1.41-3.469-2.824-5.336-4.004-1.035-.652-2.312-1.074-3.41-1.629-.367-.187-1.016-.281-1.262-.594-.574-.734-.887-1.664-1.332-2.52l-2.668-5.633c-.562-1.285-.93-2.555-1.633-3.707-3.363-5.535-6.988-8.875-12.602-12.156-1.191-.699-2.633-.973-4.148-1.332l-2.449-.148c-.496-.211-1.012-.82-1.48-1.113-1.859-1.176-6.629-3.73-8.008-.371-.867 2.121 1.301 4.191 2.078 5.266.543.754 1.242 1.598 1.629 2.445.258.555.301 1.113.52 1.703.539 1.453 1.008 3.031 1.707 4.375.352.68.738 1.395 1.184 2 .273.371.742.539.816 1.113-.457.641-.484 1.633-.742 2.445-1.16 3.652-.723 8.191.965 10.898.516.828 1.734 2.609 3.41 1.926 1.465-.598 1.137-2.445 1.555-4.078.098-.367.039-.641.223-.887v.074l1.336 2.668c.988 1.59 2.738 3.25 4.223 4.371.773.582 1.379 1.59 2.375 1.93V68.6h-.074c-.195-.297-.496-.422-.742-.664-.582-.57-1.227-1.277-1.703-1.93-1.352-1.832-2.547-3.84-3.633-5.93-.52-.996-.973-2.098-1.41-3.113-.168-.391-.164-.984-.516-1.184-.48.742-1.187 1.344-1.559 2.223-.594 1.402-.668 3.117-.891 4.891l-.148.074c-1.031-.25-1.395-1.312-1.777-2.223-.973-2.305-1.152-6.02-.297-8.672.219-.687 1.219-2.852.813-3.484-.191-.633-.828-1-1.184-1.484a11.7 11.7 0 0 1-1.187-2.074c-.793-1.801-1.164-3.816-2-5.633-.398-.871-1.074-1.75-1.629-2.523-.617-.855-1.305-1.484-1.781-2.52-.168-.367-.398-.957-.148-1.336.078-.254.195-.359.445-.441.43-.332 1.629.109 2.074.293 1.191.496 2.184.965 3.191 1.633.48.32.969.941 1.555 1.113h.668c1.043.238 2.211.07 3.188.367 1.723.523 3.27 1.34 4.668 2.227 4.273 2.695 7.766 6.535 10.156 11.117.387.738.551 1.441.891 2.223.684 1.578 1.543 3.203 2.223 4.746s1.34 3.094 2.297 4.375c.504.672 2.453 1.031 3.336 1.406.621.262 1.637.535 2.223.891 1.125.676 2.211 1.48 3.266 2.223.523.375 2.141 1.188 2.223 1.855zM91.082 38.805a5.26 5.26 0 0 0-1.332.148v.074h.074c.258.535.715.879 1.035 1.336l.742 1.555.074-.07c.461-.324.668-.844.668-1.633-.187-.195-.211-.437-.371-.668-.211-.309-.621-.48-.891-.742zm0 0"></path>
+                        </svg>    
                     </div>
                     <span class="skill-text">MySQL</span>
                 </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
-                        <i class="devicon-bootstrap-plain skill-icon"></i>
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
                     </div>
                     <span class="skill-text">Bootstrap</span>
                 </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
-                        <i class="devicon-jquery-plain skill-icon"></i>
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#0868AC" d="M27.758 20.421c-7.352 10.565-6.437 24.312-.82 35.54l.411.798.263.506.164.291.293.524c.174.307.353.612.536.919l.306.504c.203.326.41.65.622.973l.265.409c.293.437.592.872.901 1.301l.026.033.152.205c.267.368.542.732.821 1.093l.309.393c.249.313.502.623.759.934l.29.346c.345.406.698.812 1.057 1.208l.021.022.041.045c.351.383.71.758 1.075 1.133l.344.347c.282.284.569.563.858.841l.351.334c.387.364.777.722 1.176 1.07l.018.016.205.174c.351.305.708.605 1.068.902l.442.353c.294.235.591.468.89.696l.477.361c.33.243.663.482.999.717l.363.258.101.072c.318.22.645.431.97.642l.42.28c.5.315 1.007.628 1.519.93l.42.237c.377.217.756.431 1.14.639l.631.326.816.424.188.091.334.161c.427.204.858.405 1.293.599l.273.122c.498.218 1.001.427 1.508.628l.368.144c.469.182.945.359 1.423.527l.179.062c.524.184 1.054.353 1.587.52l.383.114c.542.164 1.079.358 1.638.462 35.553 6.483 45.88-21.364 45.88-21.364-8.674 11.3-24.069 14.28-38.656 10.962-.553-.125-1.089-.298-1.628-.456l-.406-.124a44.793 44.793 0 01-1.568-.51l-.215-.077a49.537 49.537 0 01-1.382-.513l-.388-.152c-.501-.198-1-.405-1.492-.62l-.298-.133a55.398 55.398 0 01-1.259-.585l-.364-.175c-.327-.159-.65-.328-.974-.495l-.649-.341c-.395-.21-.782-.43-1.167-.654l-.394-.219a58.203 58.203 0 01-1.52-.932l-.41-.273a40.515 40.515 0 01-1.081-.719l-.349-.245a54.203 54.203 0 01-1.022-.738l-.453-.343c-.31-.237-.618-.476-.922-.721l-.411-.33c-.388-.318-.771-.64-1.149-.969l-.126-.105a54.797 54.797 0 01-1.208-1.098l-.34-.328a33.158 33.158 0 01-.868-.851l-.34-.34c-.362-.37-.717-.745-1.065-1.126l-.053-.057a41.973 41.973 0 01-1.08-1.229l-.283-.336a44.66 44.66 0 01-.777-.961l-.285-.355a52.469 52.469 0 01-.898-1.195c-8.098-11.047-11.008-26.283-4.535-38.795m17.081-1.626c-5.316 7.65-5.028 17.893-.88 25.983a33.747 33.747 0 002.351 3.925c.796 1.143 1.68 2.501 2.737 3.418.383.422.784.834 1.193 1.238l.314.311c.397.385.801.764 1.218 1.132l.05.043.012.012c.462.405.939.794 1.423 1.178l.323.252c.486.372.981.738 1.489 1.087l.043.033.68.447.322.213c.363.233.73.459 1.104.676l.156.092c.322.185.648.367.975.545l.347.18.682.354.103.047c.469.23.941.453 1.424.663l.314.13c.386.163.775.323 1.167.473l.5.184c.356.132.712.253 1.072.373l.484.155c.511.158 1.017.359 1.549.448 27.45 4.547 33.787-16.588 33.787-16.588-5.712 8.228-16.775 12.153-28.58 9.089a34.726 34.726 0 01-1.555-.449l-.467-.151a29 29 0 01-1.087-.374l-.491-.183a38.673 38.673 0 01-1.171-.473l-.315-.133a32.78 32.78 0 01-1.432-.666l-.718-.365-.414-.213c-.306-.166-.61-.338-.909-.514l-.217-.123a30.75 30.75 0 01-1.1-.672l-.332-.221-.712-.472a37.364 37.364 0 01-1.484-1.085l-.334-.264c-5.167-4.079-9.263-9.655-11.21-15.977-2.041-6.557-1.601-13.917 1.935-19.891m14.847-.518c-3.134 4.612-3.442 10.341-1.267 15.435 2.293 5.407 6.992 9.648 12.477 11.66l.682.235.3.096c.323.102.644.22.978.282 15.157 2.929 19.268-7.777 20.362-9.354-3.601 5.185-9.653 6.43-17.079 4.627a18.837 18.837 0 01-1.796-.555 22.303 22.303 0 01-2.134-.886 22.19 22.19 0 01-3.741-2.282c-6.645-5.042-10.772-14.659-6.436-22.492"></path><path fill="#131B28" d="M66.359 96.295h-4.226a.556.556 0 00-.517.417l-1.5 6.94-1.5 6.94a.554.554 0 01-.516.417h-2.991c-2.959 0-2.617-2.047-2.011-4.851l.018-.085.066-.354.012-.066.135-.72.145-.771.154-.785.682-3.332.683-3.332a.336.336 0 00-.341-.419h-4.337a.55.55 0 00-.514.418l-.933 4.424-.932 4.425-.002.006-.086.412c-1.074 4.903-.79 9.58 5.048 9.727l.17.003h9.163a.554.554 0 00.516-.417l1.976-9.289 1.976-9.29c.049-.23-.103-.417-.338-.418zm-45.256-.049h-4.64a.562.562 0 00-.521.416l-.44 1.942-.44 1.942c-.051.229.098.416.333.416h4.676a.556.556 0 00.518-.417l.425-1.941.425-1.941c.049-.229-.101-.417-.336-.417zm-1.346 6.044H15.08a.563.563 0 00-.521.416l-.657 2.91-.656 2.909-.183.834-.631 2.97-.63 2.971c-.049.229-.15.599-.225.821 0 0-.874 2.6-2.343 2.57l-.184-.004-1.271-.023h-.001a.558.558 0 00-.524.407l-.485 2.039-.484 2.038c-.055.228.093.416.326.42.833.01 2.699.031 3.828.031 3.669 0 5.604-2.033 6.843-7.883l1.451-6.714 1.361-6.297c.049-.227-.103-.415-.337-.415zm86.117-1.574l-.194-.801-.191-.82-.097-.414c-.38-1.477-1.495-2.328-3.917-2.328l-3.77-.004-3.472-.005h-3.907a.552.552 0 00-.515.417l-.173.816-.204.964-.057.271-1.759 8.24-1.67 7.822c-.05.23-.066.512-.038.626.028.115.479.209.713.209h3.524c.235 0 .532-.042.66-.094s.317-.513.364-.742l.626-3.099.627-3.1.001-.005.084-.413.76-3.56.671-3.144a.555.555 0 01.515-.417l11.089-.005c.235.002.383-.185.33-.414zm14.275-7.24l-.854.003h-3.549a.904.904 0 00-.667.353l-7.849 11.498c-.132.194-.283.166-.335-.062l-.578-2.533a.562.562 0 00-.522-.416h-5.045c-.235 0-.374.184-.31.409l2.261 7.921c.064.226.069.596.011.824l-.985 3.833c-.059.228.085.413.32.413h4.987a.58.58 0 00.532-.413l.986-3.833a2.52 2.52 0 01.363-.755l12.742-16.911c.142-.188.065-.341-.169-.339l-1.339.008zm-40.086 9.919v-.004a.514.514 0 01-.499.441h-6.397c-.222 0-.334-.15-.301-.336l.006-.015-.004.002.003-.021.029-.109c.611-1.624 1.855-2.69 4.194-2.69 2.634-.001 3.148 1.285 2.969 2.732zm-1.877-7.384c-8.211 0-10.157 4.984-11.249 10.015-1.091 5.128-.998 9.921 7.5 9.921h1.03l.256-.001h.06l1.02-.003h.018c2.244-.009 4.495-.026 5.406-.033a.553.553 0 00.509-.42l.344-1.681.067-.327.41-2.006a.335.335 0 00-.341-.418h-7.639c-3.039 0-3.941-.807-3.608-3.181H84.18l-.001.001.008-.001a.503.503 0 00.445-.315l.029-.106-.001.001c1.813-6.839 1.293-11.445-6.474-11.446zm-38.81 7.358l-.116.409v.001l-.922 3.268-.922 3.267a.596.596 0 01-.543.411h-4.88c-3.702 0-4.604-2.896-3.702-7.166.901-4.368 2.668-7.083 6.312-7.358 4.98-.376 5.976 3.126 4.773 7.168zm3.348 7.105s2.301-5.588 2.823-8.814c.713-4.319-1.45-10.585-9.804-10.585-8.306 0-11.914 5.981-13.29 12.484-1.376 6.55.427 12.293 8.686 12.246l6.516-.024 6.089-.022a.59.59 0 00.534-.414l1.061-4.046c.059-.228-.084-.414-.319-.416l-1.017-.006-1.017-.006c-.199-.001-.313-.131-.289-.302l.027-.095zm41.12-3.741a.28.28 0 11-.56.001.28.28 0 01.56-.001z"></path>
+                        </svg>
                     </div>
                     <span class="skill-text">jQuery</span>
                 </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
-                        <i class="devicon-react-original skill-icon"></i>
+                        <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 109.43" style="enable-background:new 0 0 122.88 109.43" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#00D8FF;}</style><g><path class="st0" d="M122.88,54.73c0-8.14-10.19-15.85-25.82-20.64c3.61-15.93,2-28.6-5.06-32.66c-1.63-0.95-3.53-1.4-5.61-1.4 v5.59c1.15,0,2.08,0.23,2.86,0.65c3.41,1.95,4.88,9.39,3.73,18.96c-0.28,2.35-0.73,4.83-1.28,7.36c-4.91-1.2-10.27-2.13-15.9-2.73 c-3.38-4.63-6.89-8.84-10.42-12.52C73.54,9.74,81.2,5.59,86.41,5.59V0l0,0c-6.89,0-15.9,4.91-25.02,13.43 C52.27,4.96,43.26,0.1,36.37,0.1v5.59c5.18,0,12.87,4.13,21.04,11.67c-3.51,3.68-7.01,7.86-10.34,12.5 c-5.66,0.6-11.02,1.53-15.93,2.75c-0.58-2.5-1-4.93-1.3-7.26c-1.18-9.57,0.28-17.01,3.66-18.99c0.75-0.45,1.73-0.65,2.88-0.65V0.13 l0,0c-2.1,0-4.01,0.45-5.66,1.4c-7.04,4.06-8.62,16.71-4.98,32.59C10.14,38.92,0,46.61,0,54.73c0,8.14,10.19,15.85,25.82,20.64 c-3.61,15.93-2,28.6,5.06,32.66c1.63,0.95,3.53,1.4,5.64,1.4c6.89,0,15.9-4.91,25.02-13.43c9.12,8.47,18.13,13.33,25.02,13.33 c2.1,0,4.01-0.45,5.66-1.4c7.04-4.06,8.62-16.71,4.98-32.59C112.74,70.56,122.88,62.84,122.88,54.73L122.88,54.73z M72.86,54.73 c0-6.32-5.12-11.45-11.45-11.45c-6.32,0-11.45,5.12-11.45,11.45s5.12,11.45,11.45,11.45C67.74,66.17,72.86,61.05,72.86,54.73 L72.86,54.73z M36.34,0.1L36.34,0.1L36.34,0.1L36.34,0.1z M90.27,38.02c-0.93,3.23-2.08,6.56-3.38,9.89c-1.03-2-2.1-4.01-3.28-6.01 c-1.15-2-2.38-3.96-3.61-5.86C83.56,36.57,86.99,37.22,90.27,38.02L90.27,38.02z M78.8,64.7c-1.95,3.38-3.96,6.59-6.04,9.57 c-3.73,0.33-7.51,0.5-11.32,0.5c-3.78,0-7.56-0.18-11.27-0.48c-2.08-2.98-4.11-6.16-6.06-9.52c-1.9-3.28-3.63-6.61-5.21-9.97 c1.55-3.36,3.31-6.71,5.18-9.99c1.95-3.38,3.96-6.59,6.04-9.57c3.73-0.33,7.51-0.5,11.32-0.5c3.78,0,7.56,0.18,11.27,0.48 c2.08,2.98,4.11,6.16,6.06,9.52c1.9,3.28,3.63,6.61,5.21,9.97C82.4,58.06,80.68,61.41,78.8,64.7L78.8,64.7z M86.89,61.44 c1.35,3.36,2.5,6.71,3.46,9.97c-3.28,0.8-6.74,1.48-10.32,2c1.23-1.93,2.45-3.91,3.61-5.94C84.78,65.47,85.86,63.44,86.89,61.44 L86.89,61.44z M61.49,88.16c-2.33-2.4-4.66-5.08-6.96-8.01c2.25,0.1,4.56,0.18,6.89,0.18c2.35,0,4.68-0.05,6.96-0.18 C66.12,83.08,63.79,85.76,61.49,88.16L61.49,88.16z M42.86,73.41c-3.56-0.53-6.99-1.18-10.27-1.98c0.93-3.23,2.08-6.56,3.38-9.89 c1.03,2,2.1,4.01,3.28,6.01C40.43,69.56,41.63,71.51,42.86,73.41L42.86,73.41z M61.36,21.29c2.33,2.4,4.66,5.08,6.96,8.01 c-2.25-0.1-4.56-0.18-6.89-0.18c-2.35,0-4.68,0.05-6.96,0.18C56.73,26.37,59.06,23.69,61.36,21.29L61.36,21.29z M42.83,36.04 c-1.23,1.93-2.45,3.91-3.61,5.94c-1.15,2-2.23,4.01-3.26,6.01c-1.35-3.36-2.5-6.71-3.46-9.97C35.79,37.24,39.25,36.57,42.83,36.04 L42.83,36.04z M20.16,67.4c-8.87-3.78-14.6-8.74-14.6-12.67c0-3.93,5.74-8.92,14.6-12.67c2.15-0.93,4.51-1.75,6.94-2.53 c1.43,4.91,3.31,10.02,5.64,15.25c-2.3,5.21-4.16,10.29-5.56,15.18C24.7,69.18,22.34,68.33,20.16,67.4L20.16,67.4z M33.64,103.19 c-3.41-1.95-4.88-9.39-3.73-18.96c0.28-2.35,0.73-4.83,1.28-7.36c4.91,1.2,10.27,2.13,15.9,2.73c3.38,4.63,6.89,8.84,10.42,12.52 c-8.17,7.59-15.83,11.75-21.04,11.75C35.34,103.84,34.39,103.62,33.64,103.19L33.64,103.19z M93.05,84.11 c1.18,9.57-0.28,17.01-3.66,18.99c-0.75,0.45-1.73,0.65-2.88,0.65c-5.18,0-12.87-4.13-21.04-11.67c3.51-3.68,7.01-7.86,10.34-12.5 c5.66-0.6,11.02-1.53,15.93-2.76C92.32,79.35,92.77,81.78,93.05,84.11L93.05,84.11z M102.69,67.4c-2.15,0.93-4.51,1.75-6.94,2.53 c-1.43-4.91-3.31-10.02-5.64-15.25c2.3-5.21,4.16-10.29,5.56-15.18c2.48,0.78,4.83,1.63,7.04,2.55c8.87,3.78,14.6,8.74,14.6,12.67 C117.29,58.66,111.56,63.64,102.69,67.4L102.69,67.4z"/></g></svg>
                     </div>
                     <span class="skill-text">React</span>
                 </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
-                        <i class="devicon-photoshop-plain skill-icon"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511.76 498.97"><defs><style>.a{fill:#001e36;}.b{fill:#31a8ff;}</style></defs><title>adobe-photoshop</title><rect class="a" width="511.76" height="498.97" rx="90.62"/><path class="b" d="M115.24,349.91V130.53c0-1.59.68-2.4,2.06-2.4,3.65,0,7,0,12-.17s10.47-.23,16.31-.34l18.54-.35q9.78-.17,19.39-.17,26.09,0,44,6.52a76.4,76.4,0,0,1,28.66,17.51,67.06,67.06,0,0,1,15.62,24.21A80.31,80.31,0,0,1,276.61,203q0,27.48-12.7,45.32a71.82,71.82,0,0,1-34.33,25.92c-14.42,5.38-30.45,7.2-48.07,7.2-5,0-8.58-.05-10.64-.17s-5.15-.17-9.27-.17v68.49a2.72,2.72,0,0,1-2.32,3.09,2.49,2.49,0,0,1-.77,0H117.64C116,352.65,115.24,351.74,115.24,349.91ZM161.6,169.33v71.55q4.46.35,8.24.34h11.33a80.56,80.56,0,0,0,24.55-3.92A37,37,0,0,0,223.23,226q6.69-7.89,6.69-22a34.74,34.74,0,0,0-5-18.88A32,32,0,0,0,210,172.93,63.68,63.68,0,0,0,185,168.64q-8.25,0-14.59.17t-8.76.52Z"/><path class="b" d="M409.35,227.87a80,80,0,0,0-20.43-7.21,108.28,108.28,0,0,0-23.86-2.75,44.38,44.38,0,0,0-12.87,1.55,11.55,11.55,0,0,0-6.7,4.29,10.79,10.79,0,0,0-1.71,5.84,9.08,9.08,0,0,0,2.06,5.49,23.25,23.25,0,0,0,7.21,5.66,141.8,141.8,0,0,0,15.1,7,150,150,0,0,1,32.79,15.62,50,50,0,0,1,16.82,17.68,47.17,47.17,0,0,1,5,22,49.41,49.41,0,0,1-8.24,28.33,54.23,54.23,0,0,1-23.86,19.05Q375,357.3,352,357.3a140.51,140.51,0,0,1-29-2.75,92.44,92.44,0,0,1-21.8-6.87,4.44,4.44,0,0,1-2.41-4.12V306.49a2,2,0,0,1,.86-1.89,1.66,1.66,0,0,1,1.89.17A91.62,91.62,0,0,0,328,315.24a108.66,108.66,0,0,0,25.07,3.26q12,0,17.68-3.09a9.7,9.7,0,0,0,5.66-8.92q0-4.47-5.15-8.59T350.3,288a126.06,126.06,0,0,1-30.38-15.45,52.42,52.42,0,0,1-16.14-18,47.35,47.35,0,0,1-5-21.8A49.21,49.21,0,0,1,306,206.93a52.37,52.37,0,0,1,22.32-19.57q15.1-7.55,37.76-7.55a167.13,167.13,0,0,1,26.44,1.88,69.58,69.58,0,0,1,18.4,5,3.13,3.13,0,0,1,2.06,1.89,9.31,9.31,0,0,1,.34,2.57v34.68a2.3,2.3,0,0,1-1,2.06A3.33,3.33,0,0,1,409.35,227.87Z"/></svg>
                     </div>
                     <span class="skill-text">Photoshop</span>
                 </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
-                        <i class="devicon-premierepro-plain skill-icon"></i>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.84 500.01"><defs><style>.a{fill:#00005b;}.b{fill:#99f;}</style></defs><title>adobe-premiere-pro</title><path class="a" d="M90.81,0H422a90.74,90.74,0,0,1,90.82,90.81V409.2A90.73,90.73,0,0,1,422,500H90.81A90.73,90.73,0,0,1,0,409.2V90.81A90.74,90.74,0,0,1,90.81,0Z"/><path class="b" d="M121.8,350.65V130.77c0-1.49.64-2.35,2.14-2.35,3.63,0,7.05,0,12-.21,5.13-.21,10.47-.21,16.24-.43s12-.21,18.59-.43,13-.21,19.45-.21c17.52,0,32,2.14,44,6.62a76.35,76.35,0,0,1,28.64,17.53,67.94,67.94,0,0,1,15.6,24.36,81.86,81.86,0,0,1,4.91,27.77q0,27.57-12.82,45.52A73.2,73.2,0,0,1,236.12,275c-14.53,5.34-30.56,7.26-48.08,7.26-5.13,0-8.55,0-10.68-.21s-5.13-.21-9.19-.21v68.59a2.66,2.66,0,0,1-2.35,3H124.36C122.65,353.43,121.8,352.57,121.8,350.65Zm46.58-181v71.8c3,.21,5.77.43,8.33.43H188A79.61,79.61,0,0,0,212.61,238a36.71,36.71,0,0,0,17.52-11.32c4.49-5.35,6.63-12.61,6.63-22a35.19,35.19,0,0,0-4.92-19,31,31,0,0,0-15-12.18,62.55,62.55,0,0,0-25.22-4.27c-5.55,0-10.47,0-14.53.21a49.8,49.8,0,0,0-8.76.21Z"/><path class="b" d="M313.26,182.06h37.39a4.8,4.8,0,0,1,4.49,3.42,21.39,21.39,0,0,1,1.28,5.34c.43,2.13.86,4.48,1.07,6.62.21,2.35.43,4.92.43,7.69a79.63,79.63,0,0,1,22.86-18.37,66.17,66.17,0,0,1,32.48-8.34,2.66,2.66,0,0,1,3,2.35V223.3c0,1.71-1.07,2.35-3.42,2.35a92.62,92.62,0,0,0-23.08,2.13,88.75,88.75,0,0,0-17.94,5.77,33.3,33.3,0,0,0-10.9,7.91v109c0,2.13-.86,3-2.78,3H316a3,3,0,0,1-3.41-2.57V231.63c0-5.13,0-10.47-.22-16s-.21-11.11-.43-16.66c0-4.92-.42-9.62-.85-14.53a2,2,0,0,1,1.5-2.35c0-.22.42-.22.64,0Z"/></svg>
                     </div>
                     <span class="skill-text">PremierePro</span>
                 </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
-                        <i class="devicon-canva-original skill-icon"></i>
+                        <svg viewBox="0 0 508 508" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><g transform="matrix(.26718 0 0 .26718 0 0)"><circle cx="950" cy="950" r="950" fill="#7d2ae7"/><circle cx="950" cy="950" r="950" fill="url(#prefix___Radial1)"/><circle cx="950" cy="950" r="950" fill="url(#prefix___Radial2)"/><circle cx="950" cy="950" r="950" fill="url(#prefix___Radial3)"/><circle cx="950" cy="950" r="950" fill="url(#prefix___Radial4)"/></g><path d="M446.744 276.845c-.665 0-1.271.43-1.584 1.33-4.011 11.446-9.43 18.254-13.891 18.254-2.563 0-3.6-2.856-3.6-7.336 0-11.21 6.71-34.982 10.095-45.82.392-1.312.646-2.485.646-3.483 0-3.15-1.722-4.696-5.987-4.696-4.598 0-9.547 1.8-14.36 10.233-1.663-7.435-6.691-10.683-13.715-10.683-8.12 0-15.965 5.224-22.421 13.696-6.456 8.471-14.048 11.25-19.76 9.88 4.108-10.057 5.634-17.57 5.634-23.145 0-8.746-4.324-14.028-11.308-14.028-10.624 0-16.747 10.134-16.747 20.797 0 8.237 3.736 16.708 11.954 20.817-6.887 15.573-16.943 29.66-20.758 29.66-4.93 0-6.379-24.123-6.105-41.38.176-9.9.998-10.408.998-13.401 0-1.722-1.115-2.896-5.595-2.896-10.448 0-13.676 8.844-14.165 18.998a50.052 50.052 0 01-1.8 11.406c-4.363 15.573-13.363 27.39-19.232 27.39-2.72 0-3.463-2.72-3.463-6.28 0-11.21 6.28-25.219 6.28-37.173 0-8.784-3.854-14.34-11.112-14.34-8.55 0-19.858 10.173-30.56 29.229 3.521-14.595 4.97-28.721-5.459-28.721a14.115 14.115 0 00-6.476 1.683 3.689 3.689 0 00-2.113 3.56c.998 15.535-12.521 55.329-25.336 55.329-2.328 0-3.463-2.524-3.463-6.593 0-11.23 6.691-34.943 10.056-45.801.43-1.409.666-2.622.666-3.678 0-2.974-1.84-4.5-6.007-4.5-4.578 0-9.547 1.741-14.34 10.174-1.683-7.435-6.711-10.683-13.735-10.683-11.523 0-24.397 12.19-30.051 28.076-7.572 21.208-22.832 41.692-43.375 41.692-18.645 0-28.486-15.515-28.486-40.03 0-35.392 25.982-64.308 45.253-64.308 9.215 0 13.617 5.869 13.617 14.869 0 10.897-6.085 15.964-6.085 20.112 0 1.272 1.057 2.524 3.15 2.524 8.374 0 18.234-9.841 18.234-23.262 0-13.422-10.897-23.243-30.168-23.243-31.851 0-63.898 32.047-63.898 73.113 0 32.673 16.121 52.374 44 52.374 19.017 0 35.628-14.79 44.588-32.047 1.018 14.302 7.513 21.776 17.413 21.776 8.804 0 15.925-5.243 21.364-14.458 2.094 9.645 7.65 14.36 14.87 14.36 8.275 0 15.201-5.243 21.794-14.986-.097 7.65 1.644 14.85 8.276 14.85 3.13 0 6.867-.725 7.533-3.464 6.984-28.877 24.24-52.453 29.523-52.453 1.565 0 1.995 1.507 1.995 3.287 0 7.846-5.537 23.928-5.537 34.2 0 11.092 4.716 18.43 14.459 18.43 10.8 0 21.775-13.227 29.092-32.556 2.29 18.058 7.24 32.633 14.987 32.633 9.508 0 26.392-20.014 36.625-41.203 4.01.509 10.036.372 15.827-3.717-2.465 6.241-3.912 13.07-3.912 19.897 0 19.663 9.39 25.18 17.47 25.18 8.785 0 15.907-5.243 21.365-14.458 1.8 8.315 6.398 14.34 14.85 14.34 13.225 0 24.71-13.519 24.71-24.612 0-2.934-1.252-4.715-2.72-4.715zm-274.51 18.547c-5.342 0-7.435-5.38-7.435-13.401 0-13.93 9.528-37.193 19.604-37.193 4.402 0 6.065 5.185 6.065 11.524 0 14.145-9.059 39.07-18.235 39.07zm182.948-41.574c-3.189-3.796-4.343-8.961-4.343-13.559 0-5.673 2.074-10.467 4.558-10.467 2.485 0 3.248 2.446 3.248 5.85 0 5.693-2.035 14.008-3.463 18.176zm41.418 41.574c-5.34 0-7.434-6.182-7.434-13.401 0-13.441 9.528-37.193 19.682-37.193 4.402 0 5.967 5.146 5.967 11.524 0 14.145-8.902 39.07-18.215 39.07z" fill="#fff" fill-rule="nonzero"/><defs><radialGradient id="prefix___Radial1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="scale(1469.491) rotate(-49.416 1.37 .302)"><stop offset="0" stop-color="#6420ff"/><stop offset="1" stop-color="#6420ff" stop-opacity="0"/></radialGradient><radialGradient id="prefix___Radial2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="rotate(54.703 42.717 594.194) scale(1657.122)"><stop offset="0" stop-color="#00c4cc"/><stop offset="1" stop-color="#00c4cc" stop-opacity="0"/></radialGradient><radialGradient id="prefix___Radial3" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1023 -1030 473.711 470.491 367 1684)"><stop offset="0" stop-color="#6420ff"/><stop offset="1" stop-color="#6420ff" stop-opacity="0"/></radialGradient><radialGradient id="prefix___Radial4" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(595.999 1372 -2298.41 998.431 777 256)"><stop offset="0" stop-color="#00c4cc" stop-opacity=".73"/><stop offset="0" stop-color="#00c4cc"/><stop offset="1" stop-color="#00c4cc" stop-opacity="0"/></radialGradient></defs></svg>
                     </div>
                     <span class="skill-text">Canva</span>
                 </div>
@@ -680,14 +764,14 @@
         <!-- Contact Section -->
         <section id="contact">
             <div class="container-contact">
-                <h2 class="title-contact animate-on-scroll" data-animation="animate__backInUp">Contact Me</h2>
+                <h2 class="title-contact animate-on-scroll" data-animation="animate__backInUp" data-translate="title-contact">Contact Me</h2>
                 <div class="content-contact animate-on-scroll"  data-animation="animate__backInUp">
                     <div class="contact-info">
                         <button class="social-btn" onclick="window.open('https://wa.me/6281805003532', '_blank')">
                             <i class="fab fa-whatsapp"></i>
                         </button>
                         <div class="contact-text">
-                            <div class="head-contact">Phone/Whatsapp</div>
+                            <div class="head-contact" data-translate="head-contact-phone">Phone/Whatsapp</div>
                             <div class="subhead-contact">
                                 <a href="https://wa.me/6281805003532" target="_blank" style="text-decoration: none; color: inherit;">+6281805003532</a>
                             </div>
@@ -698,7 +782,7 @@
                             <i class="fa-regular fa-envelope"></i>
                         </button>
                         <div class="contact-text">
-                            <div class="head-contact">Email</div>
+                            <div class="head-contact" data-translate="head-contact-email">Email</div>
                             <div class="subhead-contact">
                                 <a href="mailto:gpascalbeye@gmail.com" style="text-decoration: none; color: inherit;">gpascalbeye@gmail.com</a>
                             </div>
@@ -719,14 +803,14 @@
                         <div class="footer-menu">
                             <nav>
                             <ul>
-                                <li><a href="#about">About Me</a></li>
-                                <li><a href="#projects">Projects</a></li>
-                                <li><a href="#exp-edu">Experience & Education</a></li>
-                                <li><a href="#skills">Skills & Contact</a></li>
+                                <li><a href="#about" data-translate="navlink-about">About Me</a></li>
+                                <li><a href="#projects" data-translate="navlink-projects">Projects</a></li>
+                                <li><a href="#exp-edu" data-translate="navlink-exp&edu">Experience & Education</a></li>
+                                <li><a href="#skills" data-translate="navlink-skills&contact">Skills & Contact</a></li>
                             </ul>
                             </nav>
                         </div>
-                        <div class="footer-text">&copy; 2024 All rights reserved. Created and designed by <a class="footer-text" href="mailto:gpascalbeye@gmail.com"style="text-decoration: none;">Gevanno Yoh</a></div>
+                        <div class="footer-text" data-translate="copyright-text">&copy; 2024 All rights reserved. Created and designed by <a class="footer-text" href="mailto:gpascalbeye@gmail.com"style="text-decoration: none;">Gevanno Yoh</a></div>
                     </div>
                 </div>
             </div>
@@ -742,6 +826,7 @@
     <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
     <!-- Custom JS -->
     <script src="js/scripts.js"></script>
+    <script src="js/language.js"></script>
 
     <script>
         // Download button
