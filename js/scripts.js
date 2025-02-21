@@ -125,6 +125,11 @@ function redirectToProject(url) {
     window.location.href = url;
 }
 
+// download app
+function redirectToDownloadApp(url) {
+    window.location.href = url;
+}
+
 //nav-link hover
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('mouseenter', () => {

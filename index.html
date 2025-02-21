@@ -179,31 +179,51 @@
                                 ></path>
                                 </svg>
                             </a>
-                            <div class="tooltip">GitHub gevanno654</div>
+                            <div class="tooltip">GitHub</div>
                         </li>
                         <li class="icon-content">
-                            <a href="https://www.instagram.com/gevanno.p_14/" aria-label="Instagram" data-social="instagram">
+                            <a href="https://www.linkedin.com/in/gevannoyoh/" aria-label="LinkedIn" data-social="linkedin">
                                 <div class="filled"></div>
                                 <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="16"
-                                height="16"
-                                fill="currentColor"
-                                class="bi bi-instagram"
-                                viewBox="0 0 16 16"
-                                xml:space="preserve"
-                                >
-                                <path
-                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
                                     fill="currentColor"
-                                ></path>
+                                    class="bi bi-linkedin"
+                                    viewBox="0 0 16 16"
+                                    xml:space="preserve"
+                                >
+                                    <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                                    fill="currentColor"
+                                    ></path>
                                 </svg>
                             </a>
-                            <div class="tooltip">Instagram gevanno.p_14</div>
+                            <div class="tooltip">LinkedIn</div>
                         </li>
-                        <button class="download-btn" onclick="downloadCV()">
-                            <span class="download-btn-content" data-translate="download-btn">Download My CV</span>
+                        <button class="download-btn" data-bs-toggle="modal" data-bs-target="#cvModal">
+                            <span class="download-btn-content" data-translate="view-btn-cv">View My CV</span>
                         </button>
+
+                        <!-- Modal untuk CV-->
+                        <div class="modal fade" id="cvModal" tabindex="-1" aria-labelledby="cvModalLabel" aria-hidden="true">
+                            <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content modal-content-cv">
+                                    <div class="modal-header modal-header-cv">
+                                        <div class="modal-title" id="cvModalLabel" data-translate="title-modal-cv">Let's view my CV</div>
+                                    </div>
+                                    <div class="modal-body modal-body-cv">
+                                        <button class="preview-btn preview-btn-cv" onclick="viewCV('document/CV - Gevanno Yoh - English.pdf')">
+                                            <span class="preview-btn-content" data-translate="download-btn-en">My CV in English</span>
+                                        </button>
+                                        <button class="preview-btn preview-btn-cv" onclick="viewCV('document/CV - Gevanno Yoh - Indonesia.pdf')">
+                                            <span class="preview-btn-content" data-translate="download-btn-id">My CV in Bahasa</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -213,7 +233,7 @@
         <section id="about">
             <div class="container-about">
                 <h2 class="title-about animate-on-scroll" data-animation="animate__zoomIn" data-translate="title-about">About Me</h2>
-                <p class="desc-about animate-on-scroll" data-animation="animate__fadeInUp" data-translate="desc-about">I am an Informatics student at Universitas Pembangunan Nasional Veteran Jawa Timur<br class="hide-me"> with experience in creating and developing websites.<br class="hide-me-on-large-devices"> I have knowledge of HTML, CSS, JavaScript, PHP, and Java.<br class="hide-me"> Apart from that, I am able to create poster designs and social media posts<br class="hide-me"> using Adobe Photoshop and Canva.<br class="hide-me"> Blend the art of design with programming skills to enhance the user experience.<br class="hide-me"> I am very interested in a Front End position or Web Developments.</p>
+                <p class="desc-about animate-on-scroll" data-animation="animate__fadeInUp" data-translate="desc-about">I am an Informatics student at Universitas Pembangunan Nasional Veteran Jawa Timur<br class="hide-me"> with experience in designing and developing websites and mobile applications.<br class="hide-me-on-large-devices"> I have used HTML, CSS, JavaScript, PHP, Java, Kotlin, and Dart.<br class="hide-me"> I am very interested in a Full Stack Web Development and Mobile Apps Development.</p>
             </div>
         </section>
 
@@ -238,20 +258,34 @@
                                 <div class="title-image-projects" data-bs-toggle="modal" data-bs-target="#modal-pro2">Read More</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="container-right-projects">
-                        <div class="image-container animate-on-scroll" data-animation="animate__fadeInRight">
-                            <img class="hover-image" id="desktop-mode" src="image/webp/DSS.webp" data-bs-toggle="modal" data-bs-target="#modal-pro3" data-translate-title="project3-title" data-translate-subtitle="project3-subtitle">
+                        <div class="image-container animate-on-scroll" data-animation="animate__fadeInLeft">
+                            <img class="hover-image" id="desktop-mode" src="image/webp/Preview-Aplikasi.webp" data-bs-toggle="modal" data-bs-target="#modal-pro3" data-translate-title="project3-title" data-translate-subtitle="project3-subtitle">
                             <div class="image-projects-responsive">
-                                <img class="hover-image" src="image/webp/DSS.webp" data-bs-toggle="modal" data-bs-target="#modal-pro3" data-translate-title="project3-title" data-translate-subtitle="project3-subtitle">
+                                <img class="hover-image" src="image/webp/Preview-Aplikasi.webp" data-bs-toggle="modal" data-bs-target="#modal-pro3" data-translate-title="project3-title" data-translate-subtitle="project3-subtitle">
                                 <div class="title-image-projects" data-bs-toggle="modal" data-bs-target="#modal-pro3">Read More</div>
                             </div>
                         </div>
+                    </div>
+                    <div class="container-right-projects">
                         <div class="image-container animate-on-scroll" data-animation="animate__fadeInRight">
-                            <img class="hover-image" id="desktop-mode" src="image/webp/OBS-panel-1.webp" data-bs-toggle="modal" data-bs-target="#modal-pro4" data-translate-title="project4-title" data-translate-subtitle="project4-subtitle">
+                            <img class="hover-image" id="desktop-mode" src="image/webp/DSS.webp" data-bs-toggle="modal" data-bs-target="#modal-pro4" data-translate-title="project4-title" data-translate-subtitle="project4-subtitle">
                             <div class="image-projects-responsive">
-                                <img class="hover-image" src="image/webp/OBS-panel-1.webp" data-bs-toggle="modal" data-bs-target="#modal-pro4" data-translate-title="project4-title" data-translate-subtitle="project4-subtitle">
+                                <img class="hover-image" src="image/webp/DSS.webp" data-bs-toggle="modal" data-bs-target="#modal-pro4" data-translate-title="project4-title" data-translate-subtitle="project4-subtitle">
                                 <div class="title-image-projects" data-bs-toggle="modal" data-bs-target="#modal-pro4">Read More</div>
+                            </div>
+                        </div>
+                        <div class="image-container animate-on-scroll" data-animation="animate__fadeInRight">
+                            <img class="hover-image" id="desktop-mode" src="image/webp/OBS-panel-1.webp" data-bs-toggle="modal" data-bs-target="#modal-pro5" data-translate-title="project5-title" data-translate-subtitle="project5-subtitle">
+                            <div class="image-projects-responsive">
+                                <img class="hover-image" src="image/webp/OBS-panel-1.webp" data-bs-toggle="modal" data-bs-target="#modal-pro5" data-translate-title="project5-title" data-translate-subtitle="project5-subtitle">
+                                <div class="title-image-projects" data-bs-toggle="modal" data-bs-target="#modal-pro5">Read More</div>
+                            </div>
+                        </div>
+                        <div class="image-container animate-on-scroll" data-animation="animate__fadeInRight">
+                            <img class="hover-image" id="desktop-mode" src="image/webp/Maintenance.webp" data-bs-toggle="modal" data-bs-target="#modal-pro6" data-translate-title="project6-title" data-translate-subtitle="project6-subtitle">
+                            <div class="image-projects-responsive">
+                                <img class="hover-image" src="image/webp/Maintenance.webp" data-bs-toggle="modal" data-bs-target="#modal-pro6" data-translate-title="project6-title" data-translate-subtitle="project6-subtitle">
+                                <div class="title-image-projects" data-bs-toggle="modal" data-bs-target="#modal-pro6">Read More</div>
                             </div>
                         </div>
                     </div>
@@ -279,7 +313,7 @@
                         <div class="header-modal-pro">
                             <h5 class="title-modal-pro" data-translate="title-modal-pro1">University Database Website</h5>
                             <div class="time-modal-pro" data-translate="time-modal-pro1">14th - 21th December 2023</div>
-                            <div class="desc-modal-pro" data-translate="desc-modal-pro1">A project that implements Advanced Query SQL into a website feature<br>to make it easier for users to search for data.</div>
+                            <div class="desc-modal-pro" data-translate="desc-modal-pro1">A project that implements Advanced Query SQL into a website feature to make it easier for users to search for data.</div>
                         </div>
                         <div class="container-preview-btn">
                             <button class="preview-btn" onclick="redirectToProject('projects/university-database/index.php')">
@@ -308,7 +342,8 @@
                         <div class="myjob-modal-pro" data-translate="myjob-modal-pro1">• Built with HTML5, CSS3, JavaScript, Bootstrap, PHP, MySQL.<br>
                             • Designed database.<br>
                             • Connected database to the website by applying Advanced Query.<br>
-                            • Enhanced user experience by optimizing the display, site structure, and navigation.</div>
+                            • Enhanced user experience by optimizing the display, site structure, and navigation.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -326,7 +361,7 @@
                         <div class="header-modal-pro">
                             <h5 class="title-modal-pro" data-translate="title-modal-pro2">Restaurant Menu Website</h5>
                             <div class="time-modal-pro" data-translate="time-modal-pro2">23th May 2024 - 12th June 2024</div>
-                            <div class="desc-modal-pro" data-translate="desc-modal-pro2">A project that develops activities in ordering menus at a restaurant.<br>The goal is to make it easier for customers to order food & drinks.</div>
+                            <div class="desc-modal-pro" data-translate="desc-modal-pro2">A project that develops activities in ordering menus at a restaurant. The goal is to make it easier for customers to order food & drinks.</div>
                         </div>
                         <div class="container-preview-btn">
                             <button class="preview-btn" onclick="redirectToProject('projects/restaurant-app/index.php')">
@@ -362,7 +397,8 @@
                             • Imporved the thankyou.php page to automatically display the code based on the order type (dine in or take away).<br>
                             • Created admin page and order history page, including order detail modal.<br>
                             • Created live page on the admin page to view the order code without having to refresh the page. Live page using React.js<br>
-                            • Created notification automatically if there is a new order.</div>
+                            • Created notification automatically if there is a new order.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -375,12 +411,71 @@
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="image-modal-pro">
+                            <div class="thumbnail"><img src="image/webp/Preview-Aplikasi.webp" alt="Image Projects"></div>
+                        </div>
+                        <div class="header-modal-pro">
+                            <h5 class="title-modal-pro" data-translate="title-modal-pro3">Zynergy<br>(Healthcare API & Android App)</h5>
+                            <div class="time-modal-pro" data-translate="time-modal-pro3">18th November 2024 - 18th December 2024</div>
+                            <div class="desc-modal-pro" data-translate="desc-modal-pro3">An Android application project developed based on research conducted by the 2getHer group in response to the issue of Generation Z's unhealthy lifestyle patterns.
+                                This application aims to help support Generation Z in maintaining a healthy lifestyle by reminding users to stay on track, including reminders for meals, sleep, waking up, exercise/light activities, and health check-ups.
+                                It features personalization options that users can customize directly, along with recommended reminder schedules, special reminder schedules, meal recommendations, and article recommendations.
+                            </div>
+                        </div>
+                        <div class="container-preview-btn">
+                            <button class="preview-btn" onclick="redirectToDownloadApp('https://drive.google.com/file/d/1_6gvEDm90NkL61UcJcWjJXAy8aI8Gl6o/view?usp=sharing')">
+                                <span class="preview-btn-content" data-translate="download-app">Download Zynergy App</span>
+                            </button>
+                            <button class="preview-btn" onclick="redirectToProject('https://backoffice-zynergy.gevannoyoh.com/admin/login')">
+                                <span class="preview-btn-content" data-translate="live-preview-backoffice">Live Preview Backoffice</span>
+                            </button>
+                            <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/api-zynergy')">
+                                <span class="preview-btn-content" data-translate="code-api-preview">View API Codes</span>
+                            </button>
+                            <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/zynergy-v2')">
+                                <span class="preview-btn-content" data-translate="code-app-preview">View App Codes</span>
+                            </button>
+                            <button class="preview-btn" onclick="redirectToProject('https://github.com/KuroXSub/filament-zynergy')">
+                                <span class="preview-btn-content" data-translate="code-backoffice-preview">View Backoffice Codes</span>
+                            </button>
+                        </div>
+                        <div class="image-modal-pro owl-carousel-modal-pro owl-carousel owl-theme">
+                            <div class="item"><img src="image/webp/Onboarding.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Register.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Personalisasi.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Main-Page.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Fitur-Pengingat.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Fitur-Artikel.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Backoffice.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/API.webp" alt="Image Projects"></div>
+                        </div>
+                        <div class="subtitle-modal-pro" data-translate="subtitle-modal-pro3">What I did in this Project:</div>
+                        <div class="myjob-modal-pro" data-translate="myjob-modal-pro3">• Designing the flow of the application's main features.<br>
+                            • Designed the database structure using MySQL.<br>
+                            • Developed 3 reminder features on the API using Laravel 10.<br>
+                            • Deployment of Back-Office and API on hosting.<br>
+                            • Developed the appearance and all features (push notification, randomize food menu, randomize article recommendation, personalization, login & register, forgot password) of the application using Flutter.<br>
+                            • Connecting Google OAuth to the application with Google Cloud Console.<br>
+                            • Connecting the API with the application.<br>
+                            • Performing steps to release the application in Flutter.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals Project 4-->
+        <div class="modal fade" id="modal-pro4" tabindex="-1" aria-labelledby="modal-pro4-label" aria-hidden="true" data-lenis-prevent="">
+            <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
+            <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="image-modal-pro">
                             <div class="thumbnail"><img src="image/webp/DSS.webp" alt="Image Projects"></div>
                         </div>
                         <div class="header-modal-pro">
-                            <h5 class="title-modal-pro" data-translate="title-modal-pro3">Decision Support System<br>for Scholarship Desktop App</h5>
-                            <div class="time-modal-pro" data-translate="time-modal-pro3">23th May 2024 - 12th June 2024</div>
-                            <div class="desc-modal-pro" data-translate="desc-modal-pro3">A project that develops the calculation of the Simple Additive Weighting method<br>to assist a scholarship committee in determining the eligibility of students who get scholarships.</div>
+                            <h5 class="title-modal-pro" data-translate="title-modal-pro4">Decision Support System<br>for Scholarship Desktop App</h5>
+                            <div class="time-modal-pro" data-translate="time-modal-pro4">23th May 2024 - 12th June 2024</div>
+                            <div class="desc-modal-pro" data-translate="desc-modal-pro4">A project that develops the calculation of the Simple Additive Weighting method to assist a scholarship committee in determining the eligibility of students who get scholarships.</div>
                         </div>
                         <div class="container-preview-btn">
                             <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/DSS-Scholarship-Desktop-App')">
@@ -399,20 +494,21 @@
                             <div class="item"><img src="image/webp/DataPeringkat Page-DSS.webp" alt="Image Projects"></div>
                             <div class="item"><img src="image/webp/HomeMahasiswaLolos Page-DSS.webp" alt="Image Projects"></div>
                         </div>
-                        <div class="subtitle-modal-pro" data-translate="subtitle-modal-pro3">What I did in this Project:</div>
-                        <div class="myjob-modal-pro" data-translate="myjob-modal-pro3">• Created database design.<br>
+                        <div class="subtitle-modal-pro" data-translate="subtitle-modal-pro4">What I did in this Project:</div>
+                        <div class="myjob-modal-pro" data-translate="myjob-modal-pro4">• Created database design.<br>
                             • Created interface desktop app with menggunakan Java Swing.<br>
                             • Connected desktop app to database with Java JDBC Driver.<br>
                             • Created user authentication, database management, and data validation.<br>
                             • Created DSS calculation feature by applying SAW method calculation.<br>
-                            • Enhanced user experience by optimizing button function, display, structure, and navigation on the website page.</div>
+                            • Enhanced user experience by optimizing button function, display, structure, and navigation on the website page.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Modals Project 4-->
-        <div class="modal fade" id="modal-pro4" tabindex="-1" aria-labelledby="modal-pro4-label" aria-hidden="true" data-lenis-prevent="">
+        <!-- Modals Project 5-->
+        <div class="modal fade" id="modal-pro5" tabindex="-1" aria-labelledby="modal-pro5-label" aria-hidden="true" data-lenis-prevent="">
             <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
             <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
                 <div class="modal-content">
@@ -421,9 +517,9 @@
                             <div class="thumbnail"><img src="image/webp/OBS-panel-1.webp" alt="Image Projects"></div>
                         </div>
                         <div class="header-modal-pro">
-                            <h5 class="title-modal-pro" data-translate="title-modal-pro4">OBS Deckstream Panel</h5>
-                            <div class="time-modal-pro" data-translate="time-modal-pro4">1st July 2024 - To be Continued</div>
-                            <div class="desc-modal-pro" data-translate="desc-modal-pro4">A project that develops a websocket connection with a broadcasting application called OBS Studio. This project aims to make it easier for users to operate OBS Studio and can be run on multiple platforms (desktop and mobile).</div>
+                            <h5 class="title-modal-pro" data-translate="title-modal-pro5">OBS Deckstream Panel</h5>
+                            <div class="time-modal-pro" data-translate="time-modal-pro5">1st July 2024 - To be Continued</div>
+                            <div class="desc-modal-pro" data-translate="desc-modal-pro5">A project that develops a websocket connection with a broadcasting application called OBS Studio. This project aims to make it easier for users to operate OBS Studio and can be run on multiple platforms (desktop and mobile).</div>
                         </div>
                         <div class="container-preview-btn">
                             <button class="preview-btn" onclick="redirectToProject('https://github.com/gevanno654/OBS-deckstream-panel')">
@@ -435,13 +531,55 @@
                             <div class="item"><img src="image/webp/OBS-panel-2.webp" alt="Image Projects"></div>
                             <div class="item"><img src="image/webp/OBS-panel-3.webp" alt="Image Projects"></div>
                         </div>
-                        <div class="subtitle-modal-pro" data-translate="subtitle-modal-pro4">What I did in this Project:</div>
-                        <div class="myjob-modal-pro" data-translate="myjob-modal-pro4">• Created concepts for application functions.<br>
+                        <div class="subtitle-modal-pro" data-translate="subtitle-modal-pro5">What I did in this Project:</div>
+                        <div class="myjob-modal-pro" data-translate="myjob-modal-pro5">• Created concepts for application functions.<br>
                             • Created user interface and user experience.<br>
                             • Created a dynamic connection between the website, websocket, and OBS.<br>
                             • Created button functions on the website to run OBS Scenes and Sources.<br>
                             • Created shortcuts and shortcut settings for each function connected to OBS Scenes and Sources.<br>
-                            • Created Scenes, Sources, and Profile settings in OBS.</div>
+                            • Created Scenes, Sources, and Profile settings in OBS.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modals Project 6-->
+        <div class="modal fade" id="modal-pro6" tabindex="-1" aria-labelledby="modal-pro6-label" aria-hidden="true" data-lenis-prevent="">
+            <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
+            <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="image-modal-pro">
+                            <div class="thumbnail"><img src="image/webp/Maintenance.webp" alt="Image Projects"></div>
+                        </div>
+                        <div class="header-modal-pro">
+                            <h5 class="title-modal-pro" data-translate="title-modal-pro6">Book E-Commerce Website</h5>
+                            <div class="time-modal-pro" data-translate="time-modal-pro6">5th November 2024 - 10 th November 2024</div>
+                            <div class="desc-modal-pro" data-translate="desc-modal-pro6">A project that develops online book shopping activities.
+                                This project aims to provide a platform for users to order their favorite and necessary books online without the need for face-to-face interaction and have them delivered anywhere.
+                                This is made possible as the project integrates the MidTrans e-payment sandbox and the RajaOngkir API.
+                            </div>
+                        </div>
+                        <div class="container-preview-btn">
+                            <button class="preview-btn-disabled">
+                                <span class="preview-btn-content" data-translate="maintenance">Sorry, Under Maintenance</span>
+                            </button>
+                            <button class="preview-btn-disabled">
+                                <span class="preview-btn-content" data-translate="code-preview">View Codes</span>
+                            </button>
+                        </div>
+                        <div class="image-modal-pro owl-carousel-modal-pro owl-carousel owl-theme">
+                            <div class="item"><img src="image/webp/Maintenance.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Maintenance.webp" alt="Image Projects"></div>
+                            <div class="item"><img src="image/webp/Maintenance.webp" alt="Image Projects"></div>
+                        </div>
+                        <div class="subtitle-modal-pro" data-translate="subtitle-modal-pro6">What I did in this Project:</div>
+                        <div class="myjob-modal-pro" data-translate="myjob-modal-pro6">• Designing a database structure using MySQL.<br>
+                            • Developing the website using Laravel 10.<br>
+                            • Connecting RajaOngkir API with the website.<br>
+                            • Developing the appearance and all sales features (check-out, automatic stock delete, e-payment sandbox, admin dashboard) on the website using Laravel 10.<br>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -452,6 +590,20 @@
             <div class="container-exp-edu">
                 <div class="container-experience">
                     <h2 class="title-experience animate-on-scroll" data-animation="animate__zoomIn" data-translate="title-experience">My Experience</h2>
+                    <div class="card-exp animate-on-scroll" data-animation="animate__fadeInLeft" data-bs-toggle="modal" data-bs-target="#modal-exp5">
+                        <div class="card-exp-content">
+                            <h4 class="title-card-exp" data-translate="title-card-exp5">September-December 2024</h4>
+                            <h3 class="job-card-exp" data-translate="job-card-exp5">Full Stack Developer MSIB 7</h3>
+                            <p class="name-card-exp" data-translate="name-card-exp5">PT Rakamin Kolektif Madani</p>
+                        </div>
+                    </div>
+                    <div class="card-exp animate-on-scroll" data-animation="animate__fadeInLeft" data-bs-toggle="modal" data-bs-target="#modal-exp6">
+                        <div class="card-exp-content">
+                            <h4 class="title-card-exp" data-translate="title-card-exp6">16th October 2024-17th January 2025</h4>
+                            <h3 class="job-card-exp" data-translate="job-card-exp6">UI/UX Designer Intern</h3>
+                            <p class="name-card-exp" data-translate="name-card-exp6">CV DB Klik</p>
+                        </div>
+                    </div>
                     <div class="card-exp animate-on-scroll" data-animation="animate__fadeInLeft" data-bs-toggle="modal" data-bs-target="#modal-exp1">
                         <div class="card-exp-content">
                             <h4 class="title-card-exp" data-translate="title-card-exp1">2020-2021</h4>
@@ -608,6 +760,57 @@
             </div>
         </div>
 
+        <div class="modal fade" id="modal-exp5" tabindex="-1" aria-labelledby="modal-exp5-label" aria-hidden="true" data-lenis-prevent="">
+            <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
+            <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="image-modal-exp">
+                            <img src="image/webp/Sertifikat-Rakamin.webp" alt="Certificate">
+                        </div>
+                        <div class="header-modal-exp">
+                            <h5 class="title-modal-exp" data-translate="title-modal-exp5">PT Rakamin Kolektif Madani</h5>
+                            <div class="time-modal-exp" data-translate="time-modal-exp5">September-December 2024</div>
+                        </div>
+                        <div class="role-modal-exp" data-translate="role-modal-exp5">Full Stack Developer MSIB 7</div>
+                        <div class="desc-modal-exp" data-translate="desc-modal-exp5">My jobdesc during my tenure:<br>
+                            • Design and develop APIs using Laravel 10.<br>
+                            • Design and develop android applications using Kotlin and Flutter.<br>
+                            • Design and develop e-commerce website using Laravel 11 and Filament 3.<br>
+                            • Deployment of Zynergy Back-Office and Zynergy API to hosting.<br>
+                            • Learned about Project Management, UI/UX Design, User Research, Bootstrap, TailwindCSS, PHP Native, Machine Learning, IT Security, Cloud Computing, and Business Architecture.<br>
+                            • Completed the study and was awarded The Most Outstanding Student and Best Student for Final Project.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-exp6" tabindex="-1" aria-labelledby="modal-exp6-label" aria-hidden="true" data-lenis-prevent="">
+            <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
+            <div class="modal-dialog modal-xl modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="image-modal-exp">
+                            <img src="image/webp/Sertifikat-DBKlik.webp" alt="Certificate">
+                        </div>
+                        <div class="header-modal-exp">
+                            <h5 class="title-modal-exp" data-translate="title-modal-exp6">CV DB Klik</h5>
+                            <div class="time-modal-exp" data-translate="time-modal-exp6">16th October 2024-17th January 2025</div>
+                        </div>
+                        <div class="role-modal-exp" data-translate="role-modal-exp5">UI/UX Designer Intern</div>
+                        <div class="desc-modal-exp" data-translate="desc-modal-exp5">My jobdesc during my tenure:<br>
+                            • Designing and designing a job search website called DB Job using Figma within 2 months.<br>
+                            • Designing and designing DB Klik chatbot website using Figma within 2 months.<br>
+                            • Making design improvements to several parts of the DB Klik Article website using Figma within 1 week.<br>
+                            • Designing and designing HRIS application for PT Gading Puri Perkasa using Figma within 2 weeks.<br>
+                            • Design DB Klik omnichannel website using Figma
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Modal Education -->
         <div class="modal fade" id="modal-edu2" tabindex="-1" aria-labelledby="modal-edu2-label" aria-hidden="true" data-lenis-prevent="">
             <div type="button" class="close-button" data-bs-dismiss="modal">×</div>
@@ -633,7 +836,7 @@
                 <div class="modal-content">
                     <div class="modal-body">
                         <div class="image-modal-exp">
-                            <img src="image/webp/Transkrip-Nilai.webp" alt="Certificate">
+                            <img src="image/webp/Transkrip-5.webp" alt="Certificate">
                         </div>
                         <div class="header-modal-exp">
                             <h5 class="title-modal-exp" data-translate="title-modal-edu3">Informatics</h5>
@@ -679,11 +882,25 @@
                 </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
+                        <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 109.43" style="enable-background:new 0 0 122.88 109.43" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#00D8FF;}</style><g><path class="st0" d="M122.88,54.73c0-8.14-10.19-15.85-25.82-20.64c3.61-15.93,2-28.6-5.06-32.66c-1.63-0.95-3.53-1.4-5.61-1.4 v5.59c1.15,0,2.08,0.23,2.86,0.65c3.41,1.95,4.88,9.39,3.73,18.96c-0.28,2.35-0.73,4.83-1.28,7.36c-4.91-1.2-10.27-2.13-15.9-2.73 c-3.38-4.63-6.89-8.84-10.42-12.52C73.54,9.74,81.2,5.59,86.41,5.59V0l0,0c-6.89,0-15.9,4.91-25.02,13.43 C52.27,4.96,43.26,0.1,36.37,0.1v5.59c5.18,0,12.87,4.13,21.04,11.67c-3.51,3.68-7.01,7.86-10.34,12.5 c-5.66,0.6-11.02,1.53-15.93,2.75c-0.58-2.5-1-4.93-1.3-7.26c-1.18-9.57,0.28-17.01,3.66-18.99c0.75-0.45,1.73-0.65,2.88-0.65V0.13 l0,0c-2.1,0-4.01,0.45-5.66,1.4c-7.04,4.06-8.62,16.71-4.98,32.59C10.14,38.92,0,46.61,0,54.73c0,8.14,10.19,15.85,25.82,20.64 c-3.61,15.93-2,28.6,5.06,32.66c1.63,0.95,3.53,1.4,5.64,1.4c6.89,0,15.9-4.91,25.02-13.43c9.12,8.47,18.13,13.33,25.02,13.33 c2.1,0,4.01-0.45,5.66-1.4c7.04-4.06,8.62-16.71,4.98-32.59C112.74,70.56,122.88,62.84,122.88,54.73L122.88,54.73z M72.86,54.73 c0-6.32-5.12-11.45-11.45-11.45c-6.32,0-11.45,5.12-11.45,11.45s5.12,11.45,11.45,11.45C67.74,66.17,72.86,61.05,72.86,54.73 L72.86,54.73z M36.34,0.1L36.34,0.1L36.34,0.1L36.34,0.1z M90.27,38.02c-0.93,3.23-2.08,6.56-3.38,9.89c-1.03-2-2.1-4.01-3.28-6.01 c-1.15-2-2.38-3.96-3.61-5.86C83.56,36.57,86.99,37.22,90.27,38.02L90.27,38.02z M78.8,64.7c-1.95,3.38-3.96,6.59-6.04,9.57 c-3.73,0.33-7.51,0.5-11.32,0.5c-3.78,0-7.56-0.18-11.27-0.48c-2.08-2.98-4.11-6.16-6.06-9.52c-1.9-3.28-3.63-6.61-5.21-9.97 c1.55-3.36,3.31-6.71,5.18-9.99c1.95-3.38,3.96-6.59,6.04-9.57c3.73-0.33,7.51-0.5,11.32-0.5c3.78,0,7.56,0.18,11.27,0.48 c2.08,2.98,4.11,6.16,6.06,9.52c1.9,3.28,3.63,6.61,5.21,9.97C82.4,58.06,80.68,61.41,78.8,64.7L78.8,64.7z M86.89,61.44 c1.35,3.36,2.5,6.71,3.46,9.97c-3.28,0.8-6.74,1.48-10.32,2c1.23-1.93,2.45-3.91,3.61-5.94C84.78,65.47,85.86,63.44,86.89,61.44 L86.89,61.44z M61.49,88.16c-2.33-2.4-4.66-5.08-6.96-8.01c2.25,0.1,4.56,0.18,6.89,0.18c2.35,0,4.68-0.05,6.96-0.18 C66.12,83.08,63.79,85.76,61.49,88.16L61.49,88.16z M42.86,73.41c-3.56-0.53-6.99-1.18-10.27-1.98c0.93-3.23,2.08-6.56,3.38-9.89 c1.03,2,2.1,4.01,3.28,6.01C40.43,69.56,41.63,71.51,42.86,73.41L42.86,73.41z M61.36,21.29c2.33,2.4,4.66,5.08,6.96,8.01 c-2.25-0.1-4.56-0.18-6.89-0.18c-2.35,0-4.68,0.05-6.96,0.18C56.73,26.37,59.06,23.69,61.36,21.29L61.36,21.29z M42.83,36.04 c-1.23,1.93-2.45,3.91-3.61,5.94c-1.15,2-2.23,4.01-3.26,6.01c-1.35-3.36-2.5-6.71-3.46-9.97C35.79,37.24,39.25,36.57,42.83,36.04 L42.83,36.04z M20.16,67.4c-8.87-3.78-14.6-8.74-14.6-12.67c0-3.93,5.74-8.92,14.6-12.67c2.15-0.93,4.51-1.75,6.94-2.53 c1.43,4.91,3.31,10.02,5.64,15.25c-2.3,5.21-4.16,10.29-5.56,15.18C24.7,69.18,22.34,68.33,20.16,67.4L20.16,67.4z M33.64,103.19 c-3.41-1.95-4.88-9.39-3.73-18.96c0.28-2.35,0.73-4.83,1.28-7.36c4.91,1.2,10.27,2.13,15.9,2.73c3.38,4.63,6.89,8.84,10.42,12.52 c-8.17,7.59-15.83,11.75-21.04,11.75C35.34,103.84,34.39,103.62,33.64,103.19L33.64,103.19z M93.05,84.11 c1.18,9.57-0.28,17.01-3.66,18.99c-0.75,0.45-1.73,0.65-2.88,0.65c-5.18,0-12.87-4.13-21.04-11.67c3.51-3.68,7.01-7.86,10.34-12.5 c5.66-0.6,11.02-1.53,15.93-2.76C92.32,79.35,92.77,81.78,93.05,84.11L93.05,84.11z M102.69,67.4c-2.15,0.93-4.51,1.75-6.94,2.53 c-1.43-4.91-3.31-10.02-5.64-15.25c2.3-5.21,4.16-10.29,5.56-15.18c2.48,0.78,4.83,1.63,7.04,2.55c8.87,3.78,14.6,8.74,14.6,12.67 C117.29,58.66,111.56,63.64,102.69,67.4L102.69,67.4z"/></g></svg>
+                    </div>
+                    <span class="skill-text">React</span>
+                </div>
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
                         <svg viewBox="0 0 128 128">
                             <path fill="url(#a)" d="M0 64c0 18.593 28.654 33.667 64 33.667 35.346 0 64-15.074 64-33.667 0-18.593-28.655-33.667-64-33.667C28.654 30.333 0 45.407 0 64Z"></path><path fill="#777bb3" d="M64 95.167c33.965 0 61.5-13.955 61.5-31.167 0-17.214-27.535-31.167-61.5-31.167S2.5 46.786 2.5 64c0 17.212 27.535 31.167 61.5 31.167Z"></path><path d="M34.772 67.864c2.793 0 4.877-.515 6.196-1.53 1.306-1.006 2.207-2.747 2.68-5.175.44-2.27.272-3.854-.5-4.71-.788-.874-2.493-1.317-5.067-1.317h-4.464l-2.473 12.732zM20.173 83.547a.694.694 0 0 1-.68-.828l6.557-33.738a.695.695 0 0 1 .68-.561h14.134c4.442 0 7.748 1.206 9.827 3.585 2.088 2.39 2.734 5.734 1.917 9.935-.333 1.711-.905 3.3-1.7 4.724a15.818 15.818 0 0 1-3.128 3.92c-1.531 1.432-3.264 2.472-5.147 3.083-1.852.604-4.232.91-7.07.91h-5.724l-1.634 8.408a.695.695 0 0 1-.682.562z"></path><path fill="#fff" d="M34.19 55.826h3.891c3.107 0 4.186.682 4.553 1.089.607.674.723 2.097.331 4.112-.439 2.257-1.253 3.858-2.42 4.756-1.194.92-3.138 1.386-5.773 1.386h-2.786l2.205-11.342zm6.674-8.1H26.731a1.39 1.39 0 0 0-1.364 1.123L18.81 82.588a1.39 1.39 0 0 0 1.363 1.653h7.35a1.39 1.39 0 0 0 1.363-1.124l1.525-7.846h5.151c2.912 0 5.364-.318 7.287-.944 1.977-.642 3.796-1.731 5.406-3.237a16.522 16.522 0 0 0 3.259-4.087c.831-1.487 1.429-3.147 1.775-4.931.86-4.423.161-7.964-2.076-10.524-2.216-2.537-5.698-3.823-10.349-3.823zM30.301 68.557h4.471c2.963 0 5.17-.557 6.62-1.675 1.451-1.116 2.428-2.98 2.938-5.591.485-2.508.264-4.277-.665-5.308-.931-1.03-2.791-1.546-5.584-1.546h-5.036l-2.743 14.12m10.563-19.445c4.252 0 7.353 1.117 9.303 3.348 1.95 2.232 2.536 5.347 1.76 9.346-.322 1.648-.863 3.154-1.625 4.518-.764 1.366-1.76 2.614-2.991 3.747-1.468 1.373-3.097 2.352-4.892 2.935-1.794.584-4.08.875-6.857.875h-6.296l-1.743 8.97h-7.35l6.558-33.739h14.133"></path><path d="M69.459 74.577a.694.694 0 0 1-.682-.827l2.9-14.928c.277-1.42.209-2.438-.19-2.87-.245-.263-.979-.704-3.15-.704h-5.256l-3.646 18.768a.695.695 0 0 1-.683.56h-7.29a.695.695 0 0 1-.683-.826l6.558-33.739a.695.695 0 0 1 .682-.561h7.29a.695.695 0 0 1 .683.826L64.41 48.42h5.653c4.307 0 7.227.758 8.928 2.321 1.733 1.593 2.275 4.14 1.608 7.573l-3.051 15.702a.695.695 0 0 1-.682.56h-7.407z"></path><path fill="#fff" d="M65.31 38.755h-7.291a1.39 1.39 0 0 0-1.364 1.124l-6.557 33.738a1.39 1.39 0 0 0 1.363 1.654h7.291a1.39 1.39 0 0 0 1.364-1.124l3.537-18.205h4.682c2.168 0 2.624.463 2.641.484.132.14.305.795.019 2.264l-2.9 14.927a1.39 1.39 0 0 0 1.364 1.654h7.408a1.39 1.39 0 0 0 1.363-1.124l3.051-15.7c.715-3.686.103-6.45-1.82-8.217-1.836-1.686-4.91-2.505-9.398-2.505h-4.81l1.421-7.315a1.39 1.39 0 0 0-1.364-1.655zm0 1.39-1.743 8.968h6.496c4.087 0 6.907.714 8.457 2.14 1.553 1.426 2.017 3.735 1.398 6.93l-3.052 15.699h-7.407l2.901-14.928c.33-1.698.208-2.856-.365-3.474-.573-.617-1.793-.926-3.658-.926h-5.829l-3.756 19.327H51.46l6.558-33.739h7.292z"></path><path d="M92.136 67.864c2.793 0 4.878-.515 6.198-1.53 1.304-1.006 2.206-2.747 2.679-5.175.44-2.27.273-3.854-.5-4.71-.788-.874-2.493-1.317-5.067-1.317h-4.463l-2.475 12.732zM77.54 83.547a.694.694 0 0 1-.682-.828l6.557-33.738a.695.695 0 0 1 .682-.561H98.23c4.442 0 7.748 1.206 9.826 3.585 2.089 2.39 2.734 5.734 1.917 9.935a15.878 15.878 0 0 1-1.699 4.724 15.838 15.838 0 0 1-3.128 3.92c-1.53 1.432-3.265 2.472-5.147 3.083-1.852.604-4.232.91-7.071.91h-5.723l-1.633 8.408a.695.695 0 0 1-.683.562z"></path><path fill="#fff" d="M91.555 55.826h3.891c3.107 0 4.186.682 4.552 1.089.61.674.724 2.097.333 4.112-.44 2.257-1.254 3.858-2.421 4.756-1.195.92-3.139 1.386-5.773 1.386h-2.786l2.204-11.342zm6.674-8.1H84.096a1.39 1.39 0 0 0-1.363 1.123l-6.558 33.739a1.39 1.39 0 0 0 1.364 1.653h7.35a1.39 1.39 0 0 0 1.363-1.124l1.525-7.846h5.15c2.911 0 5.364-.318 7.286-.944 1.978-.642 3.797-1.731 5.408-3.238a16.52 16.52 0 0 0 3.258-4.086c.832-1.487 1.428-3.147 1.775-4.931.86-4.423.162-7.964-2.076-10.524-2.216-2.537-5.697-3.823-10.35-3.823zM87.666 68.557h4.47c2.964 0 5.17-.557 6.622-1.675 1.45-1.116 2.428-2.98 2.936-5.591.487-2.508.266-4.277-.665-5.308-.93-1.03-2.791-1.546-5.583-1.546h-5.035Zm10.563-19.445c4.251 0 7.354 1.117 9.303 3.348 1.95 2.232 2.537 5.347 1.759 9.346-.32 1.648-.862 3.154-1.624 4.518-.763 1.366-1.76 2.614-2.992 3.747-1.467 1.373-3.097 2.352-4.892 2.935-1.793.584-4.078.875-6.856.875h-6.295l-1.745 8.97h-7.35l6.558-33.739h14.133"></path><defs><radialGradient id="a" cx="0" cy="0" r="1" gradientTransform="matrix(84.04136 0 0 84.04136 38.426 42.169)" gradientUnits="userSpaceOnUse"><stop stop-color="#AEB2D5"></stop><stop offset=".3" stop-color="#AEB2D5"></stop><stop offset=".75" stop-color="#484C89"></stop><stop offset="1" stop-color="#484C89"></stop></radialGradient></defs>
                         </svg>
                     </div>
                     <span class="skill-text">PHP</span>
+                </div>
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">   
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#f0513f" d="M27.271.11c-.2.078-5.82 3.28-12.487 7.112-8.078 4.644-12.227 7.09-12.449 7.32-.19.225-.34.482-.438.76-.167.564-.179 82.985-.01 83.578.061.23.26.568.44.754.436.46 48.664 28.19 49.25 28.324.272.065.577.054.88-.03.658-.165 48.76-27.834 49.188-28.286.175-.195.375-.532.44-.761.084-.273.115-4.58.115-13.655v-13.26l11.726-6.735c11.056-6.357 11.733-6.755 12.017-7.191l.29-.47V43.287c0-15.548.03-14.673-.585-15.235-.165-.146-5.798-3.433-12.53-7.31L100.89 13.71h-1.359l-11.963 6.87c-6.586 3.788-12.184 7.027-12.457 7.203-.272.18-.597.512-.73.753l-.242.417-.054 13.455-.048 13.46-9.879 5.69c-5.434 3.124-9.957 5.71-10.053 5.734-.175.049-.187-1.232-.187-25.966V15.293l-.26-.447c-.326-.545 1.136.324-13.544-8.114C27.803-.348 28.098-.2 27.27.11zm11.317 10.307c5.15 2.955 9.364 5.4 9.364 5.43 0 .031-4.516 2.641-10.035 5.813l-10.041 5.765-10.023-5.764c-5.507-3.173-10.02-5.783-10.02-5.814 0-.03 4.505-2.64 10.013-5.805l9.999-5.752.69.376c3.357 1.907 6.708 3.824 10.053 5.751zm71.668 13.261c5.422 3.122 9.908 5.702 9.95 5.744.114.103-19.774 11.535-20.046 11.523-.272-.008-19.915-11.335-19.907-11.473.01-.157 19.773-11.527 19.973-11.496.091.022 4.607 2.59 10.03 5.702zM16.3 25.328l9.558 5.503.055 27.247.05 27.252.233.368c.122.194.352.459.52.581.158.115 5.477 3.146 11.818 6.724l11.52 6.506v11.527c0 6.326-.043 11.516-.097 11.516-.041 0-10-5.699-22.124-12.676L5.793 97.201l-.03-38.966-.019-38.954.49.271c.283.15 4.807 2.748 10.065 5.775zm33.754 19.18v25.109l-.387.253c-.525.332-19.667 11.335-19.732 11.335-.03 0-.054-11.336-.054-25.193l.012-25.182 10-5.752c5.499-3.165 10.034-5.733 10.088-5.714.039.024.073 11.34.073 25.144zm38.15-5.775 10.023 5.763V55.92c0 10.838-.011 11.42-.176 11.357-.107-.041-4.642-2.64-10.083-5.774l-9.91-5.69v-11.42c0-6.287.032-11.424.062-11.424.043 0 4.577 2.592 10.084 5.764zm34.164 5.587c0 6.254-.042 11.412-.084 11.462-.072.115-19.896 11.538-20.022 11.538-.031 0-.062-5.135-.062-11.423v-11.42l10-5.756c5.507-3.16 10.042-5.752 10.084-5.752.053 0 .084 5.105.084 11.351zM95.993 70.933 52.005 96.04 32.056 84.693S76 59.277 76.176 59.343zm2.215 14.827-.034 11.442-22.028 12.676c-12.12 6.976-22.082 12.675-22.132 12.675-.053 0-.095-4.658-.095-11.516V99.51l22.08-12.592c12.132-6.923 22.101-12.59 22.154-12.602.043 0 .062 5.148.054 11.443z"></path>
+                        </svg>  
+                    </div>
+                    <span class="skill-text">Laravel</span>
                 </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
@@ -696,11 +913,27 @@
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
                         <svg viewBox="0 0 128 128">
+                            <path fill="#c711e1" d="M112.484 112.484H15.516V15.516h96.968L64 64Zm0 0"></path>
+                        </svg>
+                    </div>
+                    <span class="skill-text">Kotlin</span>
+                </div>
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
+                        <svg viewBox="0 0 128 128">
+                            <g fill="#3FB6D3"><path d="M12.3 64.2L76.3 0h39.4L32.1 83.6zM76.3 128h39.4L81.6 93.9l34.1-34.8H76.3L42.2 93.5z"></path></g><path fill="#27AACD" d="M81.6 93.9l-20-20-19.4 19.6 19.4 19.6z"></path><path fill="#19599A" d="M115.7 128L81.6 93.9l-20 19.2L76.3 128z"></path><linearGradient id="flutter-original-a" gradientUnits="userSpaceOnUse" x1="59.365" y1="116.36" x2="86.825" y2="99.399"><stop offset="0" stop-color="#1b4e94"></stop><stop offset=".63" stop-color="#1a5497"></stop><stop offset="1" stop-color="#195a9b"></stop></linearGradient><path fill="url(#flutter-original-a)" d="M61.6 113.1l30.8-8.4-10.8-10.8z"></path>
+                        </svg>
+                    </div>
+                    <span class="skill-text">Flutter</span>
+                </div>
+                <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
+                    <div class="card-skills-content">
+                        <svg viewBox="0 0 128 128">
                             <path fill="#659AD3" d="M115.4 30.7L67.1 2.9c-.8-.5-1.9-.7-3.1-.7-1.2 0-2.3.3-3.1.7l-48 27.9c-1.7 1-2.9 3.5-2.9 5.4v55.7c0 1.1.2 2.4 1 3.5l106.8-62c-.6-1.2-1.5-2.1-2.4-2.7z"></path><path fill="#03599C" d="M10.7 95.3c.5.8 1.2 1.5 1.9 1.9l48.2 27.9c.8.5 1.9.7 3.1.7 1.2 0 2.3-.3 3.1-.7l48-27.9c1.7-1 2.9-3.5 2.9-5.4V36.1c0-.9-.1-1.9-.6-2.8l-106.6 62z"></path><path fill="#fff" d="M85.3 76.1C81.1 83.5 73.1 88.5 64 88.5c-13.5 0-24.5-11-24.5-24.5s11-24.5 24.5-24.5c9.1 0 17.1 5 21.3 12.5l13-7.5c-6.8-11.9-19.6-20-34.3-20-21.8 0-39.5 17.7-39.5 39.5s17.7 39.5 39.5 39.5c14.6 0 27.4-8 34.2-19.8l-12.9-7.6z"></path>
                         </svg>    
                     </div>
                     <span class="skill-text">C</span>
-                </div>                
+                </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">          
                         <svg viewBox="0 0 128 128">
@@ -736,9 +969,11 @@
                 </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
-                        <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 109.43" style="enable-background:new 0 0 122.88 109.43" xml:space="preserve"><style type="text/css">.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#00D8FF;}</style><g><path class="st0" d="M122.88,54.73c0-8.14-10.19-15.85-25.82-20.64c3.61-15.93,2-28.6-5.06-32.66c-1.63-0.95-3.53-1.4-5.61-1.4 v5.59c1.15,0,2.08,0.23,2.86,0.65c3.41,1.95,4.88,9.39,3.73,18.96c-0.28,2.35-0.73,4.83-1.28,7.36c-4.91-1.2-10.27-2.13-15.9-2.73 c-3.38-4.63-6.89-8.84-10.42-12.52C73.54,9.74,81.2,5.59,86.41,5.59V0l0,0c-6.89,0-15.9,4.91-25.02,13.43 C52.27,4.96,43.26,0.1,36.37,0.1v5.59c5.18,0,12.87,4.13,21.04,11.67c-3.51,3.68-7.01,7.86-10.34,12.5 c-5.66,0.6-11.02,1.53-15.93,2.75c-0.58-2.5-1-4.93-1.3-7.26c-1.18-9.57,0.28-17.01,3.66-18.99c0.75-0.45,1.73-0.65,2.88-0.65V0.13 l0,0c-2.1,0-4.01,0.45-5.66,1.4c-7.04,4.06-8.62,16.71-4.98,32.59C10.14,38.92,0,46.61,0,54.73c0,8.14,10.19,15.85,25.82,20.64 c-3.61,15.93-2,28.6,5.06,32.66c1.63,0.95,3.53,1.4,5.64,1.4c6.89,0,15.9-4.91,25.02-13.43c9.12,8.47,18.13,13.33,25.02,13.33 c2.1,0,4.01-0.45,5.66-1.4c7.04-4.06,8.62-16.71,4.98-32.59C112.74,70.56,122.88,62.84,122.88,54.73L122.88,54.73z M72.86,54.73 c0-6.32-5.12-11.45-11.45-11.45c-6.32,0-11.45,5.12-11.45,11.45s5.12,11.45,11.45,11.45C67.74,66.17,72.86,61.05,72.86,54.73 L72.86,54.73z M36.34,0.1L36.34,0.1L36.34,0.1L36.34,0.1z M90.27,38.02c-0.93,3.23-2.08,6.56-3.38,9.89c-1.03-2-2.1-4.01-3.28-6.01 c-1.15-2-2.38-3.96-3.61-5.86C83.56,36.57,86.99,37.22,90.27,38.02L90.27,38.02z M78.8,64.7c-1.95,3.38-3.96,6.59-6.04,9.57 c-3.73,0.33-7.51,0.5-11.32,0.5c-3.78,0-7.56-0.18-11.27-0.48c-2.08-2.98-4.11-6.16-6.06-9.52c-1.9-3.28-3.63-6.61-5.21-9.97 c1.55-3.36,3.31-6.71,5.18-9.99c1.95-3.38,3.96-6.59,6.04-9.57c3.73-0.33,7.51-0.5,11.32-0.5c3.78,0,7.56,0.18,11.27,0.48 c2.08,2.98,4.11,6.16,6.06,9.52c1.9,3.28,3.63,6.61,5.21,9.97C82.4,58.06,80.68,61.41,78.8,64.7L78.8,64.7z M86.89,61.44 c1.35,3.36,2.5,6.71,3.46,9.97c-3.28,0.8-6.74,1.48-10.32,2c1.23-1.93,2.45-3.91,3.61-5.94C84.78,65.47,85.86,63.44,86.89,61.44 L86.89,61.44z M61.49,88.16c-2.33-2.4-4.66-5.08-6.96-8.01c2.25,0.1,4.56,0.18,6.89,0.18c2.35,0,4.68-0.05,6.96-0.18 C66.12,83.08,63.79,85.76,61.49,88.16L61.49,88.16z M42.86,73.41c-3.56-0.53-6.99-1.18-10.27-1.98c0.93-3.23,2.08-6.56,3.38-9.89 c1.03,2,2.1,4.01,3.28,6.01C40.43,69.56,41.63,71.51,42.86,73.41L42.86,73.41z M61.36,21.29c2.33,2.4,4.66,5.08,6.96,8.01 c-2.25-0.1-4.56-0.18-6.89-0.18c-2.35,0-4.68,0.05-6.96,0.18C56.73,26.37,59.06,23.69,61.36,21.29L61.36,21.29z M42.83,36.04 c-1.23,1.93-2.45,3.91-3.61,5.94c-1.15,2-2.23,4.01-3.26,6.01c-1.35-3.36-2.5-6.71-3.46-9.97C35.79,37.24,39.25,36.57,42.83,36.04 L42.83,36.04z M20.16,67.4c-8.87-3.78-14.6-8.74-14.6-12.67c0-3.93,5.74-8.92,14.6-12.67c2.15-0.93,4.51-1.75,6.94-2.53 c1.43,4.91,3.31,10.02,5.64,15.25c-2.3,5.21-4.16,10.29-5.56,15.18C24.7,69.18,22.34,68.33,20.16,67.4L20.16,67.4z M33.64,103.19 c-3.41-1.95-4.88-9.39-3.73-18.96c0.28-2.35,0.73-4.83,1.28-7.36c4.91,1.2,10.27,2.13,15.9,2.73c3.38,4.63,6.89,8.84,10.42,12.52 c-8.17,7.59-15.83,11.75-21.04,11.75C35.34,103.84,34.39,103.62,33.64,103.19L33.64,103.19z M93.05,84.11 c1.18,9.57-0.28,17.01-3.66,18.99c-0.75,0.45-1.73,0.65-2.88,0.65c-5.18,0-12.87-4.13-21.04-11.67c3.51-3.68,7.01-7.86,10.34-12.5 c5.66-0.6,11.02-1.53,15.93-2.76C92.32,79.35,92.77,81.78,93.05,84.11L93.05,84.11z M102.69,67.4c-2.15,0.93-4.51,1.75-6.94,2.53 c-1.43-4.91-3.31-10.02-5.64-15.25c2.3-5.21,4.16-10.29,5.56-15.18c2.48,0.78,4.83,1.63,7.04,2.55c8.87,3.78,14.6,8.74,14.6,12.67 C117.29,58.66,111.56,63.64,102.69,67.4L102.69,67.4z"/></g></svg>
+                        <svg viewBox="0 0 128 128">
+                            <path fill="#0acf83" d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0"></path><path fill="#a259ff" d="M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0"></path><path fill="#f24e1e" d="M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0"></path><path fill="#ff7262" d="M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0"></path><path fill="#1abcfe" d="M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5 76.6 43 88.5 43 110 52.6 110 64.5zm0 0"></path>
+                        </svg>
                     </div>
-                    <span class="skill-text">React</span>
+                    <span class="skill-text">Figma</span>
                 </div>
                 <div class="card-skills animate-on-scroll" data-animation="animate__flipInX">
                     <div class="card-skills-content">
@@ -829,15 +1064,18 @@
     <script src="js/language.js"></script>
 
     <script>
-        // Download button
-        function downloadCV() {
-            const link = document.createElement('a');
-            link.href = 'document/CV.pdf';
-            link.download = 'GevannoYoh CV.pdf';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+        // Fungsi untuk membuka PDF dalam tab baru
+        function viewCV(pdfUrl) {
+            window.open(pdfUrl, '_blank');
         }
+
+        // Fungsi untuk menampilkan modal
+        document.addEventListener('DOMContentLoaded', function() {
+            const viewCVButton = document.querySelector('.download-btn');
+            viewCVButton.addEventListener('click', function() {
+                // Tidak perlu melakukan apa-apa di sini karena modal akan muncul otomatis
+            });
+        });
 
         //Animasi nav link
         document.addEventListener("DOMContentLoaded", function() {
@@ -873,6 +1111,23 @@
                         window.scrollTo({
                             top: targetSection.offsetTop,
                             behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener("click", function (e) {
+                    e.preventDefault(); // Mencegah perubahan URL
+
+                    const targetId = this.getAttribute("href").substring(1); // Mengambil ID tanpa #
+                    const targetElement = document.getElementById(targetId);
+
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: "smooth"
                         });
                     }
                 });

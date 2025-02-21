@@ -296,6 +296,33 @@ section p {
     transition: all 0.475s;
 }
 
+/* Modal CV */
+.modal-content-cv {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 24px;
+}
+
+.modal-body-cv {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header-cv {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.preview-btn-cv {
+  margin-bottom: 14px !important;
+  margin-left: 0px !important;
+}
+
 /* about */
 .container-about {
     margin-top : 100px;
@@ -392,17 +419,21 @@ section p {
 .desc-modal-pro {
   margin-top: 10px;
   margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 30px;
   font-size: 19px;
   color: #140c1c;
+  text-align: justify;
 }
 
 .myjob-modal-pro {
   margin-top: 10px;
   margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 30px;
   font-size: 19px;
   color: #140c1c;
+  text-align: justify;
 }
 
 .image-modal-pro {
@@ -546,6 +577,21 @@ section p {
   border-radius: inherit;
   background: linear-gradient(260deg, #0575E6 0%, #021B79 100%);
   transition: all 0.475s;
+}
+
+.preview-btn-disabled {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  padding: 0 2rem;
+  border-radius: 1.5rem;
+  background: linear-gradient(260deg, #021B79 0%, #0575E6 100%);
+  color: white;
+  border: none;
+  cursor: not-allowed !important;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-left: 20px;
+  margin-bottom: 30px;
 }
 
 
@@ -987,7 +1033,7 @@ ul {
 .social-media-btn .icon-content:hover .tooltip {
   opacity: 1;
   visibility: visible;
-  top: -58px;
+  top: -38px;
 }
 .social-media-btn .icon-content a {
   position: relative;
